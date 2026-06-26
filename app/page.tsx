@@ -8,13 +8,13 @@ const OFFERINGS = [
     no: "01 / Breathwork",
     title: "Breathwork in Motion",
     sub: "Private · Couples · Group · Virtual",
-    image: "https://www.caitlynecorry.com/cc02.webp",
+    image: null,
   },
   {
     no: "02 / Nervous System",
     title: "Nervous System Support",
     sub: "Education · Toolkits · Workshops",
-    image: "https://www.caitlynecorry.com/cc03.webp",
+    image: null,
   },
   {
     no: "03 / Play",
@@ -125,10 +125,12 @@ export default function HomePage() {
 
       {/* About preview */}
       <section className="grid grid-cols-1 border-b border-ink md:grid-cols-2">
-        <div className="hatch flex min-h-[500px] items-end border-ink p-[22px] md:border-r">
-          <span className="font-mono text-xs text-[#a99e88]">
-            portrait — caitlyne
-          </span>
+        <div className="min-h-[500px] border-ink md:border-r">
+          <img
+            src="/media/caitlyne-portrait.jpeg"
+            alt="Caitlyne in a forward fold with arms outstretched on a studio floor"
+            className="h-full min-h-[500px] w-full object-cover"
+          />
         </div>
         <div className="px-6 py-16 md:px-11">
           <div className="mb-6 font-mono text-xs uppercase tracking-[0.16em] text-pink-muted">

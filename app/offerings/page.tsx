@@ -27,9 +27,13 @@ export default function OfferingsPage() {
 
       {/* Offering 01 */}
       <section className="grid grid-cols-1 border-b border-ink md:grid-cols-2">
-        <div
-          className="min-h-[520px] border-ink bg-sand bg-cover bg-center bg-no-repeat md:border-r"
-          style={{ backgroundImage: "url('https://www.caitlynecorry.com/cc02.webp')" }}
+        <video
+          className="min-h-[520px] w-full border-ink object-cover md:border-r"
+          src="/media/breathwork-clip.mov"
+          autoPlay
+          loop
+          muted
+          playsInline
         />
         <div className="flex flex-col justify-center px-6 py-16 md:px-11">
           <div className="mb-5 font-mono text-[13px] text-[#8a8074]">
