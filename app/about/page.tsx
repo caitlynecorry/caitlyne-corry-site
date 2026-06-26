@@ -35,14 +35,16 @@ export default function AboutPage() {
             Caitlyne
           </h1>
           <p className="mt-[34px] max-w-[480px] font-grotesk text-[19px] leading-[1.55] text-[#5a5247]">
-            A somatic breathwork facilitator, movement practitioner, writer, and
+            A writer, somatic breathwork facilitator, movement practitioner, and
             intuitive guide based in Seattle.
           </p>
         </div>
-        <div className="hatch flex min-h-[560px] items-end border-ink p-[22px] md:border-l">
-          <span className="font-mono text-xs text-[#a99e88]">
-            portrait — caitlyne
-          </span>
+        <div className="min-h-[560px] border-ink md:border-l">
+          <img
+            src="/media/caitlyne-about.jpg"
+            alt="Caitlyne holding a handstand on a studio floor against a paneled wall"
+            className="h-full min-h-[560px] w-full object-cover"
+          />
         </div>
       </section>
 
