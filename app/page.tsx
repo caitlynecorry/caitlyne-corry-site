@@ -55,8 +55,11 @@ export default function HomePage() {
 
       {/* Hero */}
       <section className="border-b border-ink px-5 pb-[60px] pt-[54px] md:px-10">
-        <h1 className="m-0 font-grotesk text-[clamp(56px,14vw,188px)] font-bold uppercase leading-[0.82] tracking-[-0.045em]">
-          I see through the <span className="italic text-pink-deep">story</span>
+        <h1 className="m-0 font-grotesk text-[clamp(50px,12.5vw,168px)] font-bold uppercase leading-[0.71] tracking-[-0.045em]">
+          I see through the{" "}
+          <span className="-ml-[0.08em] inline-block text-[0.85em] italic text-pink-deep">
+            story
+          </span>
         </h1>
         <div className="mt-11 flex flex-wrap items-end justify-between gap-10">
           <div className="max-w-[520px]">
