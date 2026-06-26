@@ -54,15 +54,26 @@ export default function HomePage() {
       <SiteHeader />
 
       {/* Hero */}
-      <section className="border-b border-ink px-5 pb-[60px] pt-[54px] md:px-10">
-        <h1 className="m-0 font-grotesk text-[clamp(50px,12.5vw,168px)] font-bold uppercase leading-[0.71] tracking-[-0.045em]">
-          I see through the{" "}
-          <span className="-ml-[0.08em] inline-block text-[0.85em] italic text-pink-deep">
-            story
+      <section className="border-b border-ink px-5 pb-20 pt-12 md:px-10 md:pb-28 md:pt-16">
+        {/* Editorial masthead row */}
+        <div className="flex items-baseline justify-between border-b border-ink/25 pb-4 font-mono text-[11px] uppercase tracking-[0.18em] text-[#8a8074]">
+          <span>001 — A Somatic Practice</span>
+          <span className="hidden md:inline">The body keeps listening</span>
+          <span>Seattle</span>
+        </div>
+
+        {/* Staggered headline — cascading editorial composition */}
+        <h1 className="m-0 mt-12 font-grotesk font-bold uppercase leading-[0.9] tracking-[-0.04em] text-[clamp(44px,9vw,132px)] md:mt-20">
+          <span className="block">I See</span>
+          <span className="block md:ml-[15%]">Through the</span>
+          <span className="mt-1 block text-[0.82em] italic text-pink-deep md:ml-[32%]">
+            Story
           </span>
         </h1>
-        <div className="mt-11 flex flex-wrap items-end justify-between gap-10">
-          <div className="max-w-[520px]">
+
+        {/* Lower zone aligned to the headline indent grid */}
+        <div className="mt-16 flex flex-wrap items-end justify-between gap-10 md:mt-24 md:pl-[15%]">
+          <div className="max-w-[460px]">
             <p className="mb-6 font-grotesk text-xl leading-[1.5] text-[#4a443c]">
               Hi, I&rsquo;m Caitlyne — a somatic breathwork facilitator, movement
               practitioner, and intuitive guide. This is the work of coming home
