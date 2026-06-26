@@ -29,7 +29,7 @@ export default function OfferingsPage() {
       <section className="grid grid-cols-1 border-b border-ink md:grid-cols-2">
         <video
           className="min-h-[520px] w-full border-ink object-cover md:border-r"
-          src="/media/breathwork-clip.mov"
+          src="/media/breathwork-clip.mp4"
           autoPlay
           loop
           muted
