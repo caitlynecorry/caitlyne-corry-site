@@ -1,8 +1,8 @@
 import Link from "next/link";
 
-const INSTAGRAM = "https://www.instagram.com/caitlynecorry/?hl=en";
-const LINKEDIN = "https://www.linkedin.com/in/caitlynecorry/";
-const SUBSTACK = "https://caitlynecorry.substack.com/";
+const INSTAGRAM = "https://www.instagram.com/caitlynecorry/";
+const LINKEDIN = "https://www.linkedin.com/feed/";
+const SUBSTACK = "https://substack.com/@caitlynecorry";
 
 /**
  * Full footer — used on the Home page. Three meta columns + big "Let's Connect".

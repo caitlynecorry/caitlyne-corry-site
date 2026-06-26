@@ -53,7 +53,13 @@ export default function OfferingsPage() {
             ))}
           </div>
           <Button asChild className="self-start">
-            <Link href="/live-stream">Book a session →</Link>
+            <a
+              href="https://app.acuityscheduling.com/schedule/bc35c44e"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Book a session →
+            </a>
           </Button>
         </div>
       </section>
@@ -138,7 +144,7 @@ export default function OfferingsPage() {
           How free do you wanna be?
         </p>
         <Button asChild>
-          <Link href="/live-stream">Start with a free live session →</Link>
+            <Link href="/live-stream">Start with a meet &amp; greet</Link>
         </Button>
       </section>
 
