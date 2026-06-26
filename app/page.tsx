@@ -8,13 +8,13 @@ const OFFERINGS = [
     no: "01 / Breathwork",
     title: "Breathwork in Motion",
     sub: "Private · Couples · Group · Virtual",
-    image: "https://www.caitlynecorry.com/cc02.webp",
+    image: null,
   },
   {
     no: "02 / Nervous System",
     title: "Nervous System Support",
     sub: "Education · Toolkits · Workshops",
-    image: "https://www.caitlynecorry.com/cc03.webp",
+    image: null,
   },
   {
     no: "03 / Play",
@@ -56,18 +56,14 @@ export default function HomePage() {
       {/* Hero */}
       <section className="border-b border-ink px-5 pb-[60px] pt-[54px] md:px-10">
         <h1 className="m-0 font-grotesk text-[clamp(56px,14vw,188px)] font-bold uppercase leading-[0.82] tracking-[-0.045em]">
-          Form
-          <br />
-          Follows
-          <br />
-          <span className="text-pink-deep">Silence</span>
+          I see through the <span className="italic text-pink-deep">story</span>
         </h1>
         <div className="mt-11 flex flex-wrap items-end justify-between gap-10">
           <div className="max-w-[520px]">
             <p className="mb-6 font-grotesk text-xl leading-[1.5] text-[#4a443c]">
-              Hi, I&rsquo;m Caitlyne — a somatic breathwork facilitator, movement
-              practitioner, and intuitive guide. This is the work of coming home
-              to yourself.
+              Hi, I&rsquo;m Caitlyne — a writer, somatic breathwork facilitator,
+              movement practitioner, and intuitive guide. This is the work of
+              coming home to yourself.
             </p>
             <div className="flex gap-3">
               <Button asChild>
@@ -129,10 +125,12 @@ export default function HomePage() {
 
       {/* About preview */}
       <section className="grid grid-cols-1 border-b border-ink md:grid-cols-2">
-        <div className="hatch flex min-h-[500px] items-end border-ink p-[22px] md:border-r">
-          <span className="font-mono text-xs text-[#a99e88]">
-            portrait — caitlyne
-          </span>
+        <div className="min-h-[500px] border-ink md:border-r">
+          <img
+            src="/media/caitlyne-portrait.jpg"
+            alt="Caitlyne in a forward fold with arms outstretched on a studio floor"
+            className="h-full min-h-[500px] w-full object-cover"
+          />
         </div>
         <div className="px-6 py-16 md:px-11">
           <div className="mb-6 font-mono text-xs uppercase tracking-[0.16em] text-pink-muted">

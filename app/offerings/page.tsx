@@ -27,9 +27,13 @@ export default function OfferingsPage() {
 
       {/* Offering 01 */}
       <section className="grid grid-cols-1 border-b border-ink md:grid-cols-2">
-        <div
-          className="min-h-[520px] border-ink bg-sand bg-cover bg-center bg-no-repeat md:border-r"
-          style={{ backgroundImage: "url('https://www.caitlynecorry.com/cc02.webp')" }}
+        <video
+          className="min-h-[520px] w-full border-ink object-cover md:border-r"
+          src="/media/breathwork-clip.mp4"
+          autoPlay
+          loop
+          muted
+          playsInline
         />
         <div className="flex flex-col justify-center px-6 py-16 md:px-11">
           <div className="mb-5 font-mono text-[13px] text-[#8a8074]">
@@ -53,7 +57,13 @@ export default function OfferingsPage() {
             ))}
           </div>
           <Button asChild className="self-start">
-            <Link href="/live-stream">Book a session →</Link>
+            <a
+              href="https://app.acuityscheduling.com/schedule/bc35c44e"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Book a session →
+            </a>
           </Button>
         </div>
       </section>
@@ -138,7 +148,7 @@ export default function OfferingsPage() {
           How free do you wanna be?
         </p>
         <Button asChild>
-          <Link href="/live-stream">Start with a free live session →</Link>
+            <Link href="/live-stream">Start with a meet &amp; greet</Link>
         </Button>
       </section>
 
