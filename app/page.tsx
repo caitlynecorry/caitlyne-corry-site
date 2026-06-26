@@ -127,7 +127,7 @@ export default function HomePage() {
       <section className="grid grid-cols-1 border-b border-ink md:grid-cols-2">
         <div className="min-h-[500px] border-ink md:border-r">
           <img
-            src="/media/caitlyne-portrait.jpeg"
+            src="/media/caitlyne-portrait.jpg"
             alt="Caitlyne in a forward fold with arms outstretched on a studio floor"
             className="h-full min-h-[500px] w-full object-cover"
           />
