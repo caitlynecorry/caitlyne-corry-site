@@ -62,8 +62,7 @@ export default function HomePage() {
           <div className="max-w-[520px]">
             <p className="mb-6 font-grotesk text-xl leading-[1.5] text-[#4a443c]">
               Hi, I&rsquo;m Caitlyne — a writer, somatic breathwork facilitator,
-              movement practitioner, and intuitive guide. This is the work of
-              coming home to yourself.
+              and intuitive guide.
             </p>
             <div className="flex gap-3">
               <Button asChild>

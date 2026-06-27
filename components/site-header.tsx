@@ -1,4 +1,8 @@
+"use client";
+
+import { useState } from "react";
 import Link from "next/link";
+import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const NAV = [
@@ -12,6 +16,8 @@ const TICKER_TEXT =
   "Donation-based breathwork — every Thursday 8PM PST — join us live on Zoom";
 
 export function SiteHeader({ active }: { active?: string }) {
+  const [open, setOpen] = useState(false);
+
   return (
     <header>
       {/* Announcement ticker */}
@@ -64,8 +70,43 @@ export function SiteHeader({ active }: { active?: string }) {
           <Button asChild variant="pink" size="sm">
             <Link href="/live-stream">Join Live Stream</Link>
           </Button>
+          {/* Mobile menu toggle */}
+          <button
+            type="button"
+            onClick={() => setOpen((v) => !v)}
+            aria-label={open ? "Close menu" : "Open menu"}
+            aria-expanded={open}
+            aria-controls="mobile-nav"
+            className="flex items-center justify-center p-1 text-ink md:hidden"
+          >
+            {open ? <X size={24} /> : <Menu size={24} />}
+          </button>
         </div>
       </nav>
+
+      {/* Mobile nav panel */}
+      {open ? (
+        <div
+          id="mobile-nav"
+          className="border-b border-ink bg-cream md:hidden"
+        >
+          <ul className="flex flex-col">
+            {NAV.map((item) => (
+              <li key={item.href} className="border-b border-ink/15 last:border-b-0">
+                <Link
+                  href={item.href}
+                  onClick={() => setOpen(false)}
+                  className={`block px-6 py-4 font-grotesk text-lg font-medium ${
+                    active === item.href ? "text-pink-deep" : "text-ink"
+                  }`}
+                >
+                  {item.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ) : null}
     </header>
   );
 }
