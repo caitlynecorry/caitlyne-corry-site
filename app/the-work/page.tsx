@@ -118,7 +118,7 @@ export default function TheWorkPage() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Let&rsquo;s meet →
+            Let&rsquo;s have that conversation →
           </a>
         </Button>
       </section>
