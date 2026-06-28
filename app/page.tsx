@@ -60,12 +60,12 @@ export default function HomePage() {
           <img
             src="/media/hero-reach.jpeg"
             alt="Caitlyne in a deep forward fold on a studio mat, arms outstretched with open hands reaching forward"
-            className="h-full w-full object-cover object-[center_38%] opacity-[0.42] grayscale contrast-[1.06]"
+            className="h-full w-full object-cover object-[center_38%] opacity-[0.72] grayscale contrast-[1.16] brightness-[1.02]"
           />
           {/* Cream wash keeps the type as the focal point */}
-          <div className="absolute inset-0 bg-gradient-to-b from-cream via-cream/55 to-cream/80" />
+          <div className="absolute inset-0 bg-gradient-to-b from-cream/75 via-cream/30 to-cream/60" />
           {/* Soft film grain */}
-          <div className="grain absolute inset-0 opacity-[0.35] mix-blend-multiply" />
+          <div className="grain absolute inset-0 opacity-[0.28] mix-blend-multiply" />
         </div>
 
         <div className="flex min-h-[82vh] flex-col justify-center px-5 py-[72px] md:px-10 md:py-[96px]">
