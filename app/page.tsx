@@ -116,9 +116,9 @@ export default function HomePage() {
       {/* Soft-pink statement band */}
       <section className="border-b border-ink bg-pink px-6 py-24 text-[#3a2a2b] md:px-11">
         <p className="m-0 max-w-[1080px] font-grotesk text-[clamp(30px,4.4vw,52px)] font-semibold leading-[1.12] tracking-[-0.02em]">
-          I work with people who are ready to build safety from the inside out —
-          not because someone told them to, but because they&rsquo;re finally
-          listening.
+          I work with people who want safety from the inside out &mdash; they
+          are ready to see through the story and listen to what their body
+          already knows.
         </p>
       </section>
 
