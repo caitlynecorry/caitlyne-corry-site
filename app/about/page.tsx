@@ -41,8 +41,8 @@ export default function AboutPage() {
         </div>
         <div className="min-h-[560px] border-ink md:border-l">
           <img
-            src="/media/caitlyne-about.jpg"
-            alt="Caitlyne holding a handstand on a studio floor against a paneled wall"
+            src="/media/caitlyne-meet.jpg"
+            alt="Caitlyne reclining across a wooden bench beneath a window, smiling"
             className="h-full min-h-[560px] w-full object-cover"
           />
         </div>

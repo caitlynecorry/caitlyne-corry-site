@@ -150,9 +150,9 @@ export default function HomePage() {
       <section className="grid grid-cols-1 border-b border-ink md:grid-cols-2">
         <div className="min-h-[500px] border-ink md:border-r">
           <img
-            src="/media/caitlyne-portrait.jpg"
-            alt="Caitlyne in a forward fold with arms outstretched on a studio floor"
-            className="h-full min-h-[500px] w-full object-cover"
+            src="/media/caitlyne-about.jpg"
+            alt="Caitlyne holding a handstand on a studio floor against a paneled wall"
+            className="h-full min-h-[500px] w-full object-cover object-top"
           />
         </div>
         <div className="px-6 py-16 md:px-11">
