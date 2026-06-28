@@ -19,7 +19,7 @@ const spaceMono = Space_Mono({
 export const metadata: Metadata = {
   title: "Caitlyne Corry — Form Follows Silence",
   description:
-    "Somatic breathwork facilitator, movement practitioner, and intuitive guide based in Seattle. The work of coming home to yourself.",
+    "Writer, somatic breathwork facilitator, and intuitive guide based in Seattle. The work of coming home to yourself.",
 };
 
 export default function RootLayout({

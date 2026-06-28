@@ -10,11 +10,11 @@ const TIMELINE = [
   },
   {
     year: "2018",
-    body: "Began facilitating breathwork and somatic practice professionally.",
+    body: "A deeper curiosity for body & breath formed.",
   },
   {
     year: "Now",
-    body: "Guiding individuals, couples, and groups — live every Thursday on Zoom.",
+    body: "Offering private sessions, couples work, and group experiences — including community breathwork gatherings every Thursday on Zoom.",
   },
 ];
 
@@ -35,8 +35,8 @@ export default function AboutPage() {
             Caitlyne
           </h1>
           <p className="mt-[34px] max-w-[480px] font-grotesk text-[19px] leading-[1.55] text-[#5a5247]">
-            A writer, somatic breathwork facilitator, movement practitioner, and
-            intuitive guide based in Seattle.
+            A writer, somatic breathwork facilitator, and intuitive guide based
+            in Seattle.
           </p>
         </div>
         <div className="min-h-[560px] border-ink md:border-l">
