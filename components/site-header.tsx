@@ -37,7 +37,7 @@ export function SiteHeader({ active }: { active?: string }) {
 
       {/* Mono meta bar */}
       <div className="flex items-center justify-between border-b border-ink px-6 py-3 font-mono text-[11px] uppercase tracking-[0.08em] text-[#46403a] md:px-11">
-        <span>Caitlyne Corry</span>
+        <span>Enjoy Your Breath</span>
         <span className="hidden opacity-80 sm:inline">Somatic Breathwork</span>
         <span className="hidden opacity-80 sm:inline">Seattle · Est. 2018</span>
         <span>Thu 8PM PST ●</span>
@@ -49,7 +49,7 @@ export function SiteHeader({ active }: { active?: string }) {
           href="/"
           className="font-grotesk text-base font-bold tracking-[0.02em]"
         >
-          FORM FOLLOWS SILENCE
+          CAITLYNE CORRY
         </Link>
         <div className="flex items-center gap-5 md:gap-[30px]">
           <div className="hidden items-center gap-[30px] font-grotesk text-[15px] font-medium md:flex">

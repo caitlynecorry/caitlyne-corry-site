@@ -52,25 +52,48 @@ export default function AboutPage() {
       <section className="border-b border-ink px-6 py-[90px] md:px-11">
         <div className="mx-auto max-w-[760px]">
           <p className="mb-10 font-grotesk text-[30px] font-medium leading-[1.4] tracking-[-0.01em]">
-            Life is messy and being human is hard. Unlearning, discarding,
-            rewiring — it&rsquo;s not always pretty. In my lineage, we call it
-            slaying dragons. And I know that territory. I&rsquo;ve been there.
+            My story is part of the work. From survival to self-trust. From
+            numbing to feeling. From performing to being. My deepest pains have
+            become my greatest assets. It&rsquo;s all shaped how I hold space,
+            how I listen, and how I walk alongside you.
           </p>
           <p className="mb-6 font-grotesk text-lg leading-[1.75] text-[#4a443c]">
-            That&rsquo;s what brought me here.
+            For a long time, my body was something I carried around with me
+            rather than somewhere I lived. Like a lot of people, I learned how to
+            override myself. Push through exhaustion. Explain away anxiety. Stay
+            when I should have left. Leave when I should have stayed. Call
+            survival intuition and intuition survival.
           </p>
           <p className="mb-6 font-grotesk text-lg leading-[1.75] text-[#4a443c]">
-            What began in 2009 as a personal relationship to movement became
-            something I couldn&rsquo;t unfind. The body kept telling the truth
-            even when I wasn&rsquo;t ready to hear it. Eventually I stopped
-            arguing with it.
+            My body knew the difference long before I did. What began in 2009 as
+            a relationship with movement, the body kept telling the truth even
+            when I wasn&rsquo;t ready to hear it. Eventually, I stopped arguing
+            with it.
+          </p>
+          <p className="mb-6 font-grotesk text-lg leading-[1.75] text-[#4a443c]">
+            Breath became a doorway back to myself. Not to a better version of
+            me. Not to some enlightened, healed, untouchable version of being
+            human. Just back to myself.
+          </p>
+          <p className="mb-6 font-grotesk text-lg leading-[1.75] text-[#4a443c]">
+            I&rsquo;ve learned that the cost of abandoning your body is expensive.
+            It can look like burnout, anxiety, addiction, grief, chronic
+            striving, relationships that ask you to betray yourself, or a life
+            that no longer fits the person you&rsquo;ve become.
+          </p>
+          <p className="mb-6 font-grotesk text-lg leading-[1.75] text-[#4a443c]">
+            The body usually knows long before the mind catches up.
+          </p>
+          <p className="mb-6 font-grotesk text-lg leading-[1.75] text-[#4a443c]">
+            I work with people who show up to do the work. People who are tired
+            of outsourcing their authority and ready to become their own teacher.
+            People who are willing to see through the story and listen to what
+            their body has been trying to say all along.
           </p>
           <p className="m-0 font-grotesk text-lg leading-[1.75] text-[#4a443c]">
-            I&rsquo;ve learned the price you pay for ignoring your body&rsquo;s
-            intelligence is very expensive. I work with people who are done
-            outsourcing their healing, who want to become their own teacher. Who
-            are ready to build safety from the inside out, not because someone
-            told them to, but because they&rsquo;re finally listening.
+            Because beneath the noise, beneath the fear, beneath the
+            conditioning — I&rsquo;ve discovered that the body was often wiser
+            than the narratives surrounding it.
           </p>
         </div>
       </section>

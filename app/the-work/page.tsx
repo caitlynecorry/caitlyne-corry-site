@@ -57,7 +57,7 @@ export default function TheWorkPage() {
         <h1 className="m-0 font-grotesk text-[clamp(54px,13vw,158px)] font-bold uppercase leading-[0.82] tracking-[-0.045em]">
           The
           <br />
-          Work
+          Work.
         </h1>
         <p className="mt-10 max-w-[600px] font-grotesk text-[19px] leading-[1.55] text-[#5a5247]">
           This work moves in a sequence. We don&rsquo;t start with the story — we
