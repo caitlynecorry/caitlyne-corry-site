@@ -152,9 +152,9 @@ export default function ContactPage() {
       <footer className="bg-ink px-6 pb-11 pt-[70px] text-cream md:px-11">
         <div className="flex flex-wrap items-end justify-between gap-8">
           <h2 className="m-0 font-grotesk text-[clamp(44px,8vw,72px)] font-bold uppercase leading-[0.88] tracking-[-0.03em]">
-            Form Follows
+            Enjoy Your
             <br />
-            Silence
+            Breath
           </h2>
           <div className="text-right font-grotesk text-base leading-[1.9]">
             <Link href="/offerings">Offerings</Link> ·{" "}
