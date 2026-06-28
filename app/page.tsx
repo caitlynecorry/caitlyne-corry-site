@@ -54,28 +54,43 @@ export default function HomePage() {
       <SiteHeader />
 
       {/* Hero */}
-      <section className="border-b border-ink px-5 pb-[60px] pt-[54px] md:px-10">
-        <h1 className="m-0 font-grotesk text-[clamp(56px,14vw,188px)] font-bold uppercase leading-[0.82] tracking-[-0.045em]">
-          I see through the <span className="italic text-pink-deep">story</span>
-        </h1>
-        <div className="mt-11 flex flex-wrap items-end justify-between gap-10">
-          <div className="max-w-[520px]">
-            <p className="mb-6 font-grotesk text-xl leading-[1.5] text-[#4a443c]">
-              Hi, I&rsquo;m Caitlyne — a writer, somatic breathwork facilitator,
-              and intuitive guide.
-            </p>
-            <div className="flex gap-3">
-              <Button asChild>
-                <Link href="/live-stream">Join Live Stream</Link>
-              </Button>
-              <Button asChild variant="outline">
-                <Link href="/live-stream">Book a 1:1</Link>
-              </Button>
+      <section className="relative isolate overflow-hidden border-b border-ink">
+        {/* Atmospheric photograph */}
+        <div className="absolute inset-0 -z-10">
+          <img
+            src="/media/hero-reach.jpeg"
+            alt="Caitlyne in a deep forward fold on a studio mat, arms outstretched with open hands reaching forward"
+            className="h-full w-full object-cover object-[center_38%] opacity-[0.42] grayscale contrast-[1.06]"
+          />
+          {/* Cream wash keeps the type as the focal point */}
+          <div className="absolute inset-0 bg-gradient-to-b from-cream via-cream/55 to-cream/80" />
+          {/* Soft film grain */}
+          <div className="grain absolute inset-0 opacity-[0.35] mix-blend-multiply" />
+        </div>
+
+        <div className="flex min-h-[82vh] flex-col justify-center px-5 py-[72px] md:px-10 md:py-[96px]">
+          <h1 className="m-0 max-w-[15ch] font-grotesk text-[clamp(56px,14vw,188px)] font-bold uppercase leading-[0.82] tracking-[-0.045em]">
+            I see through the <span className="italic text-pink-deep">story</span>
+          </h1>
+          <div className="mt-14 flex flex-wrap items-end justify-between gap-10 md:mt-20">
+            <div className="max-w-[520px]">
+              <p className="mb-6 font-grotesk text-xl leading-[1.5] text-[#4a443c]">
+                Hi, I&rsquo;m Caitlyne — a writer, somatic breathwork facilitator,
+                and intuitive guide.
+              </p>
+              <div className="flex gap-3">
+                <Button asChild>
+                  <Link href="/live-stream">Join Live Stream</Link>
+                </Button>
+                <Button asChild variant="outline">
+                  <Link href="/live-stream">Book a 1:1</Link>
+                </Button>
+              </div>
             </div>
+            <span className="font-mono text-xs tracking-[0.12em] text-[#8a8074]">
+              ↓ Scroll to breathe
+            </span>
           </div>
-          <span className="font-mono text-xs tracking-[0.12em] text-[#8a8074]">
-            ↓ Scroll to breathe
-          </span>
         </div>
       </section>
 
