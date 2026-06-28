@@ -72,7 +72,7 @@ export default function HomePage() {
           {/* Top block — headline + intro read as one unit */}
           <div>
             <h1 className="m-0 max-w-[15ch] font-grotesk text-[clamp(56px,14vw,188px)] font-bold uppercase leading-[0.82] tracking-[-0.045em]">
-              I see through the <span className="italic text-[#daaeaf]">story</span>
+              I see through the <span className="italic text-pink-deep">story</span>
             </h1>
             <p className="mt-7 max-w-[520px] font-grotesk text-xl leading-[1.5] text-[#4a443c] md:mt-9">
               Hi, I&rsquo;m Caitlyne — a writer, somatic breathwork facilitator,
