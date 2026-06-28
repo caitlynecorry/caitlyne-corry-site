@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooterCompact } from "@/components/site-footer";
 import { Button } from "@/components/ui/button";
@@ -114,7 +113,13 @@ export default function TheWorkPage() {
           Ready to begin?
         </p>
         <Button asChild>
-          <Link href="/live-stream">Join this Thursday&rsquo;s session →</Link>
+          <a
+            href="https://app.acuityscheduling.com/schedule/bc35c44e"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Let&rsquo;s meet →
+          </a>
         </Button>
       </section>
 

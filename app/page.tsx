@@ -82,9 +82,15 @@ export default function HomePage() {
                 <Button asChild>
                   <Link href="/live-stream">Join Live Stream</Link>
                 </Button>
-                <Button asChild variant="outline">
-                  <Link href="/live-stream">Book a 1:1</Link>
-                </Button>
+              <Button asChild variant="outline">
+                <a
+                  href="https://app.acuityscheduling.com/schedule/bc35c44e"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Book a 1:1
+                </a>
+              </Button>
               </div>
             </div>
             <span className="font-mono text-xs tracking-[0.12em] text-[#8a8074]">
@@ -131,9 +137,9 @@ export default function HomePage() {
       {/* Soft-pink statement band */}
       <section className="border-b border-ink bg-pink px-6 py-24 text-[#3a2a2b] md:px-11">
         <p className="m-0 max-w-[1080px] font-grotesk text-[clamp(30px,4.4vw,52px)] font-semibold leading-[1.12] tracking-[-0.02em]">
-          I work with people who want safety from the inside out &mdash; they
-          are ready to see through the story and listen to what their body
-          already knows.
+            I work with people who show up to do the work. If you&rsquo;re ready
+            to see through the story and listen to what your body already knows,
+            let&rsquo;s have that conversation.
         </p>
       </section>
 
