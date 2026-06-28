@@ -160,13 +160,15 @@ export default function HomePage() {
             Meet Caitlyne
           </div>
           <p className="mb-6 font-grotesk text-[27px] font-medium leading-[1.35] tracking-[-0.01em]">
-            Life is messy and being human is hard. In my lineage, we call it
-            slaying dragons. And I know that territory — I&rsquo;ve been there.
+            Life is messy and being human is hard, and marvelous, sacred, wild,
+            infinite, and holy.
           </p>
           <p className="mb-[30px] font-grotesk text-base leading-[1.7] text-[#5a5247]">
-            What began in 2009 as a personal relationship to movement became
-            something I couldn&rsquo;t unfind. I&rsquo;m not here to fix you —
-            I&rsquo;m here to help you hear yourself.
+            Unlearning, grieving, rewiring, starting over — none of it is
+            particularly graceful. In my lineage, we call it slaying dragons. And
+            I know that territory. I&rsquo;ve lived there. What began in 2009 as a
+            personal relationship to movement became something I couldn&rsquo;t
+            unfind. I&rsquo;m not here to fix you — I&rsquo;m here to witness you.
           </p>
           <Link
             href="/about"
