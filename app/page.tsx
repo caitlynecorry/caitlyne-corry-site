@@ -68,20 +68,24 @@ export default function HomePage() {
           <div className="grain absolute inset-0 opacity-[0.28] mix-blend-multiply" />
         </div>
 
-        <div className="flex min-h-[82vh] flex-col justify-center px-5 py-[72px] md:px-10 md:py-[96px]">
-          <h1 className="m-0 max-w-[15ch] font-grotesk text-[clamp(56px,14vw,188px)] font-bold uppercase leading-[0.82] tracking-[-0.045em]">
-            I see through the <span className="italic text-pink-deep">story</span>
-          </h1>
-          <div className="mt-14 flex flex-wrap items-end justify-between gap-10 md:mt-20">
-            <div className="max-w-[520px]">
-              <p className="mb-6 font-grotesk text-xl leading-[1.5] text-[#4a443c]">
-                Hi, I&rsquo;m Caitlyne — a writer, somatic breathwork facilitator,
-                and intuitive guide.
-              </p>
-              <div className="flex gap-3">
-                <Button asChild>
-                  <Link href="/live-stream">Join Live Stream</Link>
-                </Button>
+        <div className="flex min-h-[82vh] flex-col justify-between px-5 pt-10 pb-9 md:px-10 md:pt-14 md:pb-12">
+          {/* Top block — headline + intro read as one unit */}
+          <div>
+            <h1 className="m-0 max-w-[15ch] font-grotesk text-[clamp(56px,14vw,188px)] font-bold uppercase leading-[0.82] tracking-[-0.045em]">
+              I see through the <span className="italic text-pink-deep">story</span>
+            </h1>
+            <p className="mt-7 max-w-[520px] font-grotesk text-xl leading-[1.5] text-[#4a443c] md:mt-9">
+              Hi, I&rsquo;m Caitlyne — a writer, somatic breathwork facilitator,
+              and intuitive guide.
+            </p>
+          </div>
+
+          {/* Bottom block — CTAs sit lower, scroll cue anchored at the base */}
+          <div className="flex flex-wrap items-end justify-between gap-x-10 gap-y-6">
+            <div className="flex gap-3">
+              <Button asChild>
+                <Link href="/live-stream">Join Live Stream</Link>
+              </Button>
               <Button asChild variant="outline">
                 <a
                   href="https://app.acuityscheduling.com/schedule/bc35c44e"
@@ -91,7 +95,6 @@ export default function HomePage() {
                   Book a 1:1
                 </a>
               </Button>
-              </div>
             </div>
             <span className="font-mono text-xs tracking-[0.12em] text-[#8a8074]">
               ↓ Scroll to breathe

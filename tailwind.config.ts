@@ -13,8 +13,8 @@ const config: Config = {
         // Brand palette — "Form Follows Silence" (soft-pink direction)
         cream: "#F6F2EA",
         ink: "#26221C",
-        pink: "#E3ABAE",
-        "pink-deep": "#C98388",
+        pink: "#daaeaf",
+        "pink-deep": "#daaeaf",
         "pink-muted": "#C07F84",
         sand: "#E9E2D4",
         "sand-2": "#EFE8DA",
