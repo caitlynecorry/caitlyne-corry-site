@@ -148,11 +148,11 @@ export default function HomePage() {
 
       {/* About preview */}
       <section className="grid grid-cols-1 border-b border-ink md:grid-cols-2">
-        <div className="min-h-[500px] border-ink md:border-r">
+        <div className="flex min-h-[500px] items-center justify-center border-ink bg-cream md:border-r">
           <img
-            src="/media/caitlyne-portrait.jpg"
-            alt="Caitlyne in a forward fold with arms outstretched on a studio floor"
-            className="h-full min-h-[500px] w-full object-cover"
+            src="/media/caitlyne-meet.jpg"
+            alt="Caitlyne reclining across a wooden bench beneath a window, smiling"
+            className="h-full max-h-[620px] w-full object-contain"
           />
         </div>
         <div className="px-6 py-16 md:px-11">
