@@ -24,12 +24,12 @@ const FLOW = [
   {
     no: "(02)",
     title: "Arrive",
-    body: "Log on a few minutes early on Thursday. Find a quiet spot where you can lie down and won't be disturbed.",
+    body: "Log on a few minutes early on Thursday. Find a quiet spot where you can enjoy your breath.",
   },
   {
     no: "(03)",
     title: "Breathe",
-    body: "Sixty guided minutes of active breathwork. Come as you are — give what you can, when you can.",
+    body: "Sixty minutes of guided breathwork.",
   },
 ];
 
@@ -55,8 +55,7 @@ export default function LiveStreamPage() {
         <div className="mt-11 flex flex-wrap items-end justify-between gap-10">
           <p className="max-w-[520px] font-grotesk text-xl leading-[1.5] text-[#4a443c]">
             A donation-based group breathwork session, live on Zoom. Come as you
-            are — no experience needed. Reserve your spot and breathe with us
-            this week.
+            are — no experience needed. Give what you can, when you can.
           </p>
           <span className="font-mono text-xs tracking-[0.12em] text-[#8a8074]">
             ↓ Reserve below
