@@ -1,19 +1,15 @@
 "use client";
 
-import { useState } from "react";
+import { useState, type FormEvent } from "react";
 import Link from "next/link";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooterCompact } from "@/components/site-footer";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
+import { reserveSpot } from "./actions";
+
+const VENMO_URL = "https://account.venmo.com/u/Caitlyne-Corry";
 
 const FLOW = [
   {
@@ -37,6 +33,24 @@ const GIVE = ["Pay what you can", "$15 — suggested", "$30 — supporter", "$50
 
 export default function LiveStreamPage() {
   const [reserved, setReserved] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+  const [contribution, setContribution] = useState(GIVE[0]);
+
+  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    setError(null);
+    setSubmitting(true);
+    const formData = new FormData(e.currentTarget);
+    formData.set("contribution", contribution);
+    const result = await reserveSpot(formData);
+    setSubmitting(false);
+    if (result.ok) {
+      setReserved(true);
+    } else {
+      setError(result.error);
+    }
+  }
 
   return (
     <main className="min-h-screen bg-cream text-ink">
@@ -125,42 +139,64 @@ export default function LiveStreamPage() {
             </div>
           ) : (
             <form
-              onSubmit={(e) => {
-                e.preventDefault();
-                setReserved(true);
-              }}
+              onSubmit={handleSubmit}
               className="flex max-w-[520px] flex-col gap-[22px]"
             >
               <div className="flex flex-col gap-2.5">
                 <Label htmlFor="ls-name">Your name</Label>
-                <Input id="ls-name" placeholder="First and last" required />
+                <Input
+                  id="ls-name"
+                  name="name"
+                  placeholder="First and last"
+                  required
+                />
               </div>
               <div className="flex flex-col gap-2.5">
                 <Label htmlFor="ls-email">Email</Label>
                 <Input
                   id="ls-email"
+                  name="email"
                   type="email"
                   placeholder="you@email.com"
                   required
                 />
               </div>
               <div className="flex flex-col gap-2.5">
-                <Label>Contribution</Label>
-                <Select defaultValue={GIVE[0]}>
-                  <SelectTrigger>
-                    <SelectValue />
-                  </SelectTrigger>
-                  <SelectContent>
-                    {GIVE.map((g) => (
-                      <SelectItem key={g} value={g}>
-                        {g}
-                      </SelectItem>
-                    ))}
-                  </SelectContent>
-                </Select>
+                <Label>Contribution — give what you can on Venmo</Label>
+                <div className="flex flex-wrap gap-2.5">
+                  {GIVE.map((g) => (
+                    <a
+                      key={g}
+                      href={VENMO_URL}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={() => setContribution(g)}
+                      className={`rounded-[3px] border px-3.5 py-2.5 font-grotesk text-sm transition-colors ${
+                        contribution === g
+                          ? "border-ink bg-pink text-[#3a2a2b]"
+                          : "border-ink/40 text-[#5a5247] hover:border-ink"
+                      }`}
+                    >
+                      {g}
+                    </a>
+                  ))}
+                </div>
+                <p className="m-0 font-grotesk text-[13px] leading-[1.6] text-[#8a8074]">
+                  Selecting an option opens Venmo in a new tab. Contributing is
+                  optional — no one is ever turned away for lack of funds.
+                </p>
               </div>
-              <Button type="submit" className="mt-2 self-start">
-                Reserve my spot →
+              {error ? (
+                <p className="m-0 font-grotesk text-sm text-pink-deep" role="alert">
+                  {error}
+                </p>
+              ) : null}
+              <Button
+                type="submit"
+                className="mt-2 self-start"
+                disabled={submitting}
+              >
+                {submitting ? "Reserving…" : "Reserve my spot →"}
               </Button>
               <p className="m-0 font-grotesk text-[13px] leading-[1.6] text-[#8a8074]">
                 Prefer something private?{" "}
