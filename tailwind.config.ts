@@ -15,7 +15,7 @@ const config: Config = {
         ink: "#26221C",
         pink: "#daaeaf",
         "pink-deep": "#daaeaf",
-        "pink-muted": "#daaeaf",
+        "pink-muted": "#C07F84",
         sand: "#E9E2D4",
         "sand-2": "#EFE8DA",
         // shadcn/ui semantic tokens (mapped to brand)
