@@ -54,28 +54,49 @@ export default function HomePage() {
       <SiteHeader />
 
       {/* Hero */}
-      <section className="border-b border-ink px-5 pb-[60px] pt-[54px] md:px-10">
-        <h1 className="m-0 font-grotesk text-[clamp(56px,14vw,188px)] font-bold uppercase leading-[0.82] tracking-[-0.045em]">
-          I see through the <span className="italic text-pink-deep">story</span>
-        </h1>
-        <div className="mt-11 flex flex-wrap items-end justify-between gap-10">
-          <div className="max-w-[520px]">
-            <p className="mb-6 font-grotesk text-xl leading-[1.5] text-[#4a443c]">
-              Hi, I&rsquo;m Caitlyne — a writer, somatic breathwork facilitator,
-              and intuitive guide.
-            </p>
-            <div className="flex gap-3">
-              <Button asChild>
-                <Link href="/live-stream">Join Live Stream</Link>
-              </Button>
+      <section className="relative isolate overflow-hidden border-b border-ink">
+        {/* Atmospheric photograph */}
+        <div className="absolute inset-0 -z-10">
+          <img
+            src="/media/hero-reach.jpeg"
+            alt="Caitlyne in a deep forward fold on a studio mat, arms outstretched with open hands reaching forward"
+            className="h-full w-full object-cover object-[center_38%] opacity-[0.72] grayscale contrast-[1.16] brightness-[1.02]"
+          />
+          {/* Cream wash keeps the type as the focal point */}
+          <div className="absolute inset-0 bg-gradient-to-b from-cream/75 via-cream/30 to-cream/60" />
+          {/* Soft film grain */}
+          <div className="grain absolute inset-0 opacity-[0.28] mix-blend-multiply" />
+        </div>
+
+        <div className="flex min-h-[82vh] flex-col justify-center px-5 py-[72px] md:px-10 md:py-[96px]">
+          <h1 className="m-0 max-w-[15ch] font-grotesk text-[clamp(56px,14vw,188px)] font-bold uppercase leading-[0.82] tracking-[-0.045em]">
+            I see through the <span className="italic text-pink-deep">story</span>
+          </h1>
+          <div className="mt-14 flex flex-wrap items-end justify-between gap-10 md:mt-20">
+            <div className="max-w-[520px]">
+              <p className="mb-6 font-grotesk text-xl leading-[1.5] text-[#4a443c]">
+                Hi, I&rsquo;m Caitlyne — a writer, somatic breathwork facilitator,
+                and intuitive guide.
+              </p>
+              <div className="flex gap-3">
+                <Button asChild>
+                  <Link href="/live-stream">Join Live Stream</Link>
+                </Button>
               <Button asChild variant="outline">
-                <Link href="/live-stream">Book a 1:1</Link>
+                <a
+                  href="https://app.acuityscheduling.com/schedule/bc35c44e"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Book a 1:1
+                </a>
               </Button>
+              </div>
             </div>
+            <span className="font-mono text-xs tracking-[0.12em] text-[#8a8074]">
+              ↓ Scroll to breathe
+            </span>
           </div>
-          <span className="font-mono text-xs tracking-[0.12em] text-[#8a8074]">
-            ↓ Scroll to breathe
-          </span>
         </div>
       </section>
 
@@ -116,9 +137,9 @@ export default function HomePage() {
       {/* Soft-pink statement band */}
       <section className="border-b border-ink bg-pink px-6 py-24 text-[#3a2a2b] md:px-11">
         <p className="m-0 max-w-[1080px] font-grotesk text-[clamp(30px,4.4vw,52px)] font-semibold leading-[1.12] tracking-[-0.02em]">
-          I work with people who are ready to build safety from the inside out —
-          not because someone told them to, but because they&rsquo;re finally
-          listening.
+            I work with people who show up to do the work. If you&rsquo;re ready
+            to see through the story and listen to what your body already knows,
+            let&rsquo;s have that conversation.
         </p>
       </section>
 

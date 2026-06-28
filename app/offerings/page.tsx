@@ -148,7 +148,13 @@ export default function OfferingsPage() {
           How free do you wanna be?
         </p>
         <Button asChild>
-            <Link href="/live-stream">Start with a meet &amp; greet</Link>
+          <a
+            href="https://app.acuityscheduling.com/schedule/bc35c44e"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Start with a meet &amp; greet
+          </a>
         </Button>
       </section>
 

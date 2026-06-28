@@ -200,12 +200,14 @@ export default function LiveStreamPage() {
               </Button>
               <p className="m-0 font-grotesk text-[13px] leading-[1.6] text-[#8a8074]">
                 Prefer something private?{" "}
-                <Link
-                  href="/contact"
+                <a
+                  href="https://app.acuityscheduling.com/schedule/bc35c44e"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="border-b border-pink-deep pb-px text-ink"
                 >
                   Book a 1:1 instead
-                </Link>
+                </a>
                 .
               </p>
             </form>
