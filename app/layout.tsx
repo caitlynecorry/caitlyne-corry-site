@@ -17,9 +17,14 @@ const spaceMono = Space_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Caitlyne Corry — Form Follows Silence",
+  title: "Enjoy Your Breath",
   description:
     "Writer, somatic breathwork facilitator, and intuitive guide based in Seattle. The work of coming home to yourself.",
+  openGraph: {
+    title: "Enjoy Your Breath",
+    description:
+      "Writer, somatic breathwork facilitator, and intuitive guide based in Seattle. The work of coming home to yourself.",
+  },
 };
 
 export default function RootLayout({
