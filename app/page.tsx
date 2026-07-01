@@ -17,15 +17,21 @@ const OFFERINGS = [
     image: null,
   },
   {
-    no: "03 / Play",
-    title: "Make Space For Play",
-    sub: "How to cultivate playfulness",
+    no: "03 / Meditation",
+    title: "Form Follows Silence",
+    sub: "A somatics-based guided meditation",
     image: null,
   },
   {
     no: "04 / Integration",
     title: "Integration",
     sub: "The work after the work",
+    image: null,
+  },
+  {
+    no: "05 / Events",
+    title: "Event Space",
+    sub: "Workshops · Speaking · Retreats · Private events",
     image: null,
   },
 ];

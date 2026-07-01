@@ -11,7 +11,7 @@ export default function OfferingsPage() {
       {/* Page header */}
       <section className="border-b border-ink px-5 pb-14 pt-[70px] md:px-10">
         <div className="mb-[26px] font-mono text-xs uppercase tracking-[0.2em] text-pink-muted">
-          (04) Ways to work together
+          Ways to work together
         </div>
         <h1 className="m-0 font-grotesk text-[clamp(52px,12vw,148px)] font-bold uppercase leading-[0.84] tracking-[-0.04em]">
           My
@@ -28,7 +28,7 @@ export default function OfferingsPage() {
       {/* Offering 01 */}
       <section className="grid grid-cols-1 border-b border-ink md:grid-cols-2">
         <video
-          className="min-h-[520px] w-full border-ink object-cover md:border-r"
+          className="min-h-[520px] w-full border-ink object-cover object-[center_20%] md:border-r"
           src="/media/breathwork-clip.mp4"
           autoPlay
           loop
@@ -106,15 +106,19 @@ export default function OfferingsPage() {
       <section className="grid grid-cols-1 md:grid-cols-2">
         <div className="border-b border-ink px-6 py-16 md:border-r md:px-11">
           <div className="mb-[18px] font-mono text-[13px] text-[#8a8074]">
-            03 / Workshop
+            03 / Meditation
           </div>
           <h2 className="mb-4 font-grotesk text-[44px] font-semibold leading-none">
-            Make Space For Play
+            Form Follows Silence
           </h2>
           <p className="mb-6 font-grotesk text-base leading-[1.7] text-[#5a5247]">
-            How to cultivate playfulness — reconnecting to lightness,
-            spontaneity, and the parts of you that got serious too soon.
+            A somatics-based guided meditation to settle the nervous system and
+            drop beneath the noise — a doorway back to yourself, in your own
+            time and space.
           </p>
+          <div className="mb-6 font-mono text-[13px] uppercase tracking-[0.14em] text-pink-muted">
+            $28 — Coming soon
+          </div>
           <Link
             href="/contact"
             className="border-b-2 border-pink-deep pb-[3px] font-grotesk text-sm font-semibold"
@@ -138,6 +142,25 @@ export default function OfferingsPage() {
             className="border-b-2 border-pink-deep pb-[3px] font-grotesk text-sm font-semibold"
           >
             Learn more →
+          </Link>
+        </div>
+        <div className="border-b border-ink px-6 py-16 md:col-span-2 md:px-11">
+          <div className="mb-[18px] font-mono text-[13px] text-[#8a8074]">
+            05 / Events
+          </div>
+          <h2 className="mb-4 font-grotesk text-[44px] font-semibold leading-none">
+            Event Space
+          </h2>
+          <p className="mb-6 max-w-[560px] font-grotesk text-base leading-[1.7] text-[#5a5247]">
+            A space to gather. Available for workshops, speaking engagements,
+            retreats, and private events — held with the same care and intention
+            as the one-on-one work.
+          </p>
+          <Link
+            href="/contact"
+            className="border-b-2 border-pink-deep pb-[3px] font-grotesk text-sm font-semibold"
+          >
+            Inquire →
           </Link>
         </div>
       </section>
