@@ -5,7 +5,7 @@ import nodemailer from "nodemailer";
 const ZOOM = {
   title: "Thursday Community Breathwork",
   when: "Every Thursday at 8:00 PM PST",
-  link: "https://zoom.us/j/1234567890",
+  link: "https://us06web.zoom.us/j/88211332041?pwd=NFca6hy43x431iR7NXv4cqaBK9cnyT.1",
   meetingId: "882 1133 2041",
   passcode: "295538",
 };
