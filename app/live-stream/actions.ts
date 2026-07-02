@@ -16,6 +16,7 @@ export async function reserveSpot(formData: FormData): Promise<ReserveResult> {
   const name = String(formData.get("name") ?? "").trim();
   const email = String(formData.get("email") ?? "").trim();
   const contribution = String(formData.get("contribution") ?? "").trim();
+  const waiverAcceptedAt = String(formData.get("waiverAcceptedAt") ?? "").trim();
 
   if (!name || !email) {
     return { ok: false, error: "Please provide your name and email." };
@@ -23,6 +24,19 @@ export async function reserveSpot(formData: FormData): Promise<ReserveResult> {
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
     return { ok: false, error: "Please provide a valid email address." };
   }
+  if (!waiverAcceptedAt) {
+    return {
+      ok: false,
+      error: "Please review and agree to the waiver to reserve your spot.",
+    };
+  }
+
+  // Human-readable acceptance timestamp for the records in each email.
+  const waiverAcceptedLabel = new Date(waiverAcceptedAt).toLocaleString("en-US", {
+    dateStyle: "long",
+    timeStyle: "short",
+    timeZone: "America/Los_Angeles",
+  });
 
   const user = process.env.GMAIL_USER?.trim();
   // Google displays App Passwords with spaces (e.g. "abcd efgh ijkl mnop"),
@@ -55,6 +69,7 @@ export async function reserveSpot(formData: FormData): Promise<ReserveResult> {
       </div>
       <p>This is a donation-based session — give what you can, when you can. No one is ever turned away for lack of funds.</p>
       <p>See you Thursday,<br/>Caitlyne</p>
+      <p style="font-size:12px; color:#8a8074; margin-top:24px;">You agreed to the Release, Waiver of Liability, and Indemnity Agreement on ${waiverAcceptedLabel} (PT).</p>
     </div>
   `;
 
@@ -64,6 +79,7 @@ export async function reserveSpot(formData: FormData): Promise<ReserveResult> {
       <p><strong>Name:</strong> ${name}</p>
       <p><strong>Email:</strong> ${email}</p>
       <p><strong>Contribution selected:</strong> ${contribution || "Not specified"}</p>
+      <p><strong>Waiver accepted:</strong> ${waiverAcceptedLabel} (PT)</p>
     </div>
   `;
 

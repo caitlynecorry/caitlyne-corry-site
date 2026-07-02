@@ -31,21 +31,54 @@ const FLOW = [
 
 const GIVE = ["Pay what you can", "$15 — suggested", "$30 — supporter", "$50 — sustainer"];
 
+const WAIVER = [
+  "Caitlyne Corry offers Breathwork, somatic coaching, consultations, trainings, educational tools, and related wellness experiences intended to support nervous system regulation, self-awareness, and overall wellbeing. These services are educational and supportive in nature and are not a substitute for medical, psychological, or psychiatric care.",
+  "Participation in Breathwork and related practices may involve intense emotional or physical experiences. Certain medical or mental health conditions may make participation unsafe, including cardiovascular conditions, epilepsy, severe asthma, pregnancy, bipolar disorder, psychosis, PTSD, dissociative disorders, or significant trauma history. Participants are responsible for consulting appropriate healthcare professionals regarding their fitness to participate and for seeking support if distress or instability arises before or after sessions.",
+  "By participating, individuals acknowledge that they voluntarily assume all risks associated with these activities and release Caitlyne Corry from liability related to participation, except where prohibited by law. Outcomes are not guaranteed, and participation is entirely voluntary.",
+  "Confidentiality is respected; however, privacy in group settings cannot be guaranteed. Confidentiality may be broken if required by law or if there is concern of imminent harm to self or others.",
+  "I, the participant, understand that in participating, purchasing, attending, or being involved in recordings or trainings, I hereby expressly and specifically assume the risk of injury or harm, and agree that my involvement in working with Caitlyne Corry is purely voluntary and that I elect to participate despite these risks.",
+];
+
 export default function LiveStreamPage() {
   const [reserved, setReserved] = useState(false);
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [contribution, setContribution] = useState(GIVE[0]);
+  const [showWaiver, setShowWaiver] = useState(false);
+  const [waiverAgreed, setWaiverAgreed] = useState(false);
+  const [pending, setPending] = useState<{ name: string; email: string } | null>(
+    null,
+  );
 
-  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
+  function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
     setError(null);
-    setSubmitting(true);
     const formData = new FormData(e.currentTarget);
+    const name = String(formData.get("name") ?? "").trim();
+    const email = String(formData.get("email") ?? "").trim();
+    if (!name || !email) {
+      setError("Please provide your name and email.");
+      return;
+    }
+    // Gate the confirmation + Zoom link behind waiver acceptance.
+    setPending({ name, email });
+    setWaiverAgreed(false);
+    setShowWaiver(true);
+  }
+
+  async function confirmReservation() {
+    if (!pending || !waiverAgreed) return;
+    setSubmitting(true);
+    setError(null);
+    const formData = new FormData();
+    formData.set("name", pending.name);
+    formData.set("email", pending.email);
     formData.set("contribution", contribution);
+    formData.set("waiverAcceptedAt", new Date().toISOString());
     const result = await reserveSpot(formData);
     setSubmitting(false);
     if (result.ok) {
+      setShowWaiver(false);
       setReserved(true);
     } else {
       setError(result.error);
@@ -235,6 +268,82 @@ export default function LiveStreamPage() {
           Come home to yourself — one breath at a time.
         </p>
       </section>
+
+      {showWaiver ? (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-ink/60 px-4 py-8"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="waiver-title"
+        >
+          <div className="flex max-h-[88vh] w-full max-w-[640px] flex-col rounded-[4px] border border-ink bg-cream">
+            <div className="border-b border-ink px-6 py-5 md:px-8">
+              <div className="mb-1 font-mono text-[11px] uppercase tracking-[0.16em] text-pink-muted">
+                Before you reserve
+              </div>
+              <h2
+                id="waiver-title"
+                className="m-0 font-grotesk text-[22px] font-bold uppercase leading-[1.1] tracking-[-0.01em] md:text-[26px]"
+              >
+                Release, Waiver of Liability, and Indemnity Agreement
+              </h2>
+            </div>
+
+            <div className="flex-1 overflow-y-auto px-6 py-5 md:px-8">
+              {WAIVER.map((p, i) => (
+                <p
+                  key={i}
+                  className="mb-4 font-grotesk text-[14px] leading-[1.7] text-[#4a443c] last:mb-0"
+                >
+                  {p}
+                </p>
+              ))}
+            </div>
+
+            <div className="border-t border-ink px-6 py-5 md:px-8">
+              <label className="flex cursor-pointer items-start gap-3 font-grotesk text-[14px] leading-[1.5] text-ink">
+                <input
+                  type="checkbox"
+                  checked={waiverAgreed}
+                  onChange={(e) => setWaiverAgreed(e.target.checked)}
+                  className="mt-0.5 h-[18px] w-[18px] shrink-0 accent-pink-deep"
+                />
+                <span>
+                  I have read, understand, and agree to the Release, Waiver of
+                  Liability, and Indemnity Agreement.
+                </span>
+              </label>
+
+              {error ? (
+                <p
+                  className="mt-3 m-0 font-grotesk text-sm text-pink-deep"
+                  role="alert"
+                >
+                  {error}
+                </p>
+              ) : null}
+
+              <div className="mt-5 flex flex-wrap gap-3">
+                <Button
+                  type="button"
+                  onClick={confirmReservation}
+                  disabled={!waiverAgreed || submitting}
+                >
+                  {submitting ? "Reserving…" : "Agree & reserve →"}
+                </Button>
+                <Button
+                  type="button"
+                  variant="outline"
+                  onClick={() => setShowWaiver(false)}
+                  disabled={submitting}
+                >
+                  Cancel
+                </Button>
+              </div>
+            </div>
+          </div>
+        </div>
+      ) : null}
 
       <SiteFooterCompact />
     </main>

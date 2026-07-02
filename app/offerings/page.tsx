@@ -11,7 +11,7 @@ export default function OfferingsPage() {
       {/* Page header */}
       <section className="border-b border-ink px-5 pb-14 pt-[70px] md:px-10">
         <div className="mb-[26px] font-mono text-xs uppercase tracking-[0.2em] text-pink-muted">
-          (04) Ways to work together
+          Ways to work together
         </div>
         <h1 className="m-0 font-grotesk text-[clamp(52px,12vw,148px)] font-bold uppercase leading-[0.84] tracking-[-0.04em]">
           My
@@ -28,7 +28,7 @@ export default function OfferingsPage() {
       {/* Offering 01 */}
       <section className="grid grid-cols-1 border-b border-ink md:grid-cols-2">
         <video
-          className="min-h-[520px] w-full border-ink object-cover md:border-r"
+          className="min-h-[520px] w-full border-ink object-cover object-[center_20%] md:border-r"
           src="/media/breathwork-clip.mp4"
           autoPlay
           loop
@@ -106,15 +106,19 @@ export default function OfferingsPage() {
       <section className="grid grid-cols-1 md:grid-cols-2">
         <div className="border-b border-ink px-6 py-16 md:border-r md:px-11">
           <div className="mb-[18px] font-mono text-[13px] text-[#8a8074]">
-            03 / Workshop
+            03 / Meditation
           </div>
           <h2 className="mb-4 font-grotesk text-[44px] font-semibold leading-none">
-            Make Space For Play
+            Form Follows Silence
           </h2>
           <p className="mb-6 font-grotesk text-base leading-[1.7] text-[#5a5247]">
-            How to cultivate playfulness — reconnecting to lightness,
-            spontaneity, and the parts of you that got serious too soon.
+            A somatics-based guided meditation to settle the nervous system and
+            drop beneath the noise — a doorway back to yourself, in your own
+            time and space.
           </p>
+          <div className="mb-6 font-mono text-[13px] uppercase tracking-[0.14em] text-pink-muted">
+            $28 — Coming soon
+          </div>
           <Link
             href="/contact"
             className="border-b-2 border-pink-deep pb-[3px] font-grotesk text-sm font-semibold"
@@ -139,6 +143,82 @@ export default function OfferingsPage() {
           >
             Learn more →
           </Link>
+        </div>
+        <div className="border-b border-ink px-6 py-16 md:col-span-2 md:px-11">
+          <div className="mb-[18px] font-mono text-[13px] text-[#8a8074]">
+            05 / Events
+          </div>
+          <h2 className="mb-4 font-grotesk text-[44px] font-semibold leading-none">
+            Event Space
+          </h2>
+          <p className="mb-6 max-w-[560px] font-grotesk text-base leading-[1.7] text-[#5a5247]">
+            A space to gather. Available for workshops, speaking engagements,
+            retreats, and private events — held with the same care and intention
+            as the one-on-one work.
+          </p>
+          <Link
+            href="/contact"
+            className="border-b-2 border-pink-deep pb-[3px] font-grotesk text-sm font-semibold"
+          >
+            Inquire →
+          </Link>
+        </div>
+      </section>
+
+      {/* Upcoming event */}
+      <section className="grid grid-cols-1 border-b border-ink md:grid-cols-2">
+        <div
+          className="min-h-[360px] border-b border-ink bg-sand bg-cover bg-center bg-no-repeat md:min-h-[560px] md:border-b-0 md:border-r"
+          style={{ backgroundImage: "url('/media/cedarhouse-flowers.png')" }}
+          role="img"
+          aria-label="Loose seasonal cut flowers resting on a table in a flower studio"
+        />
+        <div className="flex flex-col justify-center px-6 py-16 md:px-11">
+          <div className="mb-[18px] font-mono text-[13px] uppercase tracking-[0.14em] text-pink-muted">
+            Upcoming Event · Cedarhouse Flowers
+          </div>
+          <h2 className="mb-3 font-grotesk text-[44px] font-semibold leading-[0.98]">
+            Turn Me Into a Flower
+          </h2>
+          <p className="mb-6 max-w-[460px] font-grotesk text-[17px] italic leading-[1.6] text-[#5a5247]">
+            An evening of breath, surrender, and bloom — hosted among the
+            flowers at Cedarhouse.
+          </p>
+          <p className="mb-7 max-w-[460px] font-grotesk text-base leading-[1.7] text-[#5a5247]">
+            Surrounded by the flowers and quiet of Cedarhouse, together
+            we&rsquo;ll soften what has been held too tightly, release what no
+            longer fits, and make space for whatever is waiting to bloom. No
+            breathwork experience necessary — just come as you are, and leave a
+            little more like a flower.
+          </p>
+          <dl className="mb-8 max-w-[460px] border-t border-ink/15 font-grotesk text-[14.5px] leading-[1.6] text-ink">
+            {[
+              ["Where", "Cedarhouse Flowers — 1901 N 45th St, Seattle, WA 98103"],
+              ["When", "Saturday, July 25, 2026 · 6:00–7:30 PM"],
+              ["Spots", "Limited to 15"],
+              ["Price", "$40 per person"],
+              ["Bring", "A mat or blanket, and something comfortable to wear"],
+            ].map(([label, value]) => (
+              <div
+                key={label}
+                className="flex gap-4 border-b border-ink/15 py-3"
+              >
+                <dt className="w-[64px] shrink-0 font-mono text-[11px] uppercase tracking-[0.14em] text-pink-muted">
+                  {label}
+                </dt>
+                <dd className="m-0 text-[#3a352c]">{value}</dd>
+              </div>
+            ))}
+          </dl>
+          <Button asChild className="self-start">
+            <a
+              href="https://app.acuityscheduling.com/schedule.php?owner=39688174&appointmentType=95243724"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Reserve your spot →
+            </a>
+          </Button>
         </div>
       </section>
 
