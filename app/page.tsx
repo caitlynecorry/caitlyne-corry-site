@@ -28,12 +28,6 @@ const OFFERINGS = [
     sub: "The work after the work",
     image: null,
   },
-  {
-    no: "05 / Events",
-    title: "Event Space",
-    sub: "Workshops · Speaking · Retreats · Private events",
-    image: null,
-  },
 ];
 
 const WORK = [
