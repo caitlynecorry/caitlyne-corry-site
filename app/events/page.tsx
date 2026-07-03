@@ -42,11 +42,11 @@ export default function EventsPage() {
             flowers at Cedarhouse.
           </p>
           <p className="mb-7 max-w-[460px] font-grotesk text-base leading-[1.7] text-[#5a5247]">
-            Surrounded by the flowers and quiet of Cedarhouse, together
-            we&rsquo;ll soften what has been held too tightly, release what no
-            longer fits, and make space for whatever is waiting to bloom. No
-            breathwork experience necessary — just come as you are, and leave a
-            little more like a flower.
+            This is an evening to slow down and return to yourself. Through
+            guided breathwork, together we&rsquo;ll soften what has been held too
+            tightly, release what no longer fits, and make space for whatever is
+            waiting to bloom. No breathwork experience necessary — just come as
+            you are.
           </p>
           <dl className="mb-8 max-w-[460px] border-t border-ink/15 font-grotesk text-[14.5px] leading-[1.6] text-ink">
             {[
