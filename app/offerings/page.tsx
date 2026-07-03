@@ -28,7 +28,7 @@ export default function OfferingsPage() {
       {/* Offering 01 */}
       <section className="grid grid-cols-1 border-b border-ink md:grid-cols-2">
         <video
-          className="min-h-[520px] w-full border-ink object-cover object-[center_20%] md:border-r"
+          className="min-h-[520px] w-full border-ink object-cover object-[85%_20%] md:border-r md:object-[center_20%]"
           src="/media/breathwork-clip.mp4"
           autoPlay
           loop
@@ -144,25 +144,6 @@ export default function OfferingsPage() {
             Learn more →
           </Link>
         </div>
-        <div className="border-b border-ink px-6 py-16 md:col-span-2 md:px-11">
-          <div className="mb-[18px] font-mono text-[13px] text-[#8a8074]">
-            05 / Events
-          </div>
-          <h2 className="mb-4 font-grotesk text-[44px] font-semibold leading-none">
-            Event Space
-          </h2>
-          <p className="mb-6 max-w-[560px] font-grotesk text-base leading-[1.7] text-[#5a5247]">
-            A space to gather. Available for workshops, speaking engagements,
-            retreats, and private events — held with the same care and intention
-            as the one-on-one work.
-          </p>
-          <Link
-            href="/contact"
-            className="border-b-2 border-pink-deep pb-[3px] font-grotesk text-sm font-semibold"
-          >
-            Inquire →
-          </Link>
-        </div>
       </section>
 
       {/* Upcoming event */}
@@ -195,9 +176,9 @@ export default function OfferingsPage() {
             {[
               ["Where", "Cedarhouse Flowers — 1901 N 45th St, Seattle, WA 98103"],
               ["When", "Saturday, July 25, 2026 · 6:00–7:30 PM"],
-              ["Spots", "Limited to 15"],
+              ["Spots", "Limited to 8"],
               ["Price", "$40 per person"],
-              ["Bring", "A mat or blanket, and something comfortable to wear"],
+              ["Bring", "A water bottle. The rest is provided."],
             ].map(([label, value]) => (
               <div
                 key={label}

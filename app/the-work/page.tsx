@@ -107,6 +107,49 @@ export default function TheWorkPage() {
         </div>
       </section>
 
+      {/* What is the work? */}
+      <section className="border-b border-ink px-6 py-20 md:px-11">
+        <div className="mb-10 font-mono text-xs uppercase tracking-[0.16em] text-pink-muted">
+          What is the work?
+        </div>
+        <div className="max-w-[720px]">
+          <p className="mb-6 font-grotesk text-[26px] font-bold leading-[1.35] text-ink">
+            The work is deeply human.
+          </p>
+          <p className="mb-6 font-grotesk text-[17px] leading-[1.8] text-[#5a5247]">
+            It is the practice of using breath, sensation, and awareness to
+            reconnect with the body beneath the story.
+          </p>
+          <p className="mb-6 font-grotesk text-[17px] leading-[1.8] text-[#5a5247]">
+            Modern neuroscience tells us that experiences are not stored only as
+            memories or thoughts, but as patterns in the nervous system — in
+            muscle tension, breath patterns, posture, vigilance, shutdown, and
+            stress physiology. The body remembers what the mind has moved on
+            from.
+          </p>
+          <p className="mb-6 font-grotesk text-[17px] leading-[1.8] text-[#5a5247]">
+            Through intentional breathing and somatic awareness, we create the
+            conditions for the nervous system to complete what it once had to
+            interrupt: fight, flight, freeze, grief, joy, anger, relief, and
+            connection. The work is not about fixing you. It is about helping
+            your body remember what safety feels like.
+          </p>
+          <p className="mb-6 font-grotesk text-[17px] leading-[1.8] text-[#5a5247]">
+            In a world that asks us to think our way through everything, the
+            work invites us to listen to physiology, trust sensation, and come
+            home to ourselves.
+          </p>
+          <p className="mb-6 font-grotesk text-[17px] leading-[1.8] text-[#5a5247]">
+            Because sometimes healing doesn&rsquo;t happen through understanding
+            the story.
+          </p>
+          <p className="m-0 font-grotesk text-[17px] leading-[1.8] text-[#5a5247]">
+            Sometimes it happens when the body finally realizes the story is
+            over.
+          </p>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="border-b border-ink bg-pink px-6 py-[90px] text-center text-[#3a2a2b] md:px-11">
         <p className="mb-7 font-grotesk text-[clamp(36px,6vw,56px)] font-bold uppercase leading-[1.02] tracking-[-0.02em]">

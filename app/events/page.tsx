@@ -52,9 +52,9 @@ export default function EventsPage() {
             {[
               ["Where", "Cedarhouse Flowers — 1901 N 45th St, Seattle, WA 98103"],
               ["When", "Saturday, July 25, 2026 · 6:00–7:30 PM"],
-              ["Spots", "Limited to 15"],
+              ["Spots", "Limited to 8"],
               ["Price", "$40 per person"],
-              ["Bring", "A mat or blanket, and something comfortable to wear"],
+              ["Bring", "A water bottle. The rest is provided."],
             ].map(([label, value]) => (
               <div
                 key={label}
