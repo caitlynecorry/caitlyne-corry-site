@@ -114,7 +114,7 @@ export default function TheWorkPage() {
         </div>
         <div className="max-w-[720px]">
           <p className="mb-6 font-grotesk text-[26px] font-bold leading-[1.35] text-ink">
-            The work is deeply human.
+            This work is deeply human.
           </p>
           <p className="mb-6 font-grotesk text-[17px] leading-[1.8] text-[#5a5247]">
             It is the practice of using breath, sensation, and awareness to
@@ -131,11 +131,11 @@ export default function TheWorkPage() {
             Through intentional breathing and somatic awareness, we create the
             conditions for the nervous system to complete what it once had to
             interrupt: fight, flight, freeze, grief, joy, anger, relief, and
-            connection. The work is not about fixing you. It is about helping
+            connection. This work is not about fixing you. It is about helping
             your body remember what safety feels like.
           </p>
           <p className="mb-6 font-grotesk text-[17px] leading-[1.8] text-[#5a5247]">
-            In a world that asks us to think our way through everything, the
+            In a world that asks us to think our way through everything, this
             work invites us to listen to physiology, trust sensation, and come
             home to ourselves.
           </p>
