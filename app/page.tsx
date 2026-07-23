@@ -331,7 +331,7 @@ export default function HomePage() {
 
           {/* Right card — session schedule */}
           <div className="flex h-full flex-col items-center justify-center rounded-[3px] border border-ink bg-pink p-8 text-center md:p-10">
-            <p className="font-grotesk text-[clamp(40px,6vw,64px)] font-bold leading-[1.05] tracking-[-0.02em] text-ink">
+            <p className="font-mono text-[clamp(40px,6vw,64px)] font-bold leading-[1.05] text-ink">
               8:00 PM PST WEDNESDAYS
             </p>
           </div>
