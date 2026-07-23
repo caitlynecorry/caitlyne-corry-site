@@ -33,7 +33,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${familjen.variable} ${spaceMono.variable}`}>
+    <html
+      lang="en"
+      className={`${familjen.variable} ${spaceMono.variable} scroll-smooth`}
+    >
       <body>{children}</body>
     </html>
   );
