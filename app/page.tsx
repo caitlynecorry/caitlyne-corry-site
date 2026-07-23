@@ -330,23 +330,9 @@ export default function HomePage() {
           <BreathworkNotice className="flex h-full flex-col rounded-[3px] border border-ink bg-pink p-8 md:p-10" />
 
           {/* Right card — session schedule */}
-          <div className="flex h-full flex-col rounded-[3px] border border-ink bg-pink p-8 md:p-10">
-            <div className="mb-4 font-mono text-[11px] uppercase tracking-[0.16em] text-[#5a3a3b]">
-              Session time
-            </div>
-            <div>
-              <span className="inline-flex items-center rounded-full border border-ink bg-cream px-4 py-2 font-mono text-sm tracking-[0.08em] text-[#3a2a2b]">
-                8:00 PM PST · Wednesdays
-              </span>
-            </div>
-            <p className="mt-6 max-w-[420px] font-grotesk text-base leading-[1.65] text-[#4a2e2f]">
-              A weekly, donation-based gathering held live on Zoom — an hour to
-              slow down, breathe, and return to yourself.
-            </p>
-            <div className="my-7 h-px bg-ink opacity-30" />
-            <p className="mt-auto font-grotesk text-[15px] leading-[1.6] text-[#3a2a2b]">
-              Returns August 5, 2026 · Live on Zoom · 60 minutes. No classes
-              this week or next week.
+          <div className="flex h-full flex-col items-center justify-center rounded-[3px] border border-ink bg-pink p-8 text-center md:p-10">
+            <p className="font-grotesk text-[clamp(40px,6vw,64px)] font-bold leading-[1.05] tracking-[-0.02em] text-ink">
+              8:00 PM PST WEDNESDAYS
             </p>
           </div>
         </div>

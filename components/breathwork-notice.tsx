@@ -18,15 +18,14 @@ export function BreathworkNotice({ className }: { className?: string }) {
         Temporarily paused · Returns Aug 5
       </div>
       <p className="mb-5 font-grotesk text-[22px] font-semibold leading-[1.3] text-[#3a2a2b]">
-        Virtual Breathwork is currently under construction and will return
-        Wednesday, August 5, at 8:00 PM PST.
+        Virtual Breathwork
       </p>
-      <p className="mb-2 font-grotesk text-base leading-[1.65] text-[#4a2e2f]">
-        I apologize for the inconvenience.
+      <p className="mb-4 font-grotesk text-base leading-[1.65] text-[#4a2e2f]">
+        Currently paused while I make a few thoughtful updates. Sessions return
+        Wednesday, August 5. Thank you for your patience.
       </p>
       <p className="mb-7 font-grotesk text-base leading-[1.65] text-[#4a2e2f]">
-        If you need additional support before then, please don&rsquo;t hesitate
-        to reach out.
+        If you&rsquo;re looking for support before then, please reach out.
       </p>
       <Button asChild variant="outline">
         <Link href="/contact">Reach out →</Link>
