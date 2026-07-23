@@ -91,7 +91,7 @@ export default function ContactPage() {
               </div>
               <p className="m-0 font-grotesk text-base leading-[1.6] text-[#4a2e2f]">
                 Your note is on its way. I&rsquo;ll be in touch soon — in the
-                meantime, come breathe with us this Thursday.
+                meantime, come breathe with us on Wednesday.
               </p>
             </div>
           ) : (

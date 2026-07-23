@@ -3,8 +3,8 @@
 import nodemailer from "nodemailer";
 
 const ZOOM = {
-  title: "Thursday Community Breathwork",
-  when: "Every Thursday at 8:00 PM PST",
+  title: "Wednesday Community Breathwork",
+  when: "Every Wednesday at 8:00 PM PT",
   link: "https://us06web.zoom.us/j/88211332041?pwd=NFca6hy43x431iR7NXv4cqaBK9cnyT.1",
   meetingId: "882 1133 2041",
   passcode: "295538",
@@ -68,14 +68,14 @@ export async function reserveSpot(formData: FormData): Promise<ReserveResult> {
         <p style="margin:0;">Passcode: ${ZOOM.passcode}</p>
       </div>
       <p>This is a donation-based session — give what you can, when you can. No one is ever turned away for lack of funds.</p>
-      <p>See you Thursday,<br/>Caitlyne</p>
+      <p>See you Wednesday,<br/>Caitlyne</p>
       <p style="font-size:12px; color:#8a8074; margin-top:24px;">You agreed to the Release, Waiver of Liability, and Indemnity Agreement on ${waiverAcceptedLabel} (PT).</p>
     </div>
   `;
 
   const adminHtml = `
     <div style="font-family: Arial, sans-serif; color: #2a2620; line-height: 1.6;">
-      <h3>New Thursday breathwork reservation</h3>
+      <h3>New Wednesday breathwork reservation</h3>
       <p><strong>Name:</strong> ${name}</p>
       <p><strong>Email:</strong> ${email}</p>
       <p><strong>Contribution selected:</strong> ${contribution || "Not specified"}</p>

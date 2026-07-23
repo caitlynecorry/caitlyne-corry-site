@@ -14,7 +14,7 @@ const TIMELINE = [
   },
   {
     year: "Now",
-    body: "Offering private sessions, couples work, and group experiences — including community breathwork gatherings every Thursday on Zoom.",
+    body: "Offering private sessions, couples work, and group experiences — including community breathwork gatherings every Wednesday on Zoom.",
   },
 ];
 
