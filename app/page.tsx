@@ -169,11 +169,19 @@ export default function HomePage() {
           <div className="mb-6 font-mono text-xs uppercase tracking-[0.16em] text-pink-muted">
             What is the work?
           </div>
-          <p className="max-w-[720px] font-grotesk text-[clamp(24px,3.4vw,34px)] font-medium leading-[1.35] tracking-[-0.01em]">
-            This work moves in a sequence. We don&rsquo;t start with the story —
-            we start with the body. Safety first, then truth, then the breath
-            that was always yours.
-          </p>
+          <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between md:gap-10">
+            <p className="max-w-[720px] font-grotesk text-[clamp(24px,3.4vw,34px)] font-medium leading-[1.35] tracking-[-0.01em]">
+              This work moves in a sequence. We don&rsquo;t start with the story
+              — we start with the body. Safety first, then truth, then the
+              breath that was always yours.
+            </p>
+            <Link
+              href="/the-work"
+              className="shrink-0 whitespace-nowrap border-b-2 border-pink-deep pb-[3px] font-grotesk text-sm font-semibold"
+            >
+              Explore the work →
+            </Link>
+          </div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3">
           {WORK.map((w, i) => (
@@ -192,14 +200,6 @@ export default function HomePage() {
               </p>
             </div>
           ))}
-        </div>
-        <div className="border-t border-ink px-6 py-8 md:px-11">
-          <Link
-            href="/the-work"
-            className="border-b-2 border-pink-deep pb-[3px] font-grotesk text-sm font-semibold"
-          >
-            Explore the work →
-          </Link>
         </div>
       </section>
 
@@ -342,7 +342,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ─────────────────── Contact / Book a Session ─────────────────── */}
+      {/* ─────────────────── Contact / Book a Session ─────────���───────── */}
       <section
         id="contact"
         className="scroll-mt-24 border-b border-ink px-6 py-24 text-center md:px-11"
