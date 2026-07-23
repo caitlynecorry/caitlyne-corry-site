@@ -171,8 +171,9 @@ export default function HomePage() {
           <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between md:gap-10">
             <p className="max-w-[720px] font-grotesk text-[clamp(24px,3.4vw,34px)] font-medium leading-[1.35] tracking-[-0.01em]">
               This work moves in a sequence. We don&rsquo;t start with the story
-              — we start with the body. Safety first, then truth, then the
-              breath that was always yours.
+              — we start with the body. Safety first, then truth, then
+              reclaiming the breath and restoring the body&rsquo;s natural
+              rhythm, regulation, and sense of agency.
             </p>
             <Link
               href="/the-work"
@@ -311,37 +312,47 @@ export default function HomePage() {
       {/* ─────────────────────── Virtual Breathwork ─────────────────────── */}
       <section
         id="virtual-breathwork"
-        className="grid scroll-mt-24 grid-cols-1 border-b border-ink md:grid-cols-[1.4fr_1fr]"
+        className="scroll-mt-24 border-b border-ink px-6 py-24 md:px-11"
       >
-        <div className="px-6 py-20 md:px-11">
-          <div className="mb-[22px] font-mono text-xs uppercase tracking-[0.16em] text-pink-muted">
-            Weekly · Donation-based · Virtual
-          </div>
-          <h2 className="mb-[22px] font-grotesk text-[clamp(40px,7vw,64px)] font-bold uppercase leading-[0.96] tracking-[-0.03em]">
-            Breathe with us, live
-          </h2>
-          <p className="mb-8 max-w-[520px] font-grotesk text-[17px] leading-[1.6] text-[#5a5247]">
-            Every Wednesday at 8:00 PM PT, we gather on Zoom for a guided
-            breathwork journey. Come as you are. Give what you can.
-          </p>
-          <BreathworkNotice />
+        <div className="mb-[22px] font-mono text-xs uppercase tracking-[0.16em] text-pink-muted">
+          Weekly · Donation-based · Virtual
         </div>
-        <div className="flex flex-col justify-center border-ink bg-pink px-6 py-20 md:border-l md:px-11">
-          <div className="font-mono text-[64px] font-bold leading-none text-[#3a2a2b]">
-            8:00
-          </div>
-          <div className="mt-2 font-mono text-sm tracking-[0.12em] text-[#3a2a2b]">
-            PM PT — WEDNESDAYS
-          </div>
-          <div className="my-7 h-px bg-ink opacity-30" />
-          <div className="font-grotesk text-[15px] leading-[1.6] text-[#3a2a2b]">
-            Returns August 5, 2026 · Live on Zoom · 60 minutes. No classes this
-            week or next week.
+        <h2 className="mb-[22px] font-grotesk text-[clamp(40px,7vw,64px)] font-bold uppercase leading-[0.96] tracking-[-0.03em]">
+          Breathe with us, live
+        </h2>
+        <p className="mb-14 max-w-[640px] font-grotesk text-[17px] leading-[1.6] text-[#5a5247]">
+          Every Wednesday at 8:00 PM PST, we gather on Zoom for a guided
+          breathwork journey. Come as you are. Give what you can.
+        </p>
+
+        <div className="grid grid-cols-1 items-stretch gap-6 md:grid-cols-2 md:gap-8">
+          {/* Left card — paused notice */}
+          <BreathworkNotice className="flex h-full flex-col rounded-[3px] border border-ink bg-pink p-8 md:p-10" />
+
+          {/* Right card — session schedule */}
+          <div className="flex h-full flex-col rounded-[3px] border border-ink bg-pink p-8 md:p-10">
+            <div className="mb-4 font-mono text-[11px] uppercase tracking-[0.16em] text-[#5a3a3b]">
+              Session time
+            </div>
+            <div>
+              <span className="inline-flex items-center rounded-full border border-ink bg-cream px-4 py-2 font-mono text-sm tracking-[0.08em] text-[#3a2a2b]">
+                8:00 PM PST · Wednesdays
+              </span>
+            </div>
+            <p className="mt-6 max-w-[420px] font-grotesk text-base leading-[1.65] text-[#4a2e2f]">
+              A weekly, donation-based gathering held live on Zoom — an hour to
+              slow down, breathe, and return to yourself.
+            </p>
+            <div className="my-7 h-px bg-ink opacity-30" />
+            <p className="mt-auto font-grotesk text-[15px] leading-[1.6] text-[#3a2a2b]">
+              Returns August 5, 2026 · Live on Zoom · 60 minutes. No classes
+              this week or next week.
+            </p>
           </div>
         </div>
       </section>
 
-      {/* ───────��─────────── Contact / Book a Session ─────────���───────── */}
+      {/* ───────��─────────── Contact / Book a Session ──────���──���───────── */}
       <section
         id="contact"
         className="scroll-mt-24 border-b border-ink px-6 py-24 text-center md:px-11"

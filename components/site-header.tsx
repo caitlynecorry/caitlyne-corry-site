@@ -20,7 +20,7 @@ const NAV = [
 ];
 
 const TICKER_TEXT =
-  "Wednesday Virtual Breathwork returns August 5 at 8:00 PM PT.";
+  "Wednesday Virtual Breathwork returns August 5 at 8:00 PM PST.";
 
 export function SiteHeader({ active }: { active?: string }) {
   const [open, setOpen] = useState(false);
@@ -56,7 +56,7 @@ export function SiteHeader({ active }: { active?: string }) {
         <span>Enjoy Your Breath</span>
         <span className="hidden opacity-80 sm:inline">Somatic Breathwork</span>
         <span className="hidden opacity-80 sm:inline">Seattle · Est. 2018</span>
-        <span>Wed 8PM PT ●</span>
+        <span>Wed 8PM PST ●</span>
       </div>
 
       {/* Primary nav */}
