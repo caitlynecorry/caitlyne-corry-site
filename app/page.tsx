@@ -157,9 +157,8 @@ export default function HomePage() {
       {/* Soft-pink statement band — transition into the work */}
       <section className="border-b border-ink bg-pink px-6 py-24 text-[#3a2a2b] md:px-11">
         <p className="m-0 max-w-[1080px] font-grotesk text-[clamp(30px,4.4vw,52px)] font-semibold leading-[1.12] tracking-[-0.02em]">
-          I work with people who show up to do the work. If you&rsquo;re ready to
-          see through the story and listen to what your body already knows,
-          let&rsquo;s have that conversation.
+          Safety changes everything. You already carry the wisdom. This work
+          begins with learning how to listen.
         </p>
       </section>
 
@@ -342,7 +341,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ─────────────────── Contact / Book a Session ─────────���───────── */}
+      {/* ───────��─────────── Contact / Book a Session ─────────���───────── */}
       <section
         id="contact"
         className="scroll-mt-24 border-b border-ink px-6 py-24 text-center md:px-11"
