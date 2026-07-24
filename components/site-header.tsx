@@ -2,21 +2,19 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 /**
- * Each nav item maps to a full page (for direct navigation from anywhere)
- * and to an on-page section anchor (used when the visitor is on the homepage,
- * which is a long-scroll edition of the whole site).
+ * Each nav item links to its own dedicated, standalone page. The homepage
+ * remains a separate long-scroll overview of everything.
  */
 const NAV = [
-  { label: "Offerings", href: "/offerings", anchor: "#offerings" },
-  { label: "Events", href: "/events", anchor: "#events" },
-  { label: "The Work", href: "/the-work", anchor: "#the-work" },
-  { label: "About", href: "/about", anchor: "#about" },
-  { label: "Contact", href: "/contact", anchor: "#contact" },
+  { label: "Offerings", href: "/offerings" },
+  { label: "Events", href: "/events" },
+  { label: "The Work", href: "/the-work" },
+  { label: "About", href: "/about" },
+  { label: "Contact", href: "/contact" },
 ];
 
 const TICKER_TEXT =
@@ -24,15 +22,10 @@ const TICKER_TEXT =
 
 export function SiteHeader({ active }: { active?: string }) {
   const [open, setOpen] = useState(false);
-  const pathname = usePathname();
-  const onHome = pathname === "/";
 
-  // On the homepage, nav scrolls to the matching section; elsewhere it links
-  // to the standalone page. The live-stream CTA always targets the homepage
-  // Virtual Breathwork section.
-  const navTarget = (item: (typeof NAV)[number]) =>
-    onHome ? item.anchor : item.href;
-  const liveTarget = onHome ? "#virtual-breathwork" : "/#virtual-breathwork";
+  // Navigation always opens the standalone page for each topic. The live
+  // stream CTA opens the dedicated Virtual Breathwork page.
+  const liveTarget = "/live-stream";
 
   return (
     <header>
@@ -70,9 +63,9 @@ export function SiteHeader({ active }: { active?: string }) {
         <div className="flex items-center gap-5 md:gap-[30px]">
           <div className="hidden items-center gap-[30px] font-grotesk text-[15px] font-medium md:flex">
             {NAV.map((item) => (
-              <a
+              <Link
                 key={item.href}
-                href={navTarget(item)}
+                href={item.href}
                 className={
                   active === item.href
                     ? "border-b-2 border-pink-deep pb-0.5"
@@ -80,7 +73,7 @@ export function SiteHeader({ active }: { active?: string }) {
                 }
               >
                 {item.label}
-              </a>
+              </Link>
             ))}
           </div>
           <Button asChild variant="pink" size="sm">
@@ -109,15 +102,15 @@ export function SiteHeader({ active }: { active?: string }) {
           <ul className="flex flex-col">
             {NAV.map((item) => (
               <li key={item.href} className="border-b border-ink/15 last:border-b-0">
-                <a
-                  href={navTarget(item)}
+                <Link
+                  href={item.href}
                   onClick={() => setOpen(false)}
                   className={`block px-6 py-4 font-grotesk text-lg font-medium ${
                     active === item.href ? "text-pink-deep" : "text-ink"
                   }`}
                 >
                   {item.label}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
