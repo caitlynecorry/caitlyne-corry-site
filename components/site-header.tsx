@@ -2,28 +2,43 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
+/**
+ * Each nav item maps to a full page (for direct navigation from anywhere)
+ * and to an on-page section anchor (used when the visitor is on the homepage,
+ * which is a long-scroll edition of the whole site).
+ */
 const NAV = [
-  { label: "Offerings", href: "/offerings" },
-  { label: "Events", href: "/events" },
-  { label: "The Work", href: "/the-work" },
-  { label: "About", href: "/about" },
-  { label: "Contact", href: "/contact" },
+  { label: "Offerings", href: "/offerings", anchor: "#offerings" },
+  { label: "Events", href: "/events", anchor: "#events" },
+  { label: "The Work", href: "/the-work", anchor: "#the-work" },
+  { label: "About", href: "/about", anchor: "#about" },
+  { label: "Contact", href: "/contact", anchor: "#contact" },
 ];
 
 const TICKER_TEXT =
-  "Donation-based breathwork — every Thursday 8PM PST — join us live on Zoom";
+  "Wednesday Virtual Breathwork returns August 5 at 8:00 PM PST.";
 
 export function SiteHeader({ active }: { active?: string }) {
   const [open, setOpen] = useState(false);
+  const pathname = usePathname();
+  const onHome = pathname === "/";
+
+  // On the homepage, nav scrolls to the matching section; elsewhere it links
+  // to the standalone page. The live-stream CTA always targets the homepage
+  // Virtual Breathwork section.
+  const navTarget = (item: (typeof NAV)[number]) =>
+    onHome ? item.anchor : item.href;
+  const liveTarget = onHome ? "#virtual-breathwork" : "/#virtual-breathwork";
 
   return (
     <header>
-      {/* Announcement ticker */}
-      <Link
-        href="/live-stream"
+      {/* Announcement banner */}
+      <a
+        href={liveTarget}
         className="block overflow-hidden whitespace-nowrap border-b border-ink bg-pink"
       >
         <div className="inline-block animate-ticker py-2.5 font-mono text-xs tracking-[0.12em] text-[#4a2e2f]">
@@ -34,14 +49,14 @@ export function SiteHeader({ active }: { active?: string }) {
             </span>
           ))}
         </div>
-      </Link>
+      </a>
 
       {/* Mono meta bar */}
       <div className="flex items-center justify-between border-b border-ink px-6 py-3 font-mono text-[11px] uppercase tracking-[0.08em] text-[#46403a] md:px-11">
         <span>Enjoy Your Breath</span>
         <span className="hidden opacity-80 sm:inline">Somatic Breathwork</span>
         <span className="hidden opacity-80 sm:inline">Seattle · Est. 2018</span>
-        <span>Thu 8PM PST ●</span>
+        <span>Wed 8PM PST ●</span>
       </div>
 
       {/* Primary nav */}
@@ -55,9 +70,9 @@ export function SiteHeader({ active }: { active?: string }) {
         <div className="flex items-center gap-5 md:gap-[30px]">
           <div className="hidden items-center gap-[30px] font-grotesk text-[15px] font-medium md:flex">
             {NAV.map((item) => (
-              <Link
+              <a
                 key={item.href}
-                href={item.href}
+                href={navTarget(item)}
                 className={
                   active === item.href
                     ? "border-b-2 border-pink-deep pb-0.5"
@@ -65,11 +80,11 @@ export function SiteHeader({ active }: { active?: string }) {
                 }
               >
                 {item.label}
-              </Link>
+              </a>
             ))}
           </div>
           <Button asChild variant="pink" size="sm">
-            <Link href="/live-stream">Join Live Stream</Link>
+            <a href={liveTarget}>Join Live Stream</a>
           </Button>
           {/* Mobile menu toggle */}
           <button
@@ -94,15 +109,15 @@ export function SiteHeader({ active }: { active?: string }) {
           <ul className="flex flex-col">
             {NAV.map((item) => (
               <li key={item.href} className="border-b border-ink/15 last:border-b-0">
-                <Link
-                  href={item.href}
+                <a
+                  href={navTarget(item)}
                   onClick={() => setOpen(false)}
                   className={`block px-6 py-4 font-grotesk text-lg font-medium ${
                     active === item.href ? "text-pink-deep" : "text-ink"
                   }`}
                 >
                   {item.label}
-                </Link>
+                </a>
               </li>
             ))}
           </ul>
