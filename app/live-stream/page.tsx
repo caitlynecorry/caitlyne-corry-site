@@ -55,7 +55,7 @@ export default function LiveStreamPage() {
       {/* Registration paused notice */}
       <section className="flex flex-col items-center border-b border-ink px-6 py-24 text-center md:px-11">
         <div className="mb-[26px] font-mono text-xs uppercase tracking-[0.2em] text-pink-muted">
-          Reserve your spot
+          Coming soon
         </div>
         <BreathworkNotice />
       </section>

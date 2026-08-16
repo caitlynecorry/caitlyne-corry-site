@@ -17,8 +17,7 @@ const NAV = [
   { label: "Contact", href: "/contact" },
 ];
 
-const TICKER_TEXT =
-  "Wednesday Virtual Breathwork returns August 5 at 8:00 PM PST.";
+const TICKER_TEXT = "Virtual Breathwork Coming Soon";
 
 export function SiteHeader({ active }: { active?: string }) {
   const [open, setOpen] = useState(false);
