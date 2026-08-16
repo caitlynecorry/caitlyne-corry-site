@@ -106,9 +106,8 @@ export default function AboutPage() {
           wanna be?
         </p>
         <p className="mx-auto mt-[34px] max-w-[600px] font-grotesk text-lg leading-[1.6] text-[#4a2e2f]">
-          Breathwork is a simple, powerful meditative tool for coming home to
-          yourself — quieting the noise, moving stuck emotions, and rebuilding
-          safety in the body.
+          Breathwork is a powerful practice that can create space for emotions,
+          patterns, and reconnection.
         </p>
       </section>
 
