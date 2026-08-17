@@ -158,7 +158,7 @@ export default function HomePage() {
       <section className="border-b border-ink bg-pink px-6 py-24 text-[#3a2a2b] md:px-11">
         <p className="m-0 max-w-[1080px] font-grotesk text-[clamp(30px,4.4vw,52px)] font-semibold leading-[1.12] tracking-[-0.02em]">
           Safety changes everything. You already carry the wisdom. This work
-          begins with learning how to listen.
+          begins with learning how to make space to listen.
         </p>
       </section>
 
@@ -320,21 +320,21 @@ export default function HomePage() {
           Breathe with us, live
         </h2>
         <p className="mb-14 max-w-[640px] font-grotesk text-[17px] leading-[1.6] text-[#5a5247]">
-          Every Wednesday at 8:00 PM PST, we gather on Zoom for a guided
-          breathwork journey. Come as you are. Give what you can.
+          A donation-based, guided breathwork journey gathered live on Zoom.
+          Come as you are. Give what you can. Coming soon.
         </p>
 
         <div className="grid grid-cols-1 items-stretch gap-6 md:grid-cols-2 md:gap-8">
           {/* Left card — paused notice */}
           <BreathworkNotice className="flex h-full flex-col rounded-[3px] border border-ink bg-pink p-8 md:p-10" />
 
-          {/* Right card — session schedule */}
+          {/* Right card — coming soon */}
           <div className="flex h-full flex-col items-center justify-center rounded-[3px] border border-ink bg-pink p-8 text-center md:p-10">
-            <div className="font-mono text-[clamp(40px,6vw,64px)] font-bold leading-none text-ink">
-              8:00
+            <div className="font-mono text-[clamp(32px,5vw,52px)] font-bold uppercase leading-none tracking-[-0.01em] text-ink">
+              Coming Soon
             </div>
             <div className="mt-3 font-grotesk text-sm font-semibold uppercase tracking-[0.12em] text-ink">
-              PM PST — Wednesdays
+              Schedule to be announced
             </div>
           </div>
         </div>

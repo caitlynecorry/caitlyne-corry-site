@@ -23,7 +23,7 @@ export default function LiveStreamPage() {
             are — no experience needed. Give what you can, when you can.
           </p>
           <span className="font-mono text-xs tracking-[0.12em] text-[#8a8074]">
-            Wednesdays · 8PM PST
+            Coming Soon
           </span>
         </div>
       </section>
@@ -31,8 +31,8 @@ export default function LiveStreamPage() {
       {/* Session facts band */}
       <section className="grid grid-cols-2 border-b border-ink md:grid-cols-4">
         {[
-          { k: "When", v: "Wednesdays" },
-          { k: "Time", v: "8:00 PM PST" },
+          { k: "When", v: "Coming Soon" },
+          { k: "Time", v: "TBA" },
           { k: "Where", v: "Live on Zoom" },
           { k: "Length", v: "60 minutes" },
         ].map((f, i) => (

@@ -48,7 +48,7 @@ export function SiteHeader({ active }: { active?: string }) {
         <span>Enjoy Your Breath</span>
         <span className="hidden opacity-80 sm:inline">Somatic Breathwork</span>
         <span className="hidden opacity-80 sm:inline">Seattle · Est. 2018</span>
-        <span>Wed 8PM PST ●</span>
+        <span>Coming Soon ●</span>
       </div>
 
       {/* Primary nav */}
