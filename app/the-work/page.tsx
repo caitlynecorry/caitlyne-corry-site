@@ -136,8 +136,8 @@ export default function TheWorkPage() {
           </p>
           <p className="mb-6 font-grotesk text-[17px] leading-[1.8] text-[#5a5247]">
             In a world that asks us to think our way through everything, this
-            work invites us to listen to physiology, trust sensation, and come
-            home to ourselves.
+            work invites us to listen to physiology, trust sensation, and be
+            curious enough to listen.
           </p>
           <p className="mb-6 font-grotesk text-[17px] leading-[1.8] text-[#5a5247]">
             Because sometimes healing doesn&rsquo;t happen through understanding
