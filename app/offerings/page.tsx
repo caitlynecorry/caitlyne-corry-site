@@ -161,9 +161,7 @@ export default function OfferingsPage() {
             More events coming soon
           </h2>
           <p className="mb-8 max-w-[460px] font-grotesk text-[17px] leading-[1.6] text-[#5a5247]">
-            New seasonal gatherings for breath, surrender, and coming home to
-            yourself are in the works. Check back soon, or reach out to be the
-            first to know.
+            Check back soon or reach out to be the first to know.
           </p>
           <Button asChild variant="outline" className="self-start">
             <Link href="/contact">Get in touch →</Link>
