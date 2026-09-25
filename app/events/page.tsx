@@ -20,20 +20,30 @@ export default function EventsPage() {
         </p>
       </section>
 
-      <section className="border-b border-ink px-6 py-16 md:px-11">
-        <div className="mb-[18px] font-mono text-[13px] uppercase tracking-[0.14em] text-pink-muted">
-          Cedarhouse Flowers
+      <section className="grid grid-cols-1 border-b border-ink md:grid-cols-2">
+        <div
+          className="min-h-[360px] border-b border-ink bg-sand bg-cover bg-center bg-no-repeat md:min-h-[620px] md:border-b-0 md:border-r"
+          style={{ backgroundImage: "url('/media/cedarhouse-flowers.png')" }}
+          role="img"
+          aria-label="Loose seasonal cut flowers resting on a table in a flower studio"
+        />
+        <div className="flex flex-col justify-center px-6 py-16 md:px-11">
+          <div className="mb-[18px] font-mono text-[13px] uppercase tracking-[0.14em] text-pink-muted">
+            Cedarhouse Flowers
+          </div>
+          <h2 className="mb-4 max-w-[460px] font-grotesk text-[clamp(40px,6vw,56px)] font-semibold leading-[0.98]">
+            ROOTED: Cedarhouse Breathwork
+          </h2>
+          <p className="mb-2 max-w-[460px] font-grotesk text-[19px] font-semibold leading-[1.3] text-ink">
+            The somatic reset.
+          </p>
+          <p className="max-w-[460px] font-grotesk text-[17px] leading-[1.6] text-[#5a5247]">
+            Regular Seattle gatherings utilizing therapeutic breathwork to shift whatever needs shifted. No pressure, no performance — just a local community doing deeply rooted work. Held in an intimate circle limited to 10 at Cedarhouse Flowers. Everything is provided; bring only water and whatever helps you land.
+          </p>
         </div>
-        <h2 className="mb-4 max-w-[620px] font-grotesk text-[clamp(40px,6vw,56px)] font-semibold leading-[0.98]">
-          ROOTED: Cedarhouse Breathwork
-        </h2>
-        <p className="mb-2 max-w-[600px] font-grotesk text-[19px] font-semibold leading-[1.3] text-ink">
-          The somatic reset.
-        </p>
-        <p className="mb-14 max-w-[600px] font-grotesk text-[17px] leading-[1.6] text-[#5a5247]">
-          Regular Seattle gatherings utilizing therapeutic breathwork to shift whatever needs shifted. No pressure, no performance — just a local community doing deeply rooted work. Held in an intimate circle limited to 10 at Cedarhouse Flowers. Everything is provided; bring only water and whatever helps you land.
-        </p>
+      </section>
 
+      <section className="border-b border-ink px-6 py-16 md:px-11">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
           <div className="border border-ink px-7 py-9">
             <div className="mb-3 font-mono text-[13px] uppercase tracking-[0.14em] text-pink-muted">
