@@ -56,7 +56,7 @@ export default function EventsPage() {
               6:00 – 8:00 PM · Cedarhouse Flowers · Limited to 10
             </p>
             <Button asChild variant="outline" className="self-start">
-              <a href="https://app.acuityscheduling.com/schedule.php?owner=39688174&amp;appointmentType=98703705" target="_blank" rel="noopener noreferrer">Reserve Your Spot →</a>
+              <a href="https://app.acuityscheduling.com/schedule.php?owner=39688174&amp;appointmentType=98726792" target="_blank" rel="noopener noreferrer">Reserve Your Spot →</a>
             </Button>
           </div>
 
@@ -71,7 +71,7 @@ export default function EventsPage() {
               6:00 – 8:00 PM · Cedarhouse Flowers · Limited to 10
             </p>
             <Button asChild variant="outline" className="self-start">
-              <a href="https://app.acuityscheduling.com/schedule.php?owner=39688174&amp;appointmentType=98724494" target="_blank" rel="noopener noreferrer">Reserve Your Spot →</a>
+              <a href="https://app.acuityscheduling.com/schedule.php?owner=39688174&amp;appointmentType=98726853" target="_blank" rel="noopener noreferrer">Reserve Your Spot →</a>
             </Button>
           </div>
         </div>
