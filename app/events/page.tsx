@@ -22,7 +22,7 @@ export default function EventsPage() {
         </p>
       </section>
 
-      {/* More events coming soon */}
+      {/* ROOTED: Cedarhouse Breathwork */}
       <section className="grid grid-cols-1 border-b border-ink md:grid-cols-2">
         <div
           className="min-h-[360px] border-b border-ink bg-sand bg-cover bg-center bg-no-repeat md:min-h-[620px] md:border-b-0 md:border-r"
@@ -35,13 +35,24 @@ export default function EventsPage() {
             Cedarhouse Flowers
           </div>
           <h2 className="mb-6 max-w-[460px] font-grotesk text-[clamp(40px,6vw,56px)] font-semibold leading-[0.98]">
-            More events coming soon
+            ROOTED: Cedarhouse Breathwork
           </h2>
-          <p className="mb-8 max-w-[460px] font-grotesk text-[17px] leading-[1.6] text-[#5a5247]">
-            Check back soon or reach out to be the first to know.
+          <p className="mb-6 max-w-[460px] font-grotesk text-[17px] leading-[1.6] text-[#5a5247]">
+            A seasonal gathering for breath, surrender, and coming home to
+            yourself — held at Cedarhouse Flowers.
           </p>
+          <ul className="mb-8 max-w-[460px] font-grotesk text-[17px] leading-[1.7] text-ink">
+            <li>October 17, 2026</li>
+            <li>November 21, 2026</li>
+          </ul>
           <Button asChild variant="outline" className="self-start">
-            <Link href="/contact">Get in touch →</Link>
+            
+              href="https://app.acuityscheduling.com/schedule.php?owner=39688174&appointmentType=98693695"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Reserve Your Spot →
+            </a>
           </Button>
         </div>
       </section>
