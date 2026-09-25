@@ -20,53 +20,11 @@ export default function EventsPage() {
         </p>
       </section>
 
-      <section className="grid grid-cols-1 border-b border-ink md:grid-cols-2">
-        <div className="min-h-[360px] border-b border-ink bg-sand bg-cover bg-center bg-no-repeat md:min-h-[620px] md:border-b-0 md:border-r" style={{ backgroundImage: "url('/media/cedarhouse-flowers.png')" }} role="img" aria-label="Loose seasonal cut flowers resting on a table in a flower studio" />
-        <div className="flex flex-col justify-center px-6 py-16 md:px-11">
-          <div className="mb-[18px] font-mono text-[13px] uppercase tracking-[0.14em] text-pink-muted">
-            Cedarhouse Flowers
-          </div>
-          <h2 className="mb-6 max-w-[460px] font-grotesk text-[clamp(40px,6vw,56px)] font-semibold leading-[0.98]">
-            ROOTED: Cedarhouse Breathwork
-          </h2>
-          <p className="mb-6 max-w-[460px] font-grotesk text-[17px] leading-[1.6] text-[#5a5247]">
-            A seasonal gathering for breath, surrender, and coming home to yourself — held at Cedarhouse Flowers.
-          </p>
-          <ul className="mb-8 max-w-[460px] font-grotesk text-[17px] leading-[1.7] text-ink">
-            <li>October 17, 2026</li>
-            <li>November 21, 2026</li>
-          </ul>
-          <Button asChild variant="outline" className="self-start">
-            <a href="https://app.acuityscheduling.com/schedule.php?owner=39688174&amp;appointmentType=98693695" target="_blank" rel="noopener noreferrer">Reserve Your Spot →</a>
-          </Button>
-        </div>
-      </section>
-
       <section className="border-b border-ink px-6 py-16 md:px-11">
         <div className="mb-[18px] font-mono text-[13px] uppercase tracking-[0.14em] text-pink-muted">
-          Bring the work to your space
+          Cedarhouse Flowers
         </div>
-        <h2 className="mb-4 max-w-[620px] font-grotesk text-[clamp(30px,5vw,44px)] font-semibold leading-[1.05]">
-          Interested in hosting a workshop, retreat, or private gathering?
+        <h2 className="mb-4 max-w-[620px] font-grotesk text-[clamp(40px,6vw,56px)] font-semibold leading-[0.98]">
+          ROOTED: Cedarhouse Breathwork
         </h2>
-        <p className="mb-7 max-w-[560px] font-grotesk text-base leading-[1.7] text-[#5a5247]">
-          Events are held with the same care and intention as the one-on-one work — shaped to fit your community, your space, and the moment you&rsquo;re in.
-        </p>
-        <Button asChild variant="outline" className="self-start">
-          <Link href="/contact">Inquire →</Link>
-        </Button>
-      </section>
-
-      <section className="border-b border-ink bg-pink px-6 py-[90px] text-center text-[#3a2a2b] md:px-11">
-        <p className="mb-[30px] font-grotesk text-[clamp(38px,7vw,60px)] font-bold uppercase leading-[1.05] tracking-[-0.02em]">
-          Come as you are.
-        </p>
-        <Button asChild>
-          <Link href="/contact">Get in touch →</Link>
-        </Button>
-      </section>
-
-      <SiteFooterCompact />
-    </main>
-  );
-}
+        <p className="mb-2 max-w-[600px]
