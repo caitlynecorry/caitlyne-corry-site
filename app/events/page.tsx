@@ -8,7 +8,6 @@ export default function EventsPage() {
     <main className="min-h-screen bg-cream text-ink">
       <SiteHeader active="/events" />
 
-      {/* Page header */}
       <section className="border-b border-ink px-5 pb-14 pt-[70px] md:px-10">
         <div className="mb-[26px] font-mono text-xs uppercase tracking-[0.2em] text-pink-muted">
           Gather in person
@@ -17,19 +16,12 @@ export default function EventsPage() {
           Events
         </h1>
         <p className="mt-10 max-w-[600px] font-grotesk text-[19px] leading-[1.55] text-[#5a5247]">
-          Seasonal gatherings for breath, surrender, and coming home to
-          yourself — held in community, in beautiful spaces around Seattle.
+          Seasonal gatherings for breath, surrender, and coming home to yourself — held in community, in beautiful spaces around Seattle.
         </p>
       </section>
 
-      {/* ROOTED: Cedarhouse Breathwork */}
       <section className="grid grid-cols-1 border-b border-ink md:grid-cols-2">
-        <div
-          className="min-h-[360px] border-b border-ink bg-sand bg-cover bg-center bg-no-repeat md:min-h-[620px] md:border-b-0 md:border-r"
-          style={{ backgroundImage: "url('/media/cedarhouse-flowers.png')" }}
-          role="img"
-          aria-label="Loose seasonal cut flowers resting on a table in a flower studio"
-        />
+        <div className="min-h-[360px] border-b border-ink bg-sand bg-cover bg-center bg-no-repeat md:min-h-[620px] md:border-b-0 md:border-r" style={{ backgroundImage: "url('/media/cedarhouse-flowers.png')" }} role="img" aria-label="Loose seasonal cut flowers resting on a table in a flower studio" />
         <div className="flex flex-col justify-center px-6 py-16 md:px-11">
           <div className="mb-[18px] font-mono text-[13px] uppercase tracking-[0.14em] text-pink-muted">
             Cedarhouse Flowers
@@ -38,26 +30,18 @@ export default function EventsPage() {
             ROOTED: Cedarhouse Breathwork
           </h2>
           <p className="mb-6 max-w-[460px] font-grotesk text-[17px] leading-[1.6] text-[#5a5247]">
-            A seasonal gathering for breath, surrender, and coming home to
-            yourself — held at Cedarhouse Flowers.
+            A seasonal gathering for breath, surrender, and coming home to yourself — held at Cedarhouse Flowers.
           </p>
           <ul className="mb-8 max-w-[460px] font-grotesk text-[17px] leading-[1.7] text-ink">
             <li>October 17, 2026</li>
             <li>November 21, 2026</li>
           </ul>
           <Button asChild variant="outline" className="self-start">
-            
-              href="https://app.acuityscheduling.com/schedule.php?owner=39688174&appointmentType=98693695"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Reserve Your Spot →
-            </a>
+            <a href="https://app.acuityscheduling.com/schedule.php?owner=39688174&amp;appointmentType=98693695" target="_blank" rel="noopener noreferrer">Reserve Your Spot →</a>
           </Button>
         </div>
       </section>
 
-      {/* Host an event CTA */}
       <section className="border-b border-ink px-6 py-16 md:px-11">
         <div className="mb-[18px] font-mono text-[13px] uppercase tracking-[0.14em] text-pink-muted">
           Bring the work to your space
@@ -66,16 +50,13 @@ export default function EventsPage() {
           Interested in hosting a workshop, retreat, or private gathering?
         </h2>
         <p className="mb-7 max-w-[560px] font-grotesk text-base leading-[1.7] text-[#5a5247]">
-          Events are held with the same care and intention as the one-on-one
-          work — shaped to fit your community, your space, and the moment
-          you&rsquo;re in.
+          Events are held with the same care and intention as the one-on-one work — shaped to fit your community, your space, and the moment you&rsquo;re in.
         </p>
         <Button asChild variant="outline" className="self-start">
           <Link href="/contact">Inquire →</Link>
         </Button>
       </section>
 
-      {/* Pink CTA band */}
       <section className="border-b border-ink bg-pink px-6 py-[90px] text-center text-[#3a2a2b] md:px-11">
         <p className="mb-[30px] font-grotesk text-[clamp(38px,7vw,60px)] font-bold uppercase leading-[1.05] tracking-[-0.02em]">
           Come as you are.
