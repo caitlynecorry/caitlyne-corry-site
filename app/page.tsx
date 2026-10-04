@@ -32,29 +32,6 @@ const OFFERINGS = [
   },
 ];
 
-const WORK = [
-  {
-  no: "(01)",
-  title: "Awareness",
-  body: "A system can't change what it can't feel. We begin by reading what your body is actually doing: tension, breath pattern, vigilance, shutdown.",
-  },
-  {
-  no: "(02)",
-  title: "Breath",
-  body: "Conscious connected breathing: one unbroken breath, paced to your system. A more active practice is available when you're ready.",
-  },
-  {
-  no: "(03)",
-  title: "Release",
-  body: "What the body has carried and never had the chance to say. Given room, it completes: grief, anger, relief, connection.",
-  },
-  {
-  no: "(04)",
-  title: "Integration",
-  body: "Building capacity. The system learns to hold more sensation, more charge, more of your own life, without reverting to the old pattern.",
-  },
-];
-
 export default function HomePage() {
   return (
     <main className="min-h-screen bg-cream text-ink">
@@ -168,37 +145,20 @@ export default function HomePage() {
           </div>
           <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between md:gap-10">
             <p className="max-w-[720px] font-grotesk text-[clamp(24px,3.4vw,34px)] font-medium leading-[1.35] tracking-[-0.01em]">
-              {"This work is built in order. Awareness first. A system can't change what it can't feel. Then the breath: one unbroken cycle, paced to your system. Then release, the body completing what it once had to interrupt. Then integration: building capacity. Rhythm returns. Regulation becomes baseline. Agency stops being an idea and becomes something you can feel."}
+              {"A system can't change what it can't feel."}
             </p>
             <Link
               href="/the-work"
               className="shrink-0 whitespace-nowrap border-b-2 border-pink-deep pb-[3px] font-grotesk text-sm font-semibold"
             >
-              Explore the work →
+              {"See how it's built →"}
             </Link>
           </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
-          {WORK.map((w, i) => (
-            <div
-              key={w.title}
-              className={`border-ink px-9 py-[54px] lg:px-7 ${
-                i < WORK.length - 1 ? "border-b" : ""
-              } ${i >= 2 ? "md:border-b-0" : ""} ${
-                i % 2 === 0 ? "md:border-r" : ""
-              } lg:border-b-0 ${
-                i < WORK.length - 1 ? "lg:border-r" : "lg:border-r-0"
-              }`}
-            >
-              <span className="font-mono text-xs text-[#8a8074]">{w.no}</span>
-              <h3 className="mb-3.5 mt-[18px] whitespace-nowrap font-grotesk text-[clamp(30px,9vw,48px)] font-bold uppercase md:text-[clamp(30px,4.6vw,48px)] lg:text-[clamp(24px,2.5vw,48px)]">
-                {w.title}
-              </h3>
-              <p className="m-0 font-grotesk text-[15px] leading-[1.65] text-[#5a5247]">
-                {w.body}
-              </p>
-            </div>
-          ))}
+        <div className="px-6 pb-16 pt-8 md:px-11">
+          <p className="m-0 font-mono text-xs uppercase leading-relaxed tracking-[0.16em] text-[#8a8074]">
+            Awareness · Breath · Release · Integration
+          </p>
         </div>
       </section>
 
