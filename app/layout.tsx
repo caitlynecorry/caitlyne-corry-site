@@ -19,11 +19,11 @@ const spaceMono = Space_Mono({
 export const metadata: Metadata = {
   title: "Enjoy Your Breath",
   description:
-    "Writer, somatic breathwork facilitator, and intuitive guide based in Seattle. The work of coming home to yourself.",
+    "Writer, therapeutic breathwork facilitator, and intuitive guide based in Seattle. The work of coming home to yourself.",
   openGraph: {
     title: "Enjoy Your Breath",
     description:
-      "Writer, somatic breathwork facilitator, and intuitive guide based in Seattle. The work of coming home to yourself.",
+      "Writer, therapeutic breathwork facilitator, and intuitive guide based in Seattle. The work of coming home to yourself.",
   },
 };
 

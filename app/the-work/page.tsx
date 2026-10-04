@@ -5,24 +5,32 @@ import { Button } from "@/components/ui/button";
 const STAGES = [
   {
     no: "(01)",
-    title: "Body",
-    body: "You can't access the story until you're in the body. We begin here — with sensation, with presence, with the intelligence that's been there all along.",
+    title: "Awareness",
+    body: "A system can't change what it can't feel. We begin by reading what your body is actually doing: tension, breath pattern, vigilance, shutdown.",
     bg: "bg-sand-2",
     titleColor: "",
     numColor: "text-[#8a8074]",
   },
   {
     no: "(02)",
-    title: "Story",
-    body: "Once the body is safe, the story becomes available. Not to relive — to reclaim. To hold differently. To stop being held by.",
+    title: "Breath",
+    body: "Conscious connected breathing: one unbroken breath, paced to your system. A more active practice is available when you're ready.",
     bg: "bg-sand-2",
     titleColor: "",
     numColor: "text-[#8a8074]",
   },
   {
     no: "(03)",
-    title: "Breath",
-    body: "The breath was always yours. This work returns it to you. Not as a technique, but as a homecoming.",
+    title: "Release",
+    body: "What the body has carried and never had the chance to say. Given room, it completes: grief, anger, relief, connection.",
+    bg: "bg-sand-2",
+    titleColor: "",
+    numColor: "text-[#8a8074]",
+  },
+  {
+    no: "(04)",
+    title: "Integration",
+    body: "Building capacity. The system learns to hold more sensation, more charge, more of your own life, without reverting to the old pattern.",
     bg: "bg-pink",
     titleColor: "text-[#3a2a2b]",
     numColor: "text-[#5a3a3b]",
@@ -32,15 +40,15 @@ const STAGES = [
 const EXPECT = [
   {
     title: "Arrive",
-    body: "We settle in, slow down, and set an intention. No experience needed — just willingness.",
+    body: "Awareness begins here. We slow down and take an inner weather report: your breath, your posture, your pace, what's loud in your system today. From there, we set an intention. No experience needed. Willingness is enough.",
   },
   {
     title: "Breathe",
-    body: "Guided active breathwork moves stuck energy and quiets the thinking mind. The body leads.",
+    body: "Awareness becomes breath. Guided throughout, paced to your system. The thinking mind steps back and the body leads.",
   },
   {
     title: "Integrate",
-    body: "We land gently, reflect, and name what's ready to be carried forward into your life.",
+    body: "We land slowly and notice what moved. Together we name what's ready to be carried forward. Capacity builds here, in the days after as much as in the room.",
   },
 ];
 
@@ -52,7 +60,7 @@ export default function TheWorkPage() {
       {/* Header */}
       <section className="border-b border-ink px-5 pb-14 pt-[70px] md:px-10">
         <div className="mb-[26px] font-mono text-xs uppercase tracking-[0.2em] text-pink-muted">
-          The method — body, story, breath
+          The method — awareness, breath, release, integration
         </div>
         <h1 className="m-0 font-grotesk text-[clamp(54px,13vw,158px)] font-bold uppercase leading-[0.82] tracking-[-0.045em]">
           The
@@ -60,9 +68,12 @@ export default function TheWorkPage() {
           Work.
         </h1>
         <p className="mt-10 max-w-[600px] font-grotesk text-[19px] leading-[1.55] text-[#5a5247]">
-          This work moves in a sequence. We don&rsquo;t start with the story — we
-          start with the body. Safety first, then truth, then the breath that was
-          always yours.
+          This work is built in order. Awareness first. A system can&rsquo;t
+          change what it can&rsquo;t feel. Then the breath: one unbroken cycle,
+          paced to your system. Then release, the body completing what it once
+          had to interrupt. Then integration: building capacity. Rhythm returns.
+          Regulation becomes baseline. Agency stops being an idea and becomes
+          something you can feel.
         </p>
       </section>
 

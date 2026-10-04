@@ -35,7 +35,7 @@ export default function AboutPage() {
             Caitlyne
           </h1>
           <p className="mt-[34px] max-w-[480px] font-grotesk text-[19px] leading-[1.55] text-[#5a5247]">
-            A writer, somatic breathwork facilitator, and intuitive guide based
+            A writer, therapeutic breathwork facilitator, and intuitive guide based
             in Seattle.
           </p>
         </div>

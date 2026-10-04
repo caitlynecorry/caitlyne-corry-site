@@ -3,6 +3,7 @@ import { SiteHeader } from "@/components/site-header";
 import { SiteFooterFull } from "@/components/site-footer";
 import { Button } from "@/components/ui/button";
 import { BreathworkNotice } from "@/components/breathwork-notice";
+import { EventDates } from "@/components/event-dates";
 
 const OFFERINGS = [
   {
@@ -20,32 +21,14 @@ const OFFERINGS = [
   {
     no: "03 / Meditation",
     title: "Form Follows Silence",
-    sub: "A somatics-based guided meditation",
+    sub: "Guided Somatic Meditation",
     image: null,
   },
   {
     no: "04 / Integration",
     title: "Integration",
-    sub: "The work after the work",
+    sub: "Capacity-building between and after sessions",
     image: null,
-  },
-];
-
-const WORK = [
-  {
-    no: "(01)",
-    title: "Body",
-    body: "You can't access the story until you're in the body. We begin here — with sensation, with presence, with the intelligence that's been there all along.",
-  },
-  {
-    no: "(02)",
-    title: "Story",
-    body: "Once the body is safe, the story becomes available. Not to relive — to reclaim. To hold differently. To stop being held by.",
-  },
-  {
-    no: "(03)",
-    title: "Breath",
-    body: "The breath was always yours. This work returns it to you. Not as a technique, but as a homecoming.",
   },
 ];
 
@@ -79,7 +62,7 @@ export default function HomePage() {
               Form follows <span className="italic text-pink-deep">silence</span>
             </h1>
             <p className="mt-7 max-w-[520px] font-grotesk text-xl leading-[1.5] text-[#4a443c] md:mt-9">
-              Hi, I&rsquo;m Caitlyne — a writer, somatic breathwork facilitator,
+              Hi, I&rsquo;m Caitlyne — a writer, therapeutic breathwork facilitator,
               and intuitive guide.
             </p>
           </div>
@@ -162,36 +145,20 @@ export default function HomePage() {
           </div>
           <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between md:gap-10">
             <p className="max-w-[720px] font-grotesk text-[clamp(24px,3.4vw,34px)] font-medium leading-[1.35] tracking-[-0.01em]">
-              This work moves in a sequence. We don&rsquo;t start with the story
-              — we start with the body. Safety first, then truth, then
-              reclaiming the breath and restoring the body&rsquo;s natural
-              rhythm, regulation, and sense of agency.
+              {"A system can't change what it can't feel."}
             </p>
             <Link
               href="/the-work"
               className="shrink-0 whitespace-nowrap border-b-2 border-pink-deep pb-[3px] font-grotesk text-sm font-semibold"
             >
-              Explore the work →
+              {"See how it's built →"}
             </Link>
           </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3">
-          {WORK.map((w, i) => (
-            <div
-              key={w.title}
-              className={`px-9 py-[54px] ${
-                i < 2 ? "border-b border-ink md:border-b-0 md:border-r" : ""
-              }`}
-            >
-              <span className="font-mono text-xs text-[#8a8074]">{w.no}</span>
-              <h3 className="mb-3.5 mt-[18px] font-grotesk text-[48px] font-bold uppercase">
-                {w.title}
-              </h3>
-              <p className="m-0 font-grotesk text-[15px] leading-[1.65] text-[#5a5247]">
-                {w.body}
-              </p>
-            </div>
-          ))}
+        <div className="px-6 pb-16 pt-8 md:px-11">
+          <p className="m-0 font-mono text-xs uppercase leading-relaxed tracking-[0.16em] text-[#8a8074]">
+            Awareness · Breath · Release · Integration
+          </p>
         </div>
       </section>
 
@@ -214,11 +181,9 @@ export default function HomePage() {
               Cedarhouse Flowers
             </div>
             <h2 className="mb-6 max-w-[460px] font-grotesk text-[clamp(40px,6vw,56px)] font-semibold leading-[0.98]">
-              More events coming soon
+              Upcoming dates
             </h2>
-            <p className="mb-8 max-w-[460px] font-grotesk text-[17px] leading-[1.6] text-[#5a5247]">
-              Check back soon or reach out to be the first to know.
-            </p>
+            <EventDates className="mb-8" />
             <Link
               href="/contact"
               className="self-start border-b-2 border-pink-deep pb-[3px] font-grotesk text-sm font-semibold"
@@ -236,8 +201,8 @@ export default function HomePage() {
             Ways to work together
           </div>
           <p className="mb-2 max-w-[720px] font-grotesk text-[clamp(24px,3.4vw,34px)] font-medium leading-[1.35] tracking-[-0.01em]">
-            Breathwork is a powerful practice that can create space for
-            emotions, patterns, and reconnection.
+            Breathwork changes how the nervous system responds. Structured,
+            guided, and paced for safety.
           </p>
         </div>
         <div className="grid grid-cols-1 border-t border-ink md:grid-cols-2">
