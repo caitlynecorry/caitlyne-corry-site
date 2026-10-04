@@ -27,26 +27,31 @@ const OFFERINGS = [
   {
     no: "04 / Integration",
     title: "Integration",
-    sub: "After the session, the system keeps reorganizing",
+    sub: "Capacity-building between and after sessions",
     image: null,
   },
 ];
 
 const WORK = [
   {
-    no: "(01)",
-    title: "Safety",
-    body: "Nothing reorganizes in a body that doesn't feel safe. We start with sensation, pacing, and the conditions that let the nervous system stand down.",
+  no: "(01)",
+  title: "Awareness",
+  body: "A system can't change what it can't feel. We begin by reading what your body is actually doing: tension, breath pattern, vigilance, shutdown.",
   },
   {
-    no: "(02)",
-    title: "Truth",
-    body: "What the body has carried and never had the chance to say. Held with structure, so it can move through rather than loop.",
+  no: "(02)",
+  title: "Breath",
+  body: "Conscious connected breathing: one unbroken breath, paced to your system. A more active practice is available when you're ready.",
   },
   {
-    no: "(03)",
-    title: "Breath",
-    body: "Reclaimed. Rhythm returns, regulation becomes capacity, and agency becomes something you can feel.",
+  no: "(03)",
+  title: "Release",
+  body: "What the body has carried and never had the chance to say. Given room, it completes: grief, anger, relief, connection.",
+  },
+  {
+  no: "(04)",
+  title: "Integration",
+  body: "Building capacity. The system learns to hold more sensation, more charge, more of your own life, without reverting to the old pattern.",
   },
 ];
 
@@ -163,11 +168,7 @@ export default function HomePage() {
           </div>
           <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between md:gap-10">
             <p className="max-w-[720px] font-grotesk text-[clamp(24px,3.4vw,34px)] font-medium leading-[1.35] tracking-[-0.01em]">
-              This work is built in order. Safety first. A system that
-              doesn&rsquo;t feel safe can&rsquo;t change. Then truth, what the
-              body has carried and never been allowed to say. Then the breath,
-              reclaimed. Rhythm returns. Regulation becomes capacity. Agency
-              stops being an idea and becomes something you can feel.
+              {"This work is built in order. Awareness first. A system can't change what it can't feel. Then the breath: one unbroken cycle, paced to your system. Then release, the body completing what it once had to interrupt. Then integration: building capacity. Rhythm returns. Regulation becomes baseline. Agency stops being an idea and becomes something you can feel."}
             </p>
             <Link
               href="/the-work"
@@ -177,16 +178,20 @@ export default function HomePage() {
             </Link>
           </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
           {WORK.map((w, i) => (
             <div
               key={w.title}
-              className={`px-9 py-[54px] ${
-                i < 2 ? "border-b border-ink md:border-b-0 md:border-r" : ""
+              className={`border-ink px-9 py-[54px] lg:px-7 ${
+                i < WORK.length - 1 ? "border-b" : ""
+              } ${i >= 2 ? "md:border-b-0" : ""} ${
+                i % 2 === 0 ? "md:border-r" : ""
+              } lg:border-b-0 ${
+                i < WORK.length - 1 ? "lg:border-r" : "lg:border-r-0"
               }`}
             >
               <span className="font-mono text-xs text-[#8a8074]">{w.no}</span>
-              <h3 className="mb-3.5 mt-[18px] font-grotesk text-[48px] font-bold uppercase">
+              <h3 className="mb-3.5 mt-[18px] whitespace-nowrap font-grotesk text-[clamp(30px,9vw,48px)] font-bold uppercase md:text-[clamp(30px,4.6vw,48px)] lg:text-[clamp(24px,2.5vw,48px)]">
                 {w.title}
               </h3>
               <p className="m-0 font-grotesk text-[15px] leading-[1.65] text-[#5a5247]">
