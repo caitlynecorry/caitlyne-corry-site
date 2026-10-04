@@ -60,10 +60,11 @@ export default function TheWorkPage() {
           Work.
         </h1>
         <p className="mt-10 max-w-[600px] font-grotesk text-[19px] leading-[1.55] text-[#5a5247]">
-          This work is built in order. Safety first. A system that doesn&rsquo;t
-          feel safe can&rsquo;t change. Then truth, what the body has carried and
-          never been allowed to say. Then the breath, reclaimed. Rhythm returns.
-          Regulation becomes capacity. Agency stops being an idea and becomes
+          This work is built in order. Awareness first. A system can&rsquo;t
+          change what it can&rsquo;t feel. Then the breath: one unbroken cycle,
+          paced to your system. Then release, the body completing what it once
+          had to interrupt. Then integration: building capacity. Rhythm returns.
+          Regulation becomes baseline. Agency stops being an idea and becomes
           something you can feel.
         </p>
       </section>
