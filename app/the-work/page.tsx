@@ -78,26 +78,30 @@ export default function TheWorkPage() {
       </section>
 
       {/* Stages */}
-      {STAGES.map((s) => (
-        <section
-          key={s.title}
-          className="grid grid-cols-1 border-b border-ink md:grid-cols-[0.6fr_1.4fr]"
-        >
-          <div className={`border-ink px-6 py-16 md:border-r md:px-11 ${s.bg}`}>
-            <div className={`font-mono text-[13px] ${s.numColor}`}>{s.no}</div>
-            <h2
-              className={`mt-3.5 font-grotesk text-[84px] font-bold uppercase leading-[0.9] ${s.titleColor}`}
+      <div className="grid auto-rows-fr">
+        {STAGES.map((s) => (
+          <section
+            key={s.title}
+            className="grid grid-cols-1 border-b border-ink md:grid-cols-[0.6fr_1.4fr]"
+          >
+            <div
+              className={`min-w-0 border-ink px-6 py-16 [container-type:inline-size] md:border-r md:px-11 ${s.bg}`}
             >
-              {s.title}
-            </h2>
-          </div>
-          <div className="flex items-center px-6 py-16 md:px-11">
-            <p className="m-0 max-w-[680px] font-grotesk text-2xl leading-[1.55] text-[#3a352d]">
-              {s.body}
-            </p>
-          </div>
-        </section>
-      ))}
+              <div className={`font-mono text-[13px] ${s.numColor}`}>{s.no}</div>
+              <h2
+                className={`mt-3.5 whitespace-nowrap font-grotesk font-bold uppercase leading-[0.9] [font-size:clamp(1rem,calc(100cqw/7.4),84px)] [hyphens:none] ${s.titleColor}`}
+              >
+                {s.title}
+              </h2>
+            </div>
+            <div className="flex items-center px-6 py-16 md:px-11">
+              <p className="m-0 max-w-[680px] font-grotesk text-2xl leading-[1.55] text-[#3a352d]">
+                {s.body}
+              </p>
+            </div>
+          </section>
+        ))}
+      </div>
 
       {/* What to expect */}
       <section className="border-b border-ink px-6 py-20 md:px-11">
