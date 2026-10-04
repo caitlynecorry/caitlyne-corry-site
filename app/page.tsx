@@ -80,7 +80,7 @@ export default function HomePage() {
               Form follows <span className="italic text-pink-deep">silence</span>
             </h1>
             <p className="mt-7 max-w-[520px] font-grotesk text-xl leading-[1.5] text-[#4a443c] md:mt-9">
-              Hi, I&rsquo;m Caitlyne — a writer, somatic breathwork facilitator,
+              Hi, I&rsquo;m Caitlyne — a writer, therapeutic breathwork facilitator,
               and intuitive guide.
             </p>
           </div>

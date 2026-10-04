@@ -1,6 +1,6 @@
 # Caitlyne Corry — Form Follows Silence
 
-A complete **Next.js 14 (App Router)** website for Caitlyne Corry, somatic breathwork
+A complete **Next.js 14 (App Router)** website for Caitlyne Corry, therapeutic breathwork
 facilitator. Built with **TypeScript**, **Tailwind CSS**, and **shadcn/ui**.
 
 Bold, type-forward grotesque aesthetic on a warm cream canvas with a soft-pink accent.
