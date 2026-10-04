@@ -5,16 +5,16 @@ import { Button } from "@/components/ui/button";
 const STAGES = [
   {
     no: "(01)",
-    title: "Body",
-    body: "You can't access the story until you're in the body. We begin here — with sensation, with presence, with the intelligence that's been there all along.",
+    title: "Safety",
+    body: "Nothing reorganizes in a body that doesn't feel safe. We start with sensation, pacing, and the conditions that let the nervous system stand down.",
     bg: "bg-sand-2",
     titleColor: "",
     numColor: "text-[#8a8074]",
   },
   {
     no: "(02)",
-    title: "Story",
-    body: "Once the body is safe, the story becomes available. Not to relive — to reclaim. To hold differently. To stop being held by.",
+    title: "Truth",
+    body: "What the body has carried and never had the chance to say. Held with structure, so it can move through rather than loop.",
     bg: "bg-sand-2",
     titleColor: "",
     numColor: "text-[#8a8074]",
@@ -22,7 +22,7 @@ const STAGES = [
   {
     no: "(03)",
     title: "Breath",
-    body: "The breath was always yours. This work returns it to you. Not as a technique, but as a homecoming.",
+    body: "Reclaimed. Rhythm returns, regulation becomes capacity, and agency becomes something you can feel.",
     bg: "bg-pink",
     titleColor: "text-[#3a2a2b]",
     numColor: "text-[#5a3a3b]",
@@ -52,7 +52,7 @@ export default function TheWorkPage() {
       {/* Header */}
       <section className="border-b border-ink px-5 pb-14 pt-[70px] md:px-10">
         <div className="mb-[26px] font-mono text-xs uppercase tracking-[0.2em] text-pink-muted">
-          The method — body, story, breath
+          The method — safety, truth, breath
         </div>
         <h1 className="m-0 font-grotesk text-[clamp(54px,13vw,158px)] font-bold uppercase leading-[0.82] tracking-[-0.045em]">
           The
@@ -60,9 +60,11 @@ export default function TheWorkPage() {
           Work.
         </h1>
         <p className="mt-10 max-w-[600px] font-grotesk text-[19px] leading-[1.55] text-[#5a5247]">
-          This work moves in a sequence. We don&rsquo;t start with the story — we
-          start with the body. Safety first, then truth, then the breath that was
-          always yours.
+          This work is built in order. Safety first. A system that doesn&rsquo;t
+          feel safe can&rsquo;t change. Then truth, what the body has carried and
+          never been allowed to say. Then the breath, reclaimed. Rhythm returns.
+          Regulation becomes capacity. Agency stops being an idea and becomes
+          something you can feel.
         </p>
       </section>
 

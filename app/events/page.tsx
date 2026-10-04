@@ -2,6 +2,7 @@ import Link from "next/link";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooterCompact } from "@/components/site-footer";
 import { Button } from "@/components/ui/button";
+import { EventDates } from "@/components/event-dates";
 
 export default function EventsPage() {
   return (
@@ -35,11 +36,9 @@ export default function EventsPage() {
             Cedarhouse Flowers
           </div>
           <h2 className="mb-6 max-w-[460px] font-grotesk text-[clamp(40px,6vw,56px)] font-semibold leading-[0.98]">
-            More events coming soon
+            Upcoming dates
           </h2>
-          <p className="mb-8 max-w-[460px] font-grotesk text-[17px] leading-[1.6] text-[#5a5247]">
-            Check back soon or reach out to be the first to know.
-          </p>
+          <EventDates className="mb-8" />
           <Button asChild variant="outline" className="self-start">
             <Link href="/contact">Get in touch →</Link>
           </Button>

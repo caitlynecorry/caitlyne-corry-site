@@ -3,6 +3,7 @@ import { SiteHeader } from "@/components/site-header";
 import { SiteFooterFull } from "@/components/site-footer";
 import { Button } from "@/components/ui/button";
 import { BreathworkNotice } from "@/components/breathwork-notice";
+import { EventDates } from "@/components/event-dates";
 
 const OFFERINGS = [
   {
@@ -34,18 +35,18 @@ const OFFERINGS = [
 const WORK = [
   {
     no: "(01)",
-    title: "Body",
-    body: "You can't access the story until you're in the body. We begin here — with sensation, with presence, with the intelligence that's been there all along.",
+    title: "Safety",
+    body: "Nothing reorganizes in a body that doesn't feel safe. We start with sensation, pacing, and the conditions that let the nervous system stand down.",
   },
   {
     no: "(02)",
-    title: "Story",
-    body: "Once the body is safe, the story becomes available. Not to relive — to reclaim. To hold differently. To stop being held by.",
+    title: "Truth",
+    body: "What the body has carried and never had the chance to say. Held with structure, so it can move through rather than loop.",
   },
   {
     no: "(03)",
     title: "Breath",
-    body: "The breath was always yours. This work returns it to you. Not as a technique, but as a homecoming.",
+    body: "Reclaimed. Rhythm returns, regulation becomes capacity, and agency becomes something you can feel.",
   },
 ];
 
@@ -162,10 +163,11 @@ export default function HomePage() {
           </div>
           <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between md:gap-10">
             <p className="max-w-[720px] font-grotesk text-[clamp(24px,3.4vw,34px)] font-medium leading-[1.35] tracking-[-0.01em]">
-              This work moves in a sequence. We don&rsquo;t start with the story
-              — we start with the body. Safety first, then truth, then
-              reclaiming the breath and restoring the body&rsquo;s natural
-              rhythm, regulation, and sense of agency.
+              This work is built in order. Safety first. A system that
+              doesn&rsquo;t feel safe can&rsquo;t change. Then truth, what the
+              body has carried and never been allowed to say. Then the breath,
+              reclaimed. Rhythm returns. Regulation becomes capacity. Agency
+              stops being an idea and becomes something you can feel.
             </p>
             <Link
               href="/the-work"
@@ -214,11 +216,9 @@ export default function HomePage() {
               Cedarhouse Flowers
             </div>
             <h2 className="mb-6 max-w-[460px] font-grotesk text-[clamp(40px,6vw,56px)] font-semibold leading-[0.98]">
-              More events coming soon
+              Upcoming dates
             </h2>
-            <p className="mb-8 max-w-[460px] font-grotesk text-[17px] leading-[1.6] text-[#5a5247]">
-              Check back soon or reach out to be the first to know.
-            </p>
+            <EventDates className="mb-8" />
             <Link
               href="/contact"
               className="self-start border-b-2 border-pink-deep pb-[3px] font-grotesk text-sm font-semibold"
