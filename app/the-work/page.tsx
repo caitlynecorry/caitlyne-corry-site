@@ -40,15 +40,15 @@ const STAGES = [
 const EXPECT = [
   {
     title: "Arrive",
-    body: "We settle in, slow down, and set an intention. No experience needed — just willingness.",
+    body: "Awareness begins here. We slow down and take an inner weather report: your breath, your posture, your pace, what's loud in your system today. From there, we set an intention. No experience needed. Willingness is enough.",
   },
   {
     title: "Breathe",
-    body: "Guided active breathwork moves stuck energy and quiets the thinking mind. The body leads.",
+    body: "Awareness becomes breath. Guided throughout, paced to your system. The thinking mind steps back and the body leads.",
   },
   {
     title: "Integrate",
-    body: "We land gently, reflect, and name what's ready to be carried forward into your life.",
+    body: "We land slowly and notice what moved. Together we name what's ready to be carried forward. Capacity builds here, in the days after as much as in the room.",
   },
 ];
 
