@@ -5,24 +5,32 @@ import { Button } from "@/components/ui/button";
 const STAGES = [
   {
     no: "(01)",
-    title: "Safety",
-    body: "Nothing reorganizes in a body that doesn't feel safe. We start with sensation, pacing, and the conditions that let the nervous system stand down.",
+    title: "Awareness",
+    body: "A system can't change what it can't feel. We begin by reading what your body is actually doing: tension, breath pattern, vigilance, shutdown.",
     bg: "bg-sand-2",
     titleColor: "",
     numColor: "text-[#8a8074]",
   },
   {
     no: "(02)",
-    title: "Truth",
-    body: "What the body has carried and never had the chance to say. Held with structure, so it can move through rather than loop.",
+    title: "Breath",
+    body: "Conscious connected breathing: one unbroken breath, paced to your system. A more active practice is available when you're ready.",
     bg: "bg-sand-2",
     titleColor: "",
     numColor: "text-[#8a8074]",
   },
   {
     no: "(03)",
-    title: "Breath",
-    body: "Reclaimed. Rhythm returns, regulation becomes capacity, and agency becomes something you can feel.",
+    title: "Release",
+    body: "What the body has carried and never had the chance to say. Given room, it completes: grief, anger, relief, connection.",
+    bg: "bg-sand-2",
+    titleColor: "",
+    numColor: "text-[#8a8074]",
+  },
+  {
+    no: "(04)",
+    title: "Integration",
+    body: "Building capacity. The system learns to hold more sensation, more charge, more of your own life, without reverting to the old pattern.",
     bg: "bg-pink",
     titleColor: "text-[#3a2a2b]",
     numColor: "text-[#5a3a3b]",
@@ -52,7 +60,7 @@ export default function TheWorkPage() {
       {/* Header */}
       <section className="border-b border-ink px-5 pb-14 pt-[70px] md:px-10">
         <div className="mb-[26px] font-mono text-xs uppercase tracking-[0.2em] text-pink-muted">
-          The method — safety, truth, breath
+          The method — awareness, breath, release, integration
         </div>
         <h1 className="m-0 font-grotesk text-[clamp(54px,13vw,158px)] font-bold uppercase leading-[0.82] tracking-[-0.045em]">
           The
