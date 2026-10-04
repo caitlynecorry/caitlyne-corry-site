@@ -112,7 +112,7 @@ export default function OfferingsPage() {
             Form Follows Silence
           </h2>
           <p className="mb-6 font-grotesk text-base leading-[1.7] text-[#5a5247]">
-            A somatics-based guided meditation to settle the nervous system and
+            Guided somatic meditation to settle the nervous system and
             drop beneath the noise — a doorway back to yourself, in your own
             time and space.
           </p>
@@ -134,7 +134,7 @@ export default function OfferingsPage() {
             Integration
           </h2>
           <p className="mb-6 font-grotesk text-base leading-[1.7] text-[#5a5247]">
-            The work after the work. Continued support to help you metabolize,
+            After the session, the system keeps reorganizing. Continued support to help you metabolize,
             embody, and live what you&rsquo;ve uncovered — so it lasts.
           </p>
           <Link

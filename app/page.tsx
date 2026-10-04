@@ -21,13 +21,13 @@ const OFFERINGS = [
   {
     no: "03 / Meditation",
     title: "Form Follows Silence",
-    sub: "A somatics-based guided meditation",
+    sub: "Guided Somatic Meditation",
     image: null,
   },
   {
     no: "04 / Integration",
     title: "Integration",
-    sub: "The work after the work",
+    sub: "After the session, the system keeps reorganizing",
     image: null,
   },
 ];
@@ -236,8 +236,8 @@ export default function HomePage() {
             Ways to work together
           </div>
           <p className="mb-2 max-w-[720px] font-grotesk text-[clamp(24px,3.4vw,34px)] font-medium leading-[1.35] tracking-[-0.01em]">
-            Breathwork is a powerful practice that can create space for
-            emotions, patterns, and reconnection.
+            Breathwork changes how the nervous system responds. Structured,
+            guided, and paced for safety.
           </p>
         </div>
         <div className="grid grid-cols-1 border-t border-ink md:grid-cols-2">
