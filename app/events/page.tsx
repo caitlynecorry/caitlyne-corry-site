@@ -65,10 +65,10 @@ export default function EventsPage() {
         <p className="mb-[30px] font-grotesk text-[clamp(38px,7vw,60px)] font-bold uppercase leading-[1.05] tracking-[-0.02em]">
           Come as you are.
         </p>
-        <Button asChild>
-          <Link href="/contact">Get in touch →</Link>
-        </Button>
-      </section>
+  <p className="mx-auto max-w-xl text-pretty text-base leading-relaxed">
+  {"Two-hour therapeutic breathwork experience with somatic tools and integration. Everything included. Limited capacity. Please avoid eating two hours beforehand. This work isn’t always easy, but it’s always worth it."}
+  </p>
+  </section>
 
       <SiteFooterCompact />
     </main>
