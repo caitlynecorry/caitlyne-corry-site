@@ -38,10 +38,7 @@ export default function EventsPage() {
           <h2 className="mb-6 max-w-[460px] font-grotesk text-[clamp(40px,6vw,56px)] font-semibold leading-[0.98]">
             Upcoming dates
           </h2>
-          <EventDates className="mb-8" />
-          <Button asChild variant="outline" className="self-start">
-            <Link href="/contact">Get in touch →</Link>
-          </Button>
+          <EventDates />
         </div>
       </section>
 

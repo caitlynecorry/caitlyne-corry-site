@@ -161,10 +161,7 @@ export default function OfferingsPage() {
           <h2 className="mb-6 max-w-[460px] font-grotesk text-[44px] font-semibold leading-[0.98]">
             Upcoming dates
           </h2>
-          <EventDates className="mb-8" />
-          <Button asChild variant="outline" className="self-start">
-            <Link href="/contact">Get in touch →</Link>
-          </Button>
+          <EventDates />
         </div>
       </section>
 
