@@ -183,13 +183,7 @@ export default function HomePage() {
             <h2 className="mb-6 max-w-[460px] font-grotesk text-[clamp(40px,6vw,56px)] font-semibold leading-[0.98]">
               Upcoming dates
             </h2>
-            <EventDates className="mb-8" />
-            <Link
-              href="/contact"
-              className="self-start border-b-2 border-pink-deep pb-[3px] font-grotesk text-sm font-semibold"
-            >
-              Get in touch →
-            </Link>
+            <EventDates />
           </div>
         </div>
       </section>

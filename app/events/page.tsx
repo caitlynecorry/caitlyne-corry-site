@@ -38,10 +38,10 @@ export default function EventsPage() {
           <h2 className="mb-6 max-w-[460px] font-grotesk text-[clamp(40px,6vw,56px)] font-semibold leading-[0.98]">
             Upcoming dates
           </h2>
-          <EventDates className="mb-8" />
-          <Button asChild variant="outline" className="self-start">
-            <Link href="/contact">Get in touch →</Link>
-          </Button>
+          <EventDates />
+          <p className="mt-7 max-w-[560px] text-pretty font-grotesk text-base leading-[1.7] text-[#5a5247]">
+            {"Two-hour therapeutic breathwork experience with somatic tools and integration. Everything included. Limited capacity. Please avoid eating two hours beforehand."}
+          </p>
         </div>
       </section>
 
@@ -68,9 +68,6 @@ export default function EventsPage() {
         <p className="mb-[30px] font-grotesk text-[clamp(38px,7vw,60px)] font-bold uppercase leading-[1.05] tracking-[-0.02em]">
           Come as you are.
         </p>
-        <Button asChild>
-          <Link href="/contact">Get in touch →</Link>
-        </Button>
       </section>
 
       <SiteFooterCompact />
