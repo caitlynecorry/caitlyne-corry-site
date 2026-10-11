@@ -1,6 +1,14 @@
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooterCompact } from "@/components/site-footer";
 import { BreathworkNotice } from "@/components/breathwork-notice";
+import { pageMetadata } from "@/lib/site";
+
+export const metadata = pageMetadata({
+  title: "Weekly Zoom Breathwork, Coming Soon | Caitlyne Corry",
+  description:
+    "A weekly donation-based group breathwork session on Zoom with Caitlyne Corry, coming soon. 60 minutes, no experience needed. Give what you can.",
+  path: "/live-stream",
+});
 
 export default function LiveStreamPage() {
   return (
@@ -10,7 +18,7 @@ export default function LiveStreamPage() {
       {/* Hero */}
       <section className="border-b border-ink px-5 pb-14 pt-[70px] md:px-10">
         <div className="mb-[26px] font-mono text-xs uppercase tracking-[0.2em] text-pink-muted">
-          <span className="text-pink-deep">●</span> Live every Wednesday
+          <span className="text-pink-deep">●</span> Weekly · Donation-based · Zoom
         </div>
         <h1 className="m-0 font-grotesk text-[clamp(48px,11vw,150px)] font-bold uppercase leading-[0.82] tracking-[-0.045em]">
           Breathe

@@ -17,7 +17,7 @@ const NAV = [
   { label: "Contact", href: "/contact" },
 ];
 
-const TICKER_TEXT = "Virtual Breathwork Coming Soon";
+const TICKER_TEXT = "Weekly donation-based Zoom breathwork · Coming soon";
 
 export function SiteHeader({ active }: { active?: string }) {
   const [open, setOpen] = useState(false);
@@ -48,7 +48,7 @@ export function SiteHeader({ active }: { active?: string }) {
         <span>Enjoy Your Breath</span>
         <span className="hidden opacity-80 sm:inline">Therapeutic Breathwork</span>
         <span className="hidden opacity-80 sm:inline">Seattle · Est. 2018</span>
-        <span>Coming Soon ●</span>
+        <span>In person &amp; online ●</span>
       </div>
 
       {/* Primary nav */}
@@ -76,7 +76,7 @@ export function SiteHeader({ active }: { active?: string }) {
             ))}
           </div>
           <Button asChild variant="pink" size="sm">
-            <a href={liveTarget}>Join Live Stream</a>
+            <a href={liveTarget}>Weekly Zoom</a>
           </Button>
           {/* Mobile menu toggle */}
           <button

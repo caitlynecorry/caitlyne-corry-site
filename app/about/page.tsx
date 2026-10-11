@@ -2,6 +2,14 @@ import Link from "next/link";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooterCompact } from "@/components/site-footer";
 import { Button } from "@/components/ui/button";
+import { BOOKING_URL, pageMetadata } from "@/lib/site";
+
+export const metadata = pageMetadata({
+  title: "About Caitlyne Corry | Breathwork Facilitator & Writer",
+  description:
+    "Caitlyne Corry is a writer, therapeutic breathwork facilitator, and intuitive guide in Seattle. Her story, her lineage of movement since 2009, and how she holds space.",
+  path: "/about",
+});
 
 const TIMELINE = [
   {
@@ -14,7 +22,7 @@ const TIMELINE = [
   },
   {
     year: "Now",
-    body: "Offering private sessions, couples work, and group experiences — including community breathwork gatherings every Wednesday on Zoom.",
+    body: "Offering private sessions, couples work, and group experiences in Seattle and online. Weekly donation-based Zoom breathwork is coming soon.",
   },
 ];
 
@@ -137,7 +145,9 @@ export default function AboutPage() {
         </h2>
         <div className="flex flex-wrap justify-center gap-3">
           <Button asChild>
-            <Link href="/live-stream">Join Live Stream</Link>
+            <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
+              Book a private session
+            </a>
           </Button>
           <Button asChild variant="outline">
             <Link href="/offerings">See offerings</Link>

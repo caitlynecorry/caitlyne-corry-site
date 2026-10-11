@@ -1,6 +1,14 @@
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooterCompact } from "@/components/site-footer";
 import { Button } from "@/components/ui/button";
+import { pageMetadata } from "@/lib/site";
+
+export const metadata = pageMetadata({
+  title: "Breathwork, Somatic Tools & Integration | Caitlyne Corry",
+  description:
+    "How Caitlyne Corry's therapeutic breathwork is built: awareness, one unbroken breath cycle paced to your system, release, and integration that builds capacity.",
+  path: "/the-work",
+});
 
 const STAGES = [
   {

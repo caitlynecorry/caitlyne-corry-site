@@ -19,7 +19,7 @@ const INTERESTS = [
   "A 1:1 session",
   "Couples breathwork",
   "Group / workshop",
-  "The weekly live stream",
+  "Weekly Zoom breathwork (coming soon)",
   "Something else",
 ];
 
@@ -90,8 +90,7 @@ export default function ContactPage() {
                 Thank you ✺
               </div>
               <p className="m-0 font-grotesk text-base leading-[1.6] text-[#4a2e2f]">
-                Your note is on its way. I&rsquo;ll be in touch soon — in the
-                meantime, come breathe with us on Wednesday.
+                Your note is on its way. I&rsquo;ll be in touch soon.
               </p>
             </div>
           ) : (

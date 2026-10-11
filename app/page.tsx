@@ -4,6 +4,14 @@ import { SiteFooterFull } from "@/components/site-footer";
 import { Button } from "@/components/ui/button";
 import { BreathworkNotice } from "@/components/breathwork-notice";
 import { EventDates } from "@/components/event-dates";
+import { BOOKING_URL, pageMetadata } from "@/lib/site";
+
+export const metadata = pageMetadata({
+  title: "Caitlyne Corry | Therapeutic Breathwork, In Person & Online",
+  description:
+    "Therapeutic breathwork with Caitlyne Corry: conscious connected breathing, somatic tools, and integration. Private sessions online and gatherings in Seattle.",
+  path: "/",
+});
 
 const OFFERINGS = [
   {
@@ -58,29 +66,30 @@ export default function HomePage() {
         <div className="flex min-h-[82vh] flex-col justify-between px-5 pt-10 pb-9 md:px-10 md:pt-14 md:pb-12">
           {/* Top block — headline + intro read as one unit */}
           <div>
-            <h1 className="m-0 max-w-[15ch] font-grotesk text-[clamp(56px,14vw,188px)] font-bold uppercase leading-[0.82] tracking-[-0.045em]">
-              Form follows <span className="italic text-pink-deep">silence</span>
+            <h1 className="m-0 max-w-[14ch] font-grotesk text-[clamp(44px,9vw,128px)] font-bold uppercase leading-[0.86] tracking-[-0.045em]">
+              Therapeutic breathwork,{" "}
+              <span className="italic text-pink-deep">in person and online</span>
             </h1>
-            <p className="mt-7 max-w-[520px] font-grotesk text-xl leading-[1.5] text-[#4a443c] md:mt-9">
+            <p className="mt-5 font-grotesk text-[clamp(22px,2.6vw,30px)] font-semibold italic leading-none tracking-[-0.01em] text-pink-deep md:mt-6">
+              Form follows silence.
+            </p>
+            <p className="mt-7 max-w-[560px] font-grotesk text-xl leading-[1.5] text-[#4a443c] md:mt-9">
               Hi, I&rsquo;m Caitlyne — a writer, therapeutic breathwork facilitator,
-              and intuitive guide.
+              and intuitive guide. Conscious connected breathing, somatic tools,
+              and integration, with sessions in Seattle and online.
             </p>
           </div>
 
           {/* Bottom block — CTAs sit lower, scroll cue anchored at the base */}
           <div className="flex flex-wrap items-end justify-between gap-x-10 gap-y-6">
-            <div className="flex gap-3">
+            <div className="flex flex-wrap gap-3">
               <Button asChild>
-                <Link href="#virtual-breathwork">Join Live Stream</Link>
+                <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
+                  Book a private session
+                </a>
               </Button>
               <Button asChild variant="outline">
-                <a
-                  href="https://app.acuityscheduling.com/schedule/bc35c44e"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Book a 1:1
-                </a>
+                <Link href="#events">Group gatherings</Link>
               </Button>
             </div>
             <a
@@ -239,8 +248,9 @@ export default function HomePage() {
           Breathe with us, live
         </h2>
         <p className="mb-14 max-w-[640px] font-grotesk text-[17px] leading-[1.6] text-[#5a5247]">
-          A donation-based, guided breathwork journey gathered live on Zoom.
-          Come as you are. Give what you can. Coming soon.
+          Weekly donation-based Zoom breathwork · Coming soon. A guided group
+          journey, gathered live. Come as you are. Give what you can. Private
+          virtual sessions are available now.
         </p>
 
         <div className="grid grid-cols-1 items-stretch gap-6 md:grid-cols-2 md:gap-8">
@@ -276,12 +286,8 @@ export default function HomePage() {
         </p>
         <div className="flex flex-wrap justify-center gap-3">
           <Button asChild>
-            <a
-              href="https://app.acuityscheduling.com/schedule/bc35c44e"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Book a 1:1
+            <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
+              Book a session
             </a>
           </Button>
           <Button asChild variant="outline">
