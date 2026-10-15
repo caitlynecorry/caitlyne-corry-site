@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Familjen_Grotesk, Space_Mono } from "next/font/google";
+import { Alata, Space_Mono } from "next/font/google";
 import { IS_INDEXABLE, SITE_NAME, SITE_URL } from "@/lib/site";
 import "./globals.css";
 
-const familjen = Familjen_Grotesk({
+const alata = Alata({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  weight: "400",
   variable: "--font-grotesk",
   display: "swap",
 });
@@ -39,7 +39,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${familjen.variable} ${spaceMono.variable} scroll-smooth bg-cream`}
+      className={`${alata.variable} ${spaceMono.variable} scroll-smooth bg-cream`}
     >
       <body>{children}</body>
     </html>

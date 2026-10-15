@@ -35,7 +35,7 @@ npm run build && npm run start   # production build
 
 ```
 app/
-  layout.tsx        Root layout — loads Familjen Grotesk + Space Mono via next/font
+  layout.tsx        Root layout — loads Alata + Space Mono via next/font
   globals.css       Tailwind layers + shadcn CSS variables (tuned to brand) + .hatch utility
   page.tsx          Home
   <route>/page.tsx  One folder per page
@@ -61,7 +61,7 @@ components.json      shadcn/ui config — run `npx shadcn@latest add <component>
 | `sand`       | `#E9E2D4` | Image area base                      |
 | `sand-2`     | `#EFE8DA` | Hover / alt panel                    |
 
-Typography: **Familjen Grotesk** (`font-grotesk`) for everything, **Space Mono**
+Typography: **Alata** (`font-grotesk`) for everything, **Space Mono**
 (`font-mono`) for meta labels, eyebrows, and numerals.
 
 ## Notes for the developer
