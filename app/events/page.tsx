@@ -22,7 +22,7 @@ export default function EventsPage() {
         <div className="mb-[26px] font-mono text-xs uppercase tracking-[0.2em] text-pink-muted">
           Gather in person
         </div>
-        <h1 className="m-0 font-sifonn text-[clamp(52px,12vw,148px)] font-bold uppercase leading-[0.84] tracking-[-0.04em]">
+        <h1 className="m-0 font-grotesk text-[clamp(52px,12vw,148px)] font-bold uppercase leading-[0.84] tracking-[-0.04em]">
           Events
         </h1>
         <p className="mt-10 max-w-[600px] font-grotesk text-[19px] leading-[1.55] text-[#5a5247]">

@@ -42,7 +42,7 @@ export default function OnlineBreathworkPage() {
           <div className="mb-[26px] font-mono text-xs uppercase tracking-[0.2em] text-pink-muted">
             Online · Virtual
           </div>
-          <h1 className="m-0 font-sifonn text-[clamp(48px,11vw,128px)] font-bold uppercase leading-[0.84] tracking-[-0.04em]">
+          <h1 className="m-0 font-grotesk text-[clamp(48px,11vw,128px)] font-bold uppercase leading-[0.84] tracking-[-0.04em]">
             Online
             <br />
             Breathwork

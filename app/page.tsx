@@ -66,7 +66,7 @@ export default function HomePage() {
         <div className="flex min-h-[82vh] flex-col justify-between px-5 pt-10 pb-9 md:px-10 md:pt-14 md:pb-12">
           {/* Top block — headline + intro read as one unit */}
           <div>
-            <h1 className="m-0 max-w-[14ch] font-sifonn text-[clamp(44px,9vw,128px)] font-bold uppercase leading-[0.86] tracking-[-0.045em]">
+            <h1 className="m-0 max-w-[14ch] font-grotesk text-[clamp(44px,9vw,128px)] font-bold uppercase leading-[0.86] tracking-[-0.045em]">
               Therapeutic breathwork,{" "}
               <span className="italic text-pink-deep">in person and online</span>
             </h1>
