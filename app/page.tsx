@@ -7,7 +7,7 @@ import { EventDates } from "@/components/event-dates";
 import { BOOKING_URL, pageMetadata } from "@/lib/site";
 
 export const metadata = pageMetadata({
-  title: "Caitlyne Corry | Therapeutic Breathwork, In Person & Online",
+  title: "Therapeutic Breathwork in Seattle & Online | Caitlyne Corry",
   description:
     "Therapeutic breathwork with Caitlyne Corry: conscious connected breathing, somatic tools, and integration. Private sessions online and gatherings in Seattle.",
   path: "/",
@@ -67,8 +67,8 @@ export default function HomePage() {
           {/* Top block — headline + intro read as one unit */}
           <div>
             <h1 className="m-0 max-w-[14ch] font-grotesk text-[clamp(44px,9vw,128px)] font-bold uppercase leading-[0.86] tracking-[-0.045em]">
-              Therapeutic breathwork,{" "}
-              <span className="italic text-pink-deep">in person and online</span>
+              <span className="block">Breathwork,</span>
+              <span className="block italic text-pink-deep">in Seattle and online.</span>
             </h1>
             <p className="mt-5 font-grotesk text-[clamp(22px,2.6vw,30px)] font-semibold italic leading-none tracking-[-0.01em] text-pink-deep md:mt-6">
               Form follows silence.
