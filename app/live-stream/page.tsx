@@ -20,7 +20,7 @@ export default function LiveStreamPage() {
         <div className="mb-[26px] font-mono text-xs uppercase tracking-[0.2em] text-pink-muted">
           <span className="text-pink-deep">●</span> Weekly · Donation-based · Zoom
         </div>
-        <h1 className="m-0 font-grotesk text-[clamp(48px,11vw,150px)] font-bold uppercase leading-[0.82] tracking-[-0.045em]">
+        <h1 className="m-0 font-sifonn text-[clamp(48px,11vw,150px)] font-bold uppercase leading-[0.82] tracking-[-0.045em]">
           Breathe
           <br />
           With Us

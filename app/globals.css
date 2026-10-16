@@ -3,6 +3,15 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Sifonn ships as a single weight; the 100–900 range stops the browser from faking bold on H1s */
+@font-face {
+  font-family: 'Sifonn';
+  src: url('/fonts/Sifonn-Pro.otf') format('opentype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 @layer base {
   :root {
     /* shadcn/ui tokens tuned to the brand */

@@ -70,7 +70,7 @@ export default function TheWorkPage() {
         <div className="mb-[26px] font-mono text-xs uppercase tracking-[0.2em] text-pink-muted">
           The method — awareness, breath, release, integration
         </div>
-        <h1 className="m-0 font-grotesk text-[clamp(54px,13vw,158px)] font-bold uppercase leading-[0.82] tracking-[-0.045em]">
+        <h1 className="m-0 font-sifonn text-[clamp(54px,13vw,158px)] font-bold uppercase leading-[0.82] tracking-[-0.045em]">
           The
           <br />
           Work.

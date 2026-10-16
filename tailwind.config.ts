@@ -55,6 +55,7 @@ const config: Config = {
       },
       fontFamily: {
         grotesk: ["var(--font-grotesk)", "system-ui", "sans-serif"],
+        sifonn: ["Sifonn", "var(--font-grotesk)", "sans-serif"],
         mono: ["var(--font-mono)", "ui-monospace", "monospace"],
       },
       borderRadius: {
