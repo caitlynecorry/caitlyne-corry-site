@@ -66,9 +66,9 @@ export default function HomePage() {
         <div className="flex min-h-[82vh] flex-col justify-between px-5 pt-10 pb-9 md:px-10 md:pt-14 md:pb-12">
           {/* Top block — headline + intro read as one unit */}
           <div>
-            <h1 className="m-0 max-w-[14ch] font-grotesk text-[clamp(44px,9vw,128px)] font-bold uppercase leading-[0.86] tracking-[-0.045em]">
-              <span className="block">Breathwork,</span>
-              <span className="block italic text-pink-deep">in Seattle and online.</span>
+            <h1 className="m-0 max-w-[14ch] text-[clamp(44px,9vw,128px)] lowercase leading-[0.86]">
+              <span className="block font-questrial font-normal tracking-normal text-[#2A2620]">breathwork,</span>
+              <span className="block font-poppins font-bold not-italic tracking-[-0.02em] text-[#B06A72]">in seattle and online.</span>
             </h1>
             <p className="mt-5 font-grotesk text-[clamp(22px,2.6vw,30px)] font-semibold italic leading-none tracking-[-0.01em] text-pink-deep md:mt-6">
               Form follows silence.
@@ -171,7 +171,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ─────────────────── Current Events & Workshops ─────────────────── */}
+      {/* ────────��────────── Current Events & Workshops ─────────────────── */}
       <section id="events" className="scroll-mt-24 border-b border-ink">
         <div className="px-6 pb-2 pt-16 md:px-11">
           <div className="mb-2 font-mono text-xs uppercase tracking-[0.16em] text-pink-muted">

@@ -56,6 +56,8 @@ const config: Config = {
       fontFamily: {
         grotesk: ["var(--font-grotesk)", "system-ui", "sans-serif"],
         mono: ["var(--font-mono)", "ui-monospace", "monospace"],
+        questrial: ["var(--font-questrial)", "system-ui", "sans-serif"],
+        poppins: ["var(--font-poppins)", "system-ui", "sans-serif"],
       },
       borderRadius: {
         lg: "var(--radius)",
