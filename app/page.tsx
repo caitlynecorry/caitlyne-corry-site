@@ -68,7 +68,7 @@ export default function HomePage() {
           <div>
             <h1 className="m-0 max-w-[14ch] text-[clamp(44px,9vw,128px)] lowercase leading-[0.86]">
               <span className="block font-questrial font-normal tracking-normal text-[#2A2620]">breathwork,</span>
-              <span className="block font-poppins font-bold not-italic tracking-[-0.02em] text-pink-deep">in seattle and online.</span>
+              <span className="block font-poppins font-bold not-italic tracking-[-0.02em] text-pink-deep">in seattle and virtual.</span>
             </h1>
             <p className="mt-5 font-grotesk text-[clamp(22px,2.6vw,30px)] font-semibold italic leading-none tracking-[-0.01em] text-pink-deep md:mt-6">
               Form follows silence.
