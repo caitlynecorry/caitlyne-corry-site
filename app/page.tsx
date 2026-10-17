@@ -64,24 +64,28 @@ export default function HomePage() {
           <div className="grain absolute inset-0 opacity-[0.28] mix-blend-multiply" />
         </div>
 
-        <div className="flex min-h-[82vh] flex-col justify-between px-5 pt-10 pb-9 md:px-10 md:pt-14 md:pb-12">
-          {/* Top block — headline + intro read as one unit */}
-          <div>
-            <h1 className="m-0 max-w-[14ch] text-[clamp(44px,9vw,128px)] lowercase leading-[0.86]">
-              <span className="block font-questrial font-normal tracking-normal text-[#2A2620]">breathwork,</span>
-              <span className="block font-poppins font-bold not-italic tracking-[-0.02em] text-pink-deep">in seattle and virtual.</span>
+        <div className="flex min-h-[86vh] flex-col justify-between gap-16 px-5 pt-14 pb-9 md:px-10 md:pt-20 md:pb-12">
+          <div className="flex flex-col">
+            <h1 className="m-0 flex flex-col gap-6 text-ink md:gap-8">
+              <span className="font-mono text-xs uppercase tracking-[0.28em] md:text-sm">
+                Therapeutic Breathwork
+              </span>
+              <span className="font-grotesk text-[clamp(48px,8vw,124px)] font-normal leading-[0.98] tracking-[-0.035em]">
+                <span className="block">Beyond the story.</span>
+                <span className="block">Into the body.</span>
+              </span>
             </h1>
-            <p className="mt-5 font-grotesk text-[clamp(22px,2.6vw,30px)] font-semibold italic leading-none tracking-[-0.01em] text-pink-deep md:mt-6">
-              Form follows silence.
+
+            <p className="mt-8 max-w-[34ch] text-pretty font-grotesk text-lg leading-relaxed text-ink md:mt-10 md:text-xl">
+              An experiential approach to breathwork, somatic awareness, and
+              meaningful change.
             </p>
-            <p className="mt-7 max-w-[560px] font-grotesk text-xl leading-[1.5] text-[#4a443c] md:mt-9">
-              Hi, I&rsquo;m Caitlyne — a writer, therapeutic breathwork facilitator,
-              and intuitive guide. Conscious connected breathing, somatic tools,
-              and integration, with sessions in Seattle and online.
+
+            <p className="mt-6 font-mono text-xs uppercase tracking-[0.28em] text-pink-muted md:mt-8">
+              Seattle &amp; Virtual
             </p>
           </div>
 
-          {/* Bottom block — CTAs sit lower, scroll cue anchored at the base */}
           <div className="flex flex-wrap items-end justify-between gap-x-10 gap-y-6">
             <div className="flex flex-wrap gap-3">
               <Button asChild>
@@ -95,7 +99,7 @@ export default function HomePage() {
             </div>
             <a
               href="#about"
-              className="font-mono text-xs tracking-[0.12em] text-[#8a8074] transition-colors hover:text-pink-muted"
+              className="font-mono text-xs tracking-[0.12em] text-ink/70 transition-colors hover:text-ink"
             >
               ↓ Scroll to breathe
             </a>
