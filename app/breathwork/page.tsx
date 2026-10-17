@@ -145,7 +145,7 @@ export default function BreathworkPage() {
       </section>
 
       {/* Breath & trauma */}
-      <section className="border-b border-ink px-4 py-20 md:px-11">
+      <section className="px-4 py-20 md:px-11">
         <div className={LABEL}>Breath &amp; trauma</div>
         <div className="mb-12 flex max-w-[720px] flex-col gap-6">
           {TRAUMA_INTRO.map((paragraph, index) => (
