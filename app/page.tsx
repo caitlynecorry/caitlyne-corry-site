@@ -157,7 +157,7 @@ export default function HomePage() {
               {"A system can't change what it can't feel."}
             </p>
             <Link
-              href="/the-work"
+              href="/breathwork"
               className="shrink-0 whitespace-nowrap border-b-2 border-pink-deep pb-[3px] font-grotesk text-sm font-semibold"
             >
               {"See how it's built →"}

@@ -158,7 +158,7 @@ export default function ContactPage() {
           <div className="text-right font-grotesk text-base leading-[1.9]">
             <Link href="/offerings">Offerings</Link> ·{" "}
             <Link href="/about">About</Link> ·{" "}
-            <Link href="/the-work">The Work</Link>
+            <Link href="/breathwork">Breathwork</Link>
             <br />
             <Link href="/live-stream">Join the live stream</Link>
           </div>

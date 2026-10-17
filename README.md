@@ -26,7 +26,7 @@ npm run build && npm run start   # production build
 | -------------- | ----------------------------- | ----------------------------------------------------- |
 | `/`            | `app/page.tsx`                | Home — hero, offerings grid, statement, about, the work, live CTA |
 | `/offerings`   | `app/offerings/page.tsx`      | The four ways to work together                        |
-| `/the-work`    | `app/the-work/page.tsx`       | The method — Body → Story → Breath                    |
+| `/breathwork`  | `app/breathwork/page.tsx`     | The ABRI method, breathwork, and trauma               |
 | `/about`       | `app/about/page.tsx`          | Meet Caitlyne — story + timeline                      |
 | `/contact`     | `app/contact/page.tsx`        | Contact form (client component)                       |
 | `/live-stream` | `app/live-stream/page.tsx`    | Weekly live session info + reservation form           |

@@ -15,7 +15,7 @@ export const PUBLIC_ROUTES = [
   "/seattle-breathwork",
   "/online-breathwork",
   "/events",
-  "/the-work",
+  "/breathwork",
   "/about",
   "/contact",
   "/live-stream",
