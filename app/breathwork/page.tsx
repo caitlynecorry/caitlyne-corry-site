@@ -48,6 +48,12 @@ const SESSION_STEPS = [
   },
 ];
 
+const APPROACH_PARAGRAPHS = [
+  "My approach to therapeutic breathwork is rooted in developing a deeper relationship with the body through curiosity, awareness, and choice. It is an invitation to explore our patterns of protection, reconnect with sensation, and begin recognizing what safety can feel like within ourselves.",
+  "This work is not about forcing an emotional release or moving through a prescribed set of stages. Every experience is different. Sometimes something profound shifts. Other times, the work is simply learning to listen, to notice, and to be present with what arises.",
+  "There is no required outcome, only an opportunity to explore what becomes possible when we approach the body with curiosity rather than expectation.",
+];
+
 const TRAUMA_INTRO = [
   "This work is deeply human.",
   "It is the practice of using breath, sensation, and awareness to reconnect with the body beneath the story.",
@@ -74,14 +80,15 @@ export default function BreathworkPage() {
     <main className="min-h-screen overflow-x-hidden bg-cream text-ink">
       <SiteHeader active="/breathwork" />
 
-      {/* The ABRI method */}
+      {/* The Work */}
       <section className="border-b border-ink px-4 pb-20 pt-[70px] md:px-11">
         <div className={LABEL}>The method</div>
         <h1 className="m-0 font-grotesk text-[clamp(64px,14vw,158px)] font-bold uppercase leading-[0.82] tracking-[-0.045em]">
-          ABRI
+          The Work
         </h1>
-        <p className="mt-10 max-w-[600px] font-grotesk text-[19px] leading-[1.55] text-[#5a5247]">
-          {"Pronounced \u201CAH-bree,\u201D ABRI is how I guide therapeutic breathwork. Four stages, built in order."}
+        <p className="mt-10 max-w-[640px] text-pretty font-grotesk text-[clamp(20px,2.2vw,24px)] font-semibold italic leading-[1.45] tracking-[-0.01em] text-pink-deep">
+          The breath is the practice. Awareness is the invitation. Release is a
+          possibility. Integration is where the work continues.
         </p>
         <div className="mt-16 grid grid-cols-1 gap-10 md:grid-cols-4 md:gap-8">
           {STAGES.map((stage) => (
@@ -106,6 +113,13 @@ export default function BreathworkPage() {
         <p className={`m-0 max-w-[720px] ${BODY}`}>
           {"A continuous breath, no pause between inhale and exhale, sustained over time. It's simple, and it isn't gentle. The pattern shifts your state quickly, out of analysis and into sensation. Some sessions are quiet and tender. Others open into expansive, dreamlike, even psychedelic states, where old beliefs loosen and something new becomes possible."}
         </p>
+        <div className="mt-6 flex max-w-[720px] flex-col gap-6">
+          {APPROACH_PARAGRAPHS.map((paragraph) => (
+            <p key={paragraph.slice(0, 24)} className={`m-0 ${BODY}`}>
+              {paragraph}
+            </p>
+          ))}
+        </div>
         <p className="mt-6 font-grotesk text-[17px] font-semibold italic text-pink-deep">
           In person in Seattle, and online.
         </p>
@@ -134,8 +148,11 @@ export default function BreathworkPage() {
       <section className="border-b border-ink px-4 py-20 md:px-11">
         <div className={LABEL}>Breath &amp; trauma</div>
         <div className="mb-12 flex max-w-[720px] flex-col gap-6">
-          {TRAUMA_INTRO.map((paragraph) => (
-            <p key={paragraph.slice(0, 24)} className={`m-0 ${BODY}`}>
+          {TRAUMA_INTRO.map((paragraph, index) => (
+            <p
+              key={paragraph.slice(0, 24)}
+              className={`m-0 ${BODY} ${index === 0 ? "font-bold" : ""}`}
+            >
               {paragraph}
             </p>
           ))}
