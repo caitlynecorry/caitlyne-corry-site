@@ -2,6 +2,7 @@ import Link from "next/link";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooterCompact } from "@/components/site-footer";
 import { Button } from "@/components/ui/button";
+import { HealthSafety } from "@/components/health-safety";
 import { pageMetadata } from "@/lib/site";
 
 export const metadata = pageMetadata({
@@ -144,7 +145,7 @@ export default function BreathworkPage() {
       </section>
 
       {/* Breath & trauma */}
-      <section className="border-b border-ink px-4 py-20 md:px-11">
+      <section className="px-4 py-20 md:px-11">
         <div className={LABEL}>Breath &amp; trauma</div>
         <div className="mb-12 flex max-w-[720px] flex-col gap-6">
           {TRAUMA_INTRO.map((paragraph, index) => (
@@ -174,6 +175,8 @@ export default function BreathworkPage() {
           </p>
         </div>
       </section>
+
+      <HealthSafety />
 
       {/* CTA */}
       <section className="border-b border-ink bg-pink px-4 py-[90px] text-center text-[#3a2a2b] md:px-11">

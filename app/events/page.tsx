@@ -26,8 +26,8 @@ export default function EventsPage() {
           Events
         </h1>
         <p className="mt-10 max-w-[600px] font-grotesk text-[19px] leading-[1.55] text-[#5a5247]">
-          Seasonal gatherings for breath, surrender, and coming home to
-          yourself — held in community, in beautiful spaces around Seattle.
+          Small-group breathwork sessions with somatic tools and intentional
+          integration.
         </p>
       </section>
 
