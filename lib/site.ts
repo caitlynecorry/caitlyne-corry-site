@@ -19,6 +19,7 @@ export const PUBLIC_ROUTES = [
   "/about",
   "/contact",
   "/live-stream",
+  "/journal",
 ] as const;
 
 export function pageMetadata({

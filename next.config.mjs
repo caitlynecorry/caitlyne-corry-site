@@ -3,7 +3,11 @@ const nextConfig = {
   images: {
     remotePatterns: [
       { protocol: "https", hostname: "www.caitlynecorry.com" },
+      { protocol: "https", hostname: "**.public.blob.vercel-storage.com" },
     ],
+  },
+  experimental: {
+    serverActions: { bodySizeLimit: "2mb" },
   },
   async redirects() {
     return [

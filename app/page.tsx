@@ -4,6 +4,7 @@ import { SiteFooterFull } from "@/components/site-footer";
 import { Button } from "@/components/ui/button";
 import { BreathworkNotice } from "@/components/breathwork-notice";
 import { EventDates } from "@/components/event-dates";
+import { RecentJournal } from "@/components/journal/recent-journal";
 import { BOOKING_URL, pageMetadata } from "@/lib/site";
 
 export const metadata = pageMetadata({
@@ -270,6 +271,8 @@ export default function HomePage() {
       </section>
 
       {/* ───────��───────��─── Contact / Book a Session ──────���──���───────── */}
+      <RecentJournal />
+
       <section
         id="contact"
         className="scroll-mt-24 border-b border-ink px-6 py-24 text-center md:px-11"
