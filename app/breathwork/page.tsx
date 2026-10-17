@@ -176,6 +176,8 @@ export default function BreathworkPage() {
         </div>
       </section>
 
+      <HealthSafety />
+
       {/* CTA */}
       <section className="border-b border-ink bg-pink px-4 py-[90px] text-center text-[#3a2a2b] md:px-11">
         <h2 className="mb-8 font-grotesk text-[clamp(36px,6vw,56px)] font-bold uppercase leading-[1.02] tracking-[-0.02em]">
@@ -196,8 +198,6 @@ export default function BreathworkPage() {
           </Button>
         </div>
       </section>
-
-      <HealthSafety />
 
       <SiteFooterCompact />
     </main>
