@@ -2,6 +2,7 @@ import Link from "next/link";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooterCompact } from "@/components/site-footer";
 import { Button } from "@/components/ui/button";
+import { HealthSafety } from "@/components/health-safety";
 import { pageMetadata } from "@/lib/site";
 
 export const metadata = pageMetadata({
@@ -195,6 +196,8 @@ export default function BreathworkPage() {
           </Button>
         </div>
       </section>
+
+      <HealthSafety />
 
       <SiteFooterCompact />
     </main>
