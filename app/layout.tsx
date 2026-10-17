@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { Familjen_Grotesk, Space_Mono } from "next/font/google";
+import { Familjen_Grotesk, Poppins, Questrial, Space_Mono } from "next/font/google";
+import { IS_INDEXABLE, SITE_NAME, SITE_URL } from "@/lib/site";
 import "./globals.css";
 
 const familjen = Familjen_Grotesk({
@@ -16,15 +17,32 @@ const spaceMono = Space_Mono({
   display: "swap",
 });
 
+const questrial = Questrial({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-questrial",
+  display: "swap",
+});
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: "700",
+  variable: "--font-poppins",
+  display: "swap",
+});
+
 export const metadata: Metadata = {
-  title: "Enjoy Your Breath",
-  description:
-    "Writer, therapeutic breathwork facilitator, and intuitive guide based in Seattle. The work of coming home to yourself.",
-  openGraph: {
-    title: "Enjoy Your Breath",
-    description:
-      "Writer, therapeutic breathwork facilitator, and intuitive guide based in Seattle. The work of coming home to yourself.",
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: "Caitlyne Corry | Therapeutic Breathwork, In Person & Online",
+    template: "%s | Caitlyne Corry",
   },
+  description:
+    "Therapeutic breathwork with Caitlyne Corry: conscious connected breathing, somatic tools, and integration, with sessions in Seattle and online.",
+  applicationName: SITE_NAME,
+  robots: IS_INDEXABLE
+    ? { index: true, follow: true }
+    : { index: false, follow: false },
 };
 
 export default function RootLayout({
@@ -35,7 +53,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${familjen.variable} ${spaceMono.variable} scroll-smooth`}
+      className={`${familjen.variable} ${spaceMono.variable} ${questrial.variable} ${poppins.variable} scroll-smooth bg-cream`}
     >
       <body>{children}</body>
     </html>

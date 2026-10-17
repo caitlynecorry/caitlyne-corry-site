@@ -3,6 +3,29 @@ import { SiteHeader } from "@/components/site-header";
 import { SiteFooterCompact } from "@/components/site-footer";
 import { Button } from "@/components/ui/button";
 import { EventDates } from "@/components/event-dates";
+import { pageMetadata } from "@/lib/site";
+
+export const metadata = pageMetadata({
+  title: "Private & Group Breathwork | Caitlyne Corry",
+  description:
+    "Private 1:1, couples, and group breathwork, nervous system education, and integration support. Book a virtual session or gather in person in Seattle.",
+  path: "/offerings",
+});
+
+const FORMATS = [
+  {
+    href: "/seattle-breathwork",
+    label: "In person · Seattle",
+    title: "Seattle breathwork",
+    body: "ROOTED gatherings at Cedarhouse Flowers, plus private and group sessions in person by request.",
+  },
+  {
+    href: "/online-breathwork",
+    label: "Online · Virtual",
+    title: "Online breathwork",
+    body: "Private 1:1 virtual sessions, available now. Monthly donation-based Zoom breathwork, last Sunday of every month · Coming soon.",
+  },
+];
 
 export default function OfferingsPage() {
   return (
@@ -23,6 +46,35 @@ export default function OfferingsPage() {
           Breathwork is a powerful practice that can create space for emotions,
           patterns, and reconnection.
         </p>
+      </section>
+
+      {/* In person / online */}
+      <section className="grid grid-cols-1 border-b border-ink md:grid-cols-2">
+        {FORMATS.map((f, i) => (
+          <Link
+            key={f.href}
+            href={f.href}
+            className={`group px-6 py-12 transition-colors hover:bg-sand-2 md:px-11 ${
+              i === 0 ? "border-b border-ink md:border-b-0 md:border-r" : ""
+            }`}
+          >
+            <div className="mb-5 flex justify-between font-mono text-xs uppercase tracking-[0.14em] text-[#8a8074]">
+              <span>{f.label}</span>
+              <span
+                aria-hidden="true"
+                className="inline-block transition-transform group-hover:-translate-y-1 group-hover:translate-x-1"
+              >
+                ↗
+              </span>
+            </div>
+            <h2 className="mb-3 font-grotesk text-[38px] font-semibold leading-[1.02]">
+              {f.title}
+            </h2>
+            <p className="m-0 max-w-[440px] font-grotesk text-base leading-[1.7] text-[#5a5247]">
+              {f.body}
+            </p>
+          </Link>
+        ))}
       </section>
 
       {/* Offering 01 */}

@@ -4,6 +4,15 @@ import { SiteFooterFull } from "@/components/site-footer";
 import { Button } from "@/components/ui/button";
 import { BreathworkNotice } from "@/components/breathwork-notice";
 import { EventDates } from "@/components/event-dates";
+import { RecentJournal } from "@/components/journal/recent-journal";
+import { BOOKING_URL, pageMetadata } from "@/lib/site";
+
+export const metadata = pageMetadata({
+  title: "Therapeutic Breathwork in Seattle & Online | Caitlyne Corry",
+  description:
+    "Therapeutic breathwork with Caitlyne Corry: conscious connected breathing, somatic tools, and integration. Private sessions online and gatherings in Seattle.",
+  path: "/",
+});
 
 const OFFERINGS = [
   {
@@ -55,37 +64,42 @@ export default function HomePage() {
           <div className="grain absolute inset-0 opacity-[0.28] mix-blend-multiply" />
         </div>
 
-        <div className="flex min-h-[82vh] flex-col justify-between px-5 pt-10 pb-9 md:px-10 md:pt-14 md:pb-12">
-          {/* Top block — headline + intro read as one unit */}
-          <div>
-            <h1 className="m-0 max-w-[15ch] font-grotesk text-[clamp(56px,14vw,188px)] font-bold uppercase leading-[0.82] tracking-[-0.045em]">
-              Form follows <span className="italic text-pink-deep">silence</span>
+        <div className="flex min-h-[86vh] flex-col justify-between gap-16 px-5 pt-14 pb-9 md:px-10 md:pt-20 md:pb-12">
+          <div className="flex flex-col">
+            <h1 className="m-0 flex flex-col gap-6 text-ink md:gap-8">
+              <span className="font-mono text-xs uppercase tracking-[0.28em] md:text-sm">
+                Therapeutic Breathwork
+              </span>
+              <span className="font-grotesk text-[clamp(48px,8vw,124px)] font-normal leading-[0.98] tracking-[-0.035em]">
+                <span className="block">Beyond the story.</span>
+                <span className="block">Into the body.</span>
+              </span>
             </h1>
-            <p className="mt-7 max-w-[520px] font-grotesk text-xl leading-[1.5] text-[#4a443c] md:mt-9">
-              Hi, I&rsquo;m Caitlyne — a writer, therapeutic breathwork facilitator,
-              and intuitive guide.
+
+            <p className="mt-8 max-w-[34ch] text-pretty font-grotesk text-lg leading-relaxed text-ink md:mt-10 md:text-xl">
+              An experiential approach to breathwork, somatic awareness, and
+              meaningful change.
+            </p>
+
+            <p className="mt-6 font-mono text-xs uppercase tracking-[0.28em] text-pink-muted md:mt-8">
+              Seattle &amp; Virtual
             </p>
           </div>
 
-          {/* Bottom block — CTAs sit lower, scroll cue anchored at the base */}
           <div className="flex flex-wrap items-end justify-between gap-x-10 gap-y-6">
-            <div className="flex gap-3">
+            <div className="flex flex-wrap gap-3">
               <Button asChild>
-                <Link href="#virtual-breathwork">Join Live Stream</Link>
+                <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
+                  Book a private session
+                </a>
               </Button>
               <Button asChild variant="outline">
-                <a
-                  href="https://app.acuityscheduling.com/schedule/bc35c44e"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Book a 1:1
-                </a>
+                <Link href="#events">Group gatherings</Link>
               </Button>
             </div>
             <a
               href="#about"
-              className="font-mono text-xs tracking-[0.12em] text-[#8a8074] transition-colors hover:text-pink-muted"
+              className="font-mono text-xs tracking-[0.12em] text-ink/70 transition-colors hover:text-ink"
             >
               ↓ Scroll to breathe
             </a>
@@ -137,18 +151,18 @@ export default function HomePage() {
         </p>
       </section>
 
-      {/* ─────────────────────── What Is the Work? ─────────────────────── */}
+      {/* ─────────────────────── What Is the Method? ─────────────────────── */}
       <section id="the-work" className="scroll-mt-24 border-b border-ink">
         <div className="px-6 pb-4 pt-16 md:px-11">
           <div className="mb-6 font-mono text-xs uppercase tracking-[0.16em] text-pink-muted">
-            What is the work?
+            What is the method?
           </div>
           <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between md:gap-10">
             <p className="max-w-[720px] font-grotesk text-[clamp(24px,3.4vw,34px)] font-medium leading-[1.35] tracking-[-0.01em]">
               {"A system can't change what it can't feel."}
             </p>
             <Link
-              href="/the-work"
+              href="/breathwork"
               className="shrink-0 whitespace-nowrap border-b-2 border-pink-deep pb-[3px] font-grotesk text-sm font-semibold"
             >
               {"See how it's built →"}
@@ -162,7 +176,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ─────────────────── Current Events & Workshops ─────────────────── */}
+      {/* ──────���─��────────── Current Events & Workshops ─────────────────── */}
       <section id="events" className="scroll-mt-24 border-b border-ink">
         <div className="px-6 pb-2 pt-16 md:px-11">
           <div className="mb-2 font-mono text-xs uppercase tracking-[0.16em] text-pink-muted">
@@ -233,14 +247,16 @@ export default function HomePage() {
         className="scroll-mt-24 border-b border-ink px-6 py-24 md:px-11"
       >
         <div className="mb-[22px] font-mono text-xs uppercase tracking-[0.16em] text-pink-muted">
-          Weekly · Donation-based · Virtual
+          Monthly · Donation-based · Virtual
         </div>
         <h2 className="mb-[22px] font-grotesk text-[clamp(40px,7vw,64px)] font-bold uppercase leading-[0.96] tracking-[-0.03em]">
           Breathe with us, live
         </h2>
         <p className="mb-14 max-w-[640px] font-grotesk text-[17px] leading-[1.6] text-[#5a5247]">
-          A donation-based, guided breathwork journey gathered live on Zoom.
-          Come as you are. Give what you can. Coming soon.
+          Monthly donation-based Zoom breathwork · Coming soon. Join me on the
+          last Sunday of every month for a guided therapeutic breathwork
+          experience, offered virtually. Come as you are. Give what you can.
+          Private virtual sessions are available now.
         </p>
 
         <div className="grid grid-cols-1 items-stretch gap-6 md:grid-cols-2 md:gap-8">
@@ -253,13 +269,15 @@ export default function HomePage() {
               Coming Soon
             </div>
             <div className="mt-3 font-grotesk text-sm font-semibold uppercase tracking-[0.12em] text-ink">
-              Schedule to be announced
+              Last Sunday of every month
             </div>
           </div>
         </div>
       </section>
 
       {/* ───────��───────��─── Contact / Book a Session ──────���──���───────── */}
+      <RecentJournal />
+
       <section
         id="contact"
         className="scroll-mt-24 border-b border-ink px-6 py-24 text-center md:px-11"
@@ -276,12 +294,8 @@ export default function HomePage() {
         </p>
         <div className="flex flex-wrap justify-center gap-3">
           <Button asChild>
-            <a
-              href="https://app.acuityscheduling.com/schedule/bc35c44e"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Book a 1:1
+            <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
+              Book a session
             </a>
           </Button>
           <Button asChild variant="outline">

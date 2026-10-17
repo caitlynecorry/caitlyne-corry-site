@@ -19,7 +19,7 @@ const INTERESTS = [
   "A 1:1 session",
   "Couples breathwork",
   "Group / workshop",
-  "The weekly live stream",
+  "Monthly Zoom breathwork (coming soon)",
   "Something else",
 ];
 
@@ -90,8 +90,7 @@ export default function ContactPage() {
                 Thank you ✺
               </div>
               <p className="m-0 font-grotesk text-base leading-[1.6] text-[#4a2e2f]">
-                Your note is on its way. I&rsquo;ll be in touch soon — in the
-                meantime, come breathe with us on Wednesday.
+                Your note is on its way. I&rsquo;ll be in touch soon.
               </p>
             </div>
           ) : (
@@ -159,7 +158,7 @@ export default function ContactPage() {
           <div className="text-right font-grotesk text-base leading-[1.9]">
             <Link href="/offerings">Offerings</Link> ·{" "}
             <Link href="/about">About</Link> ·{" "}
-            <Link href="/the-work">The Work</Link>
+            <Link href="/breathwork">Breathwork</Link>
             <br />
             <Link href="/live-stream">Join the live stream</Link>
           </div>
