@@ -82,10 +82,9 @@ export default function BreathworkPage() {
 
       {/* The Work */}
       <section className="border-b border-ink px-4 pb-20 pt-[70px] md:px-11">
-        <div className={LABEL}>The method</div>
-        <h1 className="m-0 font-grotesk text-[clamp(64px,14vw,158px)] font-bold uppercase leading-[0.82] tracking-[-0.045em]">
-          The Work
-        </h1>
+  <h1 className="m-0 font-grotesk text-[clamp(64px,14vw,158px)] font-bold uppercase leading-[0.82] tracking-[-0.045em]">
+  THE METHOD.
+  </h1>
         <p className="mt-10 max-w-[640px] text-pretty font-grotesk text-[clamp(20px,2.2vw,24px)] font-semibold italic leading-[1.45] tracking-[-0.01em] text-pink-deep">
           The breath is the practice. Awareness is the invitation. Release is a
           possibility. Integration is where the work continues.
