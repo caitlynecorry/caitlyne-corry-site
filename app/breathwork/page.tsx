@@ -48,12 +48,22 @@ const SESSION_STEPS = [
   },
 ];
 
+const TRAUMA_INTRO = [
+  "This work is deeply human.",
+  "It is the practice of using breath, sensation, and awareness to reconnect with the body beneath the story.",
+  ];
+
 const TRAUMA_PARAGRAPHS = [
   "Trauma isn't just about what happened to us. It's also about how those experiences can continue to show up in our bodies, our nervous systems, and the ways we move through the world.",
+  "Modern neuroscience tells us that experiences are not stored only as memories or thoughts, but as patterns in the nervous system — in muscle tension, breath patterns, posture, vigilance, shutdown, and stress physiology. The body remembers what the mind has moved on from.",
   "When we experience something overwhelming, our bodies instinctively respond in ways designed to protect us: fight, flight, or freeze. And sometimes, long after the experience has passed, those protective patterns remain.",
   "We can intellectually understand what happened to us and still find ourselves reacting in ways we don't fully understand. Clenching the steering wheel. Holding our breath. Feeling unsafe when there is no immediate danger.",
   "Therapeutic breathwork creates an opportunity to move beyond intellectual understanding and explore what is happening beneath the surface. Through active breathing, somatic awareness, and intentional integration, we work with the nervous system and the patterns of protection it has developed over time.",
-];
+  "This work is not about fixing you. It is about helping your body discover what safety feels like.",
+  "In a world that asks us to think our way through everything, this work invites us to listen to physiology, trust sensation, and be curious enough to adapt.",
+  "Because sometimes healing doesn't happen through understanding the story.",
+  "Sometimes it happens when the body finally realizes the story is over.",
+  ];
 
 const LABEL =
   "mb-6 font-mono text-xs uppercase tracking-[0.16em] text-pink-muted";
@@ -123,6 +133,13 @@ export default function BreathworkPage() {
       {/* Breath & trauma */}
       <section className="border-b border-ink px-4 py-20 md:px-11">
         <div className={LABEL}>Breath &amp; trauma</div>
+        <div className="mb-12 flex max-w-[720px] flex-col gap-6">
+          {TRAUMA_INTRO.map((paragraph) => (
+            <p key={paragraph.slice(0, 24)} className={`m-0 ${BODY}`}>
+              {paragraph}
+            </p>
+          ))}
+        </div>
         <h2 className="mb-10 text-balance font-grotesk text-[clamp(36px,6vw,64px)] font-bold leading-[1.02] tracking-[-0.02em]">
           {"Let's talk about trauma."}
         </h2>
