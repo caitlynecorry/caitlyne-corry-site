@@ -29,7 +29,7 @@ npm run build && npm run start   # production build
 | `/breathwork`  | `app/breathwork/page.tsx`     | The ABRI method, breathwork, and trauma               |
 | `/about`       | `app/about/page.tsx`          | Meet Caitlyne — story + timeline                      |
 | `/contact`     | `app/contact/page.tsx`        | Contact form (client component)                       |
-| `/live-stream` | `app/live-stream/page.tsx`    | Weekly live session info + reservation form           |
+| `/live-stream` | `app/live-stream/page.tsx`    | Monthly live session info + reservation form          |
 
 ## Architecture
 

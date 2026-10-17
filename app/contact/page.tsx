@@ -19,7 +19,7 @@ const INTERESTS = [
   "A 1:1 session",
   "Couples breathwork",
   "Group / workshop",
-  "Weekly Zoom breathwork (coming soon)",
+  "Monthly Zoom breathwork (coming soon)",
   "Something else",
 ];
 

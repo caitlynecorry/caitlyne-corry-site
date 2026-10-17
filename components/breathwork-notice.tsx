@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 /**
- * Temporary notice shown until the weekly donation-based Zoom gathering
+ * Temporary notice shown until the monthly donation-based Zoom gathering
  * launches. Designed to read as an intentional, brand-consistent state —
  * not a broken control.
  */
@@ -18,10 +18,11 @@ export function BreathworkNotice({ className }: { className?: string }) {
         Coming soon
       </div>
       <p className="mb-5 font-grotesk text-[22px] font-semibold leading-[1.3] text-[#3a2a2b]">
-        Weekly Zoom breathwork
+        Monthly Virtual Breathwork
       </p>
       <p className="mb-4 font-grotesk text-base leading-[1.65] text-[#4a2e2f]">
-        Weekly donation-based Zoom breathwork is coming soon. I&rsquo;m putting
+        Monthly donation-based Zoom breathwork, held the last Sunday of every
+        month, is coming soon. I&rsquo;m putting
         a few thoughtful touches in place before we begin gathering.
       </p>
       <p className="mb-7 font-grotesk text-base leading-[1.65] text-[#4a2e2f]">

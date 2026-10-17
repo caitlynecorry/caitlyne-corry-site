@@ -4,9 +4,9 @@ import { BreathworkNotice } from "@/components/breathwork-notice";
 import { pageMetadata } from "@/lib/site";
 
 export const metadata = pageMetadata({
-  title: "Weekly Zoom Breathwork, Coming Soon | Caitlyne Corry",
+  title: "Monthly Virtual Breathwork, Coming Soon | Caitlyne Corry",
   description:
-    "A weekly donation-based group breathwork session on Zoom with Caitlyne Corry, coming soon. 60 minutes, no experience needed. Give what you can.",
+    "A monthly donation-based group breathwork session on Zoom with Caitlyne Corry, held the last Sunday of every month. Coming soon. 60 minutes, no experience needed. Give what you can.",
   path: "/live-stream",
 });
 
@@ -18,7 +18,7 @@ export default function LiveStreamPage() {
       {/* Hero */}
       <section className="border-b border-ink px-5 pb-14 pt-[70px] md:px-10">
         <div className="mb-[26px] font-mono text-xs uppercase tracking-[0.2em] text-pink-muted">
-          <span className="text-pink-deep">●</span> Weekly · Donation-based · Zoom
+          <span className="text-pink-deep">●</span> Monthly · Donation-based · Zoom
         </div>
         <h1 className="m-0 font-grotesk text-[clamp(48px,11vw,150px)] font-bold uppercase leading-[0.82] tracking-[-0.045em]">
           Breathe
@@ -27,8 +27,9 @@ export default function LiveStreamPage() {
         </h1>
         <div className="mt-11 flex flex-wrap items-end justify-between gap-10">
           <p className="max-w-[520px] font-grotesk text-xl leading-[1.5] text-[#4a443c]">
-            A donation-based group breathwork session, live on Zoom. Come as you
-            are — no experience needed. Give what you can, when you can.
+            Join me on the last Sunday of every month for a guided therapeutic
+            breathwork experience, offered virtually. Come as you are — no
+            experience needed. Give what you can, when you can.
           </p>
           <span className="font-mono text-xs tracking-[0.12em] text-[#8a8074]">
             Coming Soon
@@ -39,7 +40,7 @@ export default function LiveStreamPage() {
       {/* Session facts band */}
       <section className="grid grid-cols-2 border-b border-ink md:grid-cols-4">
         {[
-          { k: "When", v: "Coming Soon" },
+          { k: "When", v: "Last Sunday monthly" },
           { k: "Time", v: "TBA" },
           { k: "Where", v: "Live on Zoom" },
           { k: "Length", v: "60 minutes" },

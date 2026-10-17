@@ -22,7 +22,7 @@ const TIMELINE = [
   },
   {
     year: "Now",
-    body: "Offering private sessions, couples work, and group experiences in Seattle and online. Weekly donation-based Zoom breathwork is coming soon.",
+    body: "Offering private sessions, couples work, and group experiences in Seattle and online. Monthly donation-based Zoom breathwork, held the last Sunday of every month, is coming soon.",
   },
 ];
 

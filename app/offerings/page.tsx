@@ -23,7 +23,7 @@ const FORMATS = [
     href: "/online-breathwork",
     label: "Online · Virtual",
     title: "Online breathwork",
-    body: "Private 1:1 virtual sessions, available now. Weekly donation-based Zoom breathwork · Coming soon.",
+    body: "Private 1:1 virtual sessions, available now. Monthly donation-based Zoom breathwork, last Sunday of every month · Coming soon.",
   },
 ];
 

@@ -7,7 +7,7 @@ export const CATEGORIES = [
     slug: "therapeutic-breathwork",
     name: "Therapeutic Breathwork",
     description:
-      "Writing on therapeutic breathwork and conscious connected breathing: what the practice is, how a session unfolds, and what it can open.",
+      "Exploring therapeutic breathwork, the relationship between mind and body, and what becomes possible through curiosity, awareness, and conscious connection.",
     service: { label: "Explore Therapeutic Breathwork", href: "/breathwork" },
   },
   {

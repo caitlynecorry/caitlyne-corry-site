@@ -151,11 +151,11 @@ export default function HomePage() {
         </p>
       </section>
 
-      {/* ─────────────────────── What Is the Work? ─────────────────────── */}
+      {/* ─────────────────────── What Is the Method? ─────────────────────── */}
       <section id="the-work" className="scroll-mt-24 border-b border-ink">
         <div className="px-6 pb-4 pt-16 md:px-11">
           <div className="mb-6 font-mono text-xs uppercase tracking-[0.16em] text-pink-muted">
-            What is the work?
+            What is the method?
           </div>
           <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between md:gap-10">
             <p className="max-w-[720px] font-grotesk text-[clamp(24px,3.4vw,34px)] font-medium leading-[1.35] tracking-[-0.01em]">
@@ -176,7 +176,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ────────��────────── Current Events & Workshops ─────────────────── */}
+      {/* ──────���─��────────── Current Events & Workshops ─────────────────── */}
       <section id="events" className="scroll-mt-24 border-b border-ink">
         <div className="px-6 pb-2 pt-16 md:px-11">
           <div className="mb-2 font-mono text-xs uppercase tracking-[0.16em] text-pink-muted">
@@ -247,15 +247,16 @@ export default function HomePage() {
         className="scroll-mt-24 border-b border-ink px-6 py-24 md:px-11"
       >
         <div className="mb-[22px] font-mono text-xs uppercase tracking-[0.16em] text-pink-muted">
-          Weekly · Donation-based · Virtual
+          Monthly · Donation-based · Virtual
         </div>
         <h2 className="mb-[22px] font-grotesk text-[clamp(40px,7vw,64px)] font-bold uppercase leading-[0.96] tracking-[-0.03em]">
           Breathe with us, live
         </h2>
         <p className="mb-14 max-w-[640px] font-grotesk text-[17px] leading-[1.6] text-[#5a5247]">
-          Weekly donation-based Zoom breathwork · Coming soon. A guided group
-          journey, gathered live. Come as you are. Give what you can. Private
-          virtual sessions are available now.
+          Monthly donation-based Zoom breathwork · Coming soon. Join me on the
+          last Sunday of every month for a guided therapeutic breathwork
+          experience, offered virtually. Come as you are. Give what you can.
+          Private virtual sessions are available now.
         </p>
 
         <div className="grid grid-cols-1 items-stretch gap-6 md:grid-cols-2 md:gap-8">
@@ -268,7 +269,7 @@ export default function HomePage() {
               Coming Soon
             </div>
             <div className="mt-3 font-grotesk text-sm font-semibold uppercase tracking-[0.12em] text-ink">
-              Schedule to be announced
+              Last Sunday of every month
             </div>
           </div>
         </div>

@@ -7,7 +7,7 @@ import { BOOKING_URL, pageMetadata } from "@/lib/site";
 export const metadata = pageMetadata({
   title: "Online Breathwork Sessions | Caitlyne Corry",
   description:
-    "Private 1:1 virtual breathwork with Caitlyne Corry, plus a 15-minute meet & greet call. Weekly donation-based Zoom breathwork is coming soon.",
+    "Private 1:1 virtual breathwork with Caitlyne Corry, plus a 15-minute meet & greet call. Monthly donation-based Zoom breathwork, held the last Sunday of every month, is coming soon.",
   path: "/online-breathwork",
 });
 
@@ -26,8 +26,8 @@ const SESSIONS = [
   },
   {
     label: "Group · Donation-based",
-    title: "Weekly Zoom breathwork",
-    body: "A guided group journey, live on Zoom. 60 minutes, no experience needed. Give what you can.",
+    title: "Monthly Virtual Breathwork",
+    body: "A guided group journey, live on Zoom, on the last Sunday of every month. 60 minutes, no experience needed. Give what you can.",
     status: "Coming soon",
   },
 ];
