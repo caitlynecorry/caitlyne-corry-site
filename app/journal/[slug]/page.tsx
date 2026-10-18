@@ -24,7 +24,7 @@ import {
 import { sanitizeArticleHtml } from "@/lib/sanitize";
 import { BOOKING_URL, SITE_NAME, SITE_URL } from "@/lib/site";
 
-export const revalidate = 3600;
+export const revalidate = 60;
 
 type Props = { params: { slug: string } };
 

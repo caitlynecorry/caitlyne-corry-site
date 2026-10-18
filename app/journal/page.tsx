@@ -5,7 +5,7 @@ import { getPublishedArticles, safeRead } from "@/lib/journal";
 import { JOURNAL_AUTHOR } from "@/lib/journal-shared";
 import { SITE_NAME, SITE_URL, pageMetadata } from "@/lib/site";
 
-export const revalidate = 3600;
+export const revalidate = 60;
 
 const TITLE = "Journal: Breathwork, the Body & the Nervous System | Caitlyne Corry";
 const DESCRIPTION =

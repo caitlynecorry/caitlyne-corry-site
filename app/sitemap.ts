@@ -3,7 +3,7 @@ import { PUBLIC_ROUTES, SITE_URL } from "@/lib/site";
 import { getPublishedArticles, safeRead } from "@/lib/journal";
 import { CATEGORIES } from "@/lib/journal-shared";
 
-export const revalidate = 3600;
+export const revalidate = 60;
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const lastModified = new Date();

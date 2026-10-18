@@ -5,7 +5,7 @@ import { getPublishedArticles, safeRead } from "@/lib/journal";
 import { CATEGORIES, getCategory } from "@/lib/journal-shared";
 import { pageMetadata } from "@/lib/site";
 
-export const revalidate = 3600;
+export const revalidate = 60;
 export const dynamicParams = false;
 
 type Props = { params: { category: string } };
