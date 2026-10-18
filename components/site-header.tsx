@@ -227,14 +227,6 @@ export function SiteHeader({ active }: { active?: string }) {
         </div>
       </a>
 
-      {/* Mono meta bar */}
-      <div className="flex items-center justify-between border-b border-ink px-6 py-3 font-mono text-[11px] uppercase tracking-[0.08em] text-[#46403a] md:px-11">
-        <span>Enjoy Your Breath</span>
-        <span className="hidden opacity-80 sm:inline">Therapeutic Breathwork</span>
-        <span className="hidden opacity-80 sm:inline">Seattle · Est. 2018</span>
-        <span>In person &amp; online ●</span>
-      </div>
-
       {/* Primary nav */}
       <nav
         aria-label="Main"
