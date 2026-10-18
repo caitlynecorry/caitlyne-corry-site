@@ -154,17 +154,16 @@ export default async function ArticlePage({ params }: Props) {
         </header>
 
         {article.featuredImageUrl ? (
-          <figure className="m-0 border-b border-ink">
-            <div className="relative aspect-[16/9] max-h-[720px] w-full">
-              <Image
-                src={article.featuredImageUrl}
-                alt={article.featuredImageAlt ?? ""}
-                fill
-                priority
-                sizes="100vw"
-                className="object-cover"
-              />
-            </div>
+          <figure className="m-0 px-6 pt-12 md:px-11 md:pt-16">
+            <Image
+              src={article.featuredImageUrl}
+              alt={article.featuredImageAlt ?? ""}
+              width={1600}
+              height={1067}
+              priority
+              sizes="(min-width: 960px) 860px, 100vw"
+              className="mx-auto h-auto max-h-[min(60vh,520px)] w-auto max-w-full md:max-w-[860px]"
+            />
           </figure>
         ) : null}
 

@@ -46,6 +46,78 @@
   }
 }
 
+/* Shared by the admin editor, draft preview, and published article so all three match */
+@layer components {
+  .journal-prose {
+    @apply font-grotesk text-[18px] leading-[1.7] text-ink;
+    overflow-wrap: break-word;
+  }
+  .journal-prose > * + * {
+    margin-top: 1.4em;
+  }
+  .journal-prose p {
+    margin-bottom: 0;
+  }
+  /* Blank lines entered in the editor are saved as empty paragraphs; keep their height */
+  .journal-prose p:empty::before {
+    content: "\00a0";
+  }
+  .journal-prose h2 {
+    @apply font-grotesk text-[clamp(26px,3.2vw,34px)] font-semibold leading-[1.15] tracking-[-0.01em];
+    margin-top: 2.2em;
+  }
+  .journal-prose h3 {
+    @apply font-grotesk text-[22px] font-semibold leading-[1.25];
+    margin-top: 1.8em;
+  }
+  .journal-prose > h2:first-child,
+  .journal-prose > h3:first-child {
+    margin-top: 0;
+  }
+  .journal-prose p:empty + h2,
+  .journal-prose p:empty + h3 {
+    margin-top: 1em;
+  }
+  .journal-prose h2 + *,
+  .journal-prose h3 + * {
+    margin-top: 0.7em;
+  }
+  .journal-prose a {
+    @apply underline decoration-pink-muted underline-offset-4 hover:text-pink-muted;
+  }
+  .journal-prose ul,
+  .journal-prose ol {
+    padding-left: 1.4em;
+  }
+  .journal-prose ul {
+    list-style: disc;
+  }
+  .journal-prose ol {
+    list-style: decimal;
+  }
+  .journal-prose li + li {
+    margin-top: 0.5em;
+  }
+  .journal-prose li > p {
+    margin: 0;
+  }
+  .journal-prose blockquote {
+    @apply border-l border-ink pl-6 italic;
+  }
+  .journal-prose hr {
+    @apply my-12 border-t border-ink/20;
+  }
+  .journal-prose img {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: min(70vh, 560px);
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 @layer utilities {
   /* Diagonal hatch used as an image placeholder where no photo exists yet */
   .hatch {
