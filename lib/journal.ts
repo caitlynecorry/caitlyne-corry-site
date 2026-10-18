@@ -5,7 +5,9 @@ import { journalArticles, journalSettings } from "@/lib/db/schema";
 import type { Article, ArticleSummary } from "@/lib/journal-shared";
 
 export const JOURNAL_TAG = "journal";
-const REVALIDATE_SECONDS = 3600;
+// Posts are often published from the v0 Preview, whose revalidateTag calls
+// can't clear production's cache, so production must refresh on its own.
+const REVALIDATE_SECONDS = 60;
 
 const summaryColumns = {
   slug: journalArticles.slug,
@@ -56,7 +58,7 @@ export const getPublishedArticles = unstable_cache(
       .orderBy(desc(journalArticles.publishedAt), desc(journalArticles.id));
     return rows.map(toSummary);
   },
-  ["journal-published-articles"],
+  ["journal-published-articles-v2"],
   { tags: [JOURNAL_TAG], revalidate: REVALIDATE_SECONDS }
 );
 
@@ -85,7 +87,7 @@ export const getPublishedArticle = unstable_cache(
       metaDescription: row.metaDescription,
     };
   },
-  ["journal-published-article"],
+  ["journal-published-article-v2"],
   { tags: [JOURNAL_TAG], revalidate: REVALIDATE_SECONDS }
 );
 
@@ -98,7 +100,7 @@ export const getJournalSettings = unstable_cache(
       .limit(1);
     return { substackUrl: row?.substackUrl || null };
   },
-  ["journal-settings"],
+  ["journal-settings-v2"],
   { tags: [JOURNAL_TAG], revalidate: REVALIDATE_SECONDS }
 );
 

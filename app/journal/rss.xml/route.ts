@@ -2,7 +2,7 @@ import { getPublishedArticles, safeRead } from "@/lib/journal";
 import { JOURNAL_AUTHOR, getCategory } from "@/lib/journal-shared";
 import { SITE_NAME, SITE_URL } from "@/lib/site";
 
-export const revalidate = 3600;
+export const revalidate = 60;
 
 function escapeXml(value: string) {
   return value
