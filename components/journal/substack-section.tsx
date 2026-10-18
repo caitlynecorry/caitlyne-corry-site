@@ -21,7 +21,7 @@ export async function SubstackSection() {
           id="substack-heading"
           className="m-0 max-w-[620px] text-balance font-grotesk text-[clamp(26px,3.4vw,36px)] font-semibold leading-[1.12] tracking-[-0.01em]"
         >
-          Letters and shorter writing, delivered to your inbox.
+          Poetry, letters, and the mysteries I&apos;m still figuring out. Delivered to your inbox.
         </h2>
         <a
           href={substackUrl}
