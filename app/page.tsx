@@ -64,7 +64,7 @@ export default function HomePage() {
           <div className="grain absolute inset-0 opacity-[0.28] mix-blend-multiply" />
         </div>
 
-        <div className="flex min-h-[86vh] flex-col justify-between gap-16 px-5 pt-14 pb-9 md:px-10 md:pt-20 md:pb-12">
+        <div className="flex min-h-[calc(100svh-var(--header-h,7.25rem))] flex-col justify-between gap-16 px-5 pt-14 pb-9 md:px-10 md:pt-20 md:pb-12">
           <div className="flex flex-col">
             <h1 className="m-0 flex flex-col gap-6 text-ink md:gap-8">
               <span className="font-mono text-xs uppercase tracking-[0.28em] md:text-sm">
