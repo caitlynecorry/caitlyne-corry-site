@@ -1,13 +1,6 @@
 export const EVENT_DATES = [
   {
     day: "Saturday",
-    date: "October 24",
-    dateTime: "2026-10-24T19:00",
-    registerUrl:
-      "https://app.acuityscheduling.com/schedule.php?owner=39688174&appointmentType=98726792",
-  },
-  {
-    day: "Saturday",
     date: "November 21",
     dateTime: "2026-11-21T19:00",
     registerUrl:

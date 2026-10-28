@@ -6,9 +6,9 @@ import { HealthSafety } from "@/components/health-safety";
 import { pageMetadata } from "@/lib/site";
 
 export const metadata = pageMetadata({
-  title: "Therapeutic Breathwork & the ABRI Method | Caitlyne Corry",
+  title: "Therapeutic Breathwork & the Method | Caitlyne Corry",
   description:
-    "Therapeutic breathwork in Seattle and online with Caitlyne Corry. The ABRI method: awareness, breath, release, integration.",
+    "Therapeutic breathwork in Seattle and online with Caitlyne Corry. The method: awareness, breath, release, integration.",
   path: "/breathwork",
 });
 

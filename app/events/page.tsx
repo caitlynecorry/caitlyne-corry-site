@@ -8,7 +8,7 @@ import { pageMetadata } from "@/lib/site";
 export const metadata = pageMetadata({
   title: "Breathwork Events & Workshops | Caitlyne Corry",
   description:
-    "ROOTED: two-hour therapeutic breathwork gatherings at Cedarhouse Flowers in Seattle, October 24 and November 21, 2026, 7–9 p.m. Limited capacity.",
+    "ROOTED: two-hour therapeutic breathwork gatherings at Cedarhouse Flowers in Seattle, November 21, 2026, 7–9 p.m. Limited capacity.",
   path: "/events",
 });
 
