@@ -3,7 +3,7 @@ import { SiteHeader } from "@/components/site-header";
 import { SiteFooterFull } from "@/components/site-footer";
 import { Button } from "@/components/ui/button";
 import { BreathworkNotice } from "@/components/breathwork-notice";
-import { EventDates } from "@/components/event-dates";
+import { EventsComingSoon } from "@/components/event-dates";
 import { RecentJournal } from "@/components/journal/recent-journal";
 import { BOOKING_URL, pageMetadata } from "@/lib/site";
 
@@ -198,12 +198,12 @@ export default function HomePage() {
           />
           <div className="flex flex-col justify-center border-t border-ink px-6 py-16 md:px-11">
             <div className="mb-[18px] font-mono text-[13px] uppercase tracking-[0.14em] text-pink-muted">
-              Cedarhouse Flowers
+              Thank you, 2026
             </div>
-            <h2 className="mb-6 max-w-[460px] font-grotesk text-[clamp(40px,6vw,56px)] font-semibold leading-[0.98]">
-              Upcoming dates
+            <h2 className="mb-6 max-w-[460px] text-balance font-grotesk text-[clamp(40px,6vw,56px)] font-semibold leading-[0.98]">
+              More events coming in 2027
             </h2>
-            <EventDates />
+            <EventsComingSoon />
           </div>
         </div>
       </section>
