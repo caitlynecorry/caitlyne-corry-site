@@ -2,7 +2,7 @@ import Link from "next/link";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooterCompact } from "@/components/site-footer";
 import { Button } from "@/components/ui/button";
-import { EventDates } from "@/components/event-dates";
+import { EventsComingSoon } from "@/components/event-dates";
 import { pageMetadata } from "@/lib/site";
 
 export const metadata = pageMetadata({
@@ -208,12 +208,12 @@ export default function OfferingsPage() {
         />
         <div className="flex flex-col justify-center px-6 py-16 md:px-11">
           <div className="mb-[18px] font-mono text-[13px] uppercase tracking-[0.14em] text-pink-muted">
-            Cedarhouse Flowers
+            Thank you, 2026
           </div>
-          <h2 className="mb-6 max-w-[460px] font-grotesk text-[44px] font-semibold leading-[0.98]">
-            Upcoming dates
+          <h2 className="mb-6 max-w-[460px] text-balance font-grotesk text-[44px] font-semibold leading-[0.98]">
+            More events coming in 2027
           </h2>
-          <EventDates />
+          <EventsComingSoon />
         </div>
       </section>
 

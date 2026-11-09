@@ -3,7 +3,7 @@ import { SiteHeader } from "@/components/site-header";
 import { SiteFooterFull } from "@/components/site-footer";
 import { Button } from "@/components/ui/button";
 import { BreathworkNotice } from "@/components/breathwork-notice";
-import { EventDates } from "@/components/event-dates";
+import { EventsComingSoon } from "@/components/event-dates";
 import { RecentJournal } from "@/components/journal/recent-journal";
 import { BOOKING_URL, pageMetadata } from "@/lib/site";
 
@@ -78,7 +78,7 @@ export default function HomePage() {
 
             <p className="mt-8 max-w-[34ch] text-pretty font-grotesk text-lg leading-relaxed text-ink md:mt-10 md:text-xl">
               An experiential approach to breathwork, somatic awareness, and
-              meaningful change.
+              building capacity for change.
             </p>
 
             <p className="mt-6 font-mono text-xs uppercase tracking-[0.28em] text-pink-muted md:mt-8">
@@ -132,7 +132,13 @@ export default function HomePage() {
             particularly graceful. In my lineage, we call it slaying dragons. And
             I know that territory. I&rsquo;ve lived there. What began in 2009 as a
             personal relationship to movement became something I couldn&rsquo;t
-            unfind. I&rsquo;m not here to fix you — I&rsquo;m here to witness you.
+            unfind. I&rsquo;m not here to fix you — I&rsquo;m here to witness you,
+            in a way that stays grounded, supportive, and responsive to whoever
+            is in front of me. There&rsquo;s no pushing through discomfort and no
+            prescribed path. We lead with curiosity, choice, and respect for your
+            own limits, so that over time it gets easier to stay present, to
+            recognize old patterns as they surface, and to make more room for
+            connection.
           </p>
           <Link
             href="/about"
@@ -192,12 +198,12 @@ export default function HomePage() {
           />
           <div className="flex flex-col justify-center border-t border-ink px-6 py-16 md:px-11">
             <div className="mb-[18px] font-mono text-[13px] uppercase tracking-[0.14em] text-pink-muted">
-              Cedarhouse Flowers
+              Thank you, 2026
             </div>
-            <h2 className="mb-6 max-w-[460px] font-grotesk text-[clamp(40px,6vw,56px)] font-semibold leading-[0.98]">
-              Upcoming dates
+            <h2 className="mb-6 max-w-[460px] text-balance font-grotesk text-[clamp(40px,6vw,56px)] font-semibold leading-[0.98]">
+              More events coming in 2027
             </h2>
-            <EventDates />
+            <EventsComingSoon />
           </div>
         </div>
       </section>

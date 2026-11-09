@@ -2,7 +2,7 @@ import Link from "next/link";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooterCompact } from "@/components/site-footer";
 import { Button } from "@/components/ui/button";
-import { EventDates } from "@/components/event-dates";
+import { EventsComingSoon } from "@/components/event-dates";
 import { pageMetadata } from "@/lib/site";
 
 export const metadata = pageMetadata({
@@ -63,15 +63,12 @@ export default function SeattleBreathworkPage() {
         />
         <div className="flex flex-col justify-center px-6 py-16 md:px-11">
           <div className="mb-[18px] font-mono text-[13px] uppercase tracking-[0.14em] text-pink-muted">
-            ROOTED · Cedarhouse Flowers
+            Thank you, 2026
           </div>
-          <h2 className="mb-6 max-w-[460px] font-grotesk text-[clamp(40px,6vw,56px)] font-semibold leading-[0.98]">
-            Upcoming dates
+          <h2 className="mb-6 max-w-[460px] text-balance font-grotesk text-[clamp(40px,6vw,56px)] font-semibold leading-[0.98]">
+            More events coming in 2027
           </h2>
-          <EventDates />
-          <p className="mt-7 max-w-[560px] text-pretty font-grotesk text-base leading-[1.7] text-[#5a5247]">
-            {"Two-hour therapeutic breathwork experience with somatic tools and integration, in an intimate flower-shop setting. Everything included. Limited capacity. Please avoid eating two hours beforehand."}
-          </p>
+          <EventsComingSoon />
         </div>
       </section>
 
